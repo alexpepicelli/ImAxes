@@ -6,7 +6,7 @@ using UnityEngine.Events;
 using DG.Tweening;
 
 
-public class AxisRangeWidget : MonoBehaviour, Grabbable {
+public class AxisRangeWidget : MonoBehaviour, IAxisGrabbable {
 
     [SerializeField]
     float axisOffset = 2.0f;

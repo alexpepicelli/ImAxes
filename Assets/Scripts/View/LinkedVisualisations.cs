@@ -4,7 +4,7 @@ using UnityEngine;
 using Staxes;
 using System.Linq;
 
-public class LinkedVisualisations : MonoBehaviour, Grabbable
+public class LinkedVisualisations : MonoBehaviour, IAxisGrabbable
 {
     Visualization v1 = null;
 

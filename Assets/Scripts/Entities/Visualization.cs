@@ -7,7 +7,7 @@ using System.Linq;
 
 // a visualization prefab will auto-configure which visuzalization to present depending on the number of attached axes and
 // orientation of those axes
-public class Visualization : MonoBehaviour, Grabbable, Brushable
+public class Visualization : MonoBehaviour, IAxisGrabbable, Brushable
 {
     public struct ReferenceAxis
     {

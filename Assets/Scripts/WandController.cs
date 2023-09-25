@@ -9,7 +9,7 @@ using System.Linq;
 using UnityEngine.Serialization;
 
 
-public interface Grabbable
+public interface IAxisGrabbable
 {
     int GetPriority();
 
@@ -30,21 +30,32 @@ public interface Brushable
     void OnDetailOnDemandRelease(WandController controller);
 
 }
-
+/*
+ * This class deals with interactions based on the Oculus Rift controller interactions and Hand interactions
+ */
 public class WandController : MonoBehaviour
 {
+    // the controller this component is attached to
+    public OVRInput.Controller OculusController;
+
+    // the active controller in the scene
+    private OVRInput.Controller activeController;
+
+    // The hand object attached to this component
+    private OVRHand hand;
+
+    //public GestureDetector gesture;
 
     [FormerlySerializedAs("isOculusRift")] public bool isOculusQuest = true;
     //Debug test
     GameObject brushingPoint;
 
-    Valve.VR.EVRButtonId gripButton = Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger;
-    Valve.VR.EVRButtonId padButton = Valve.VR.EVRButtonId.k_EButton_SteamVR_Touchpad;
+    //Valve.VR.EVRButtonId gripButton = Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger;
+    //Valve.VR.EVRButtonId padButton = Valve.VR.EVRButtonId.k_EButton_SteamVR_Touchpad;
 
     bool isTouchDown;
 
-    SteamVR_TrackedObject trackedObject;
-    SteamVR_Controller.Device controller;
+    //Valve.VR.SteamVR_TrackedObject trackedObject;
     
     Collider intersectingCollider;
     List<Collider> intersectingGrabbables = new List<Collider>();
@@ -75,8 +86,6 @@ public class WandController : MonoBehaviour
 
     void Start()
     {
-        if (!isOculusQuest) controller = SteamVR_Controller.Input((int)trackedObject.index); 
-    
         brushingPoint = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         brushingPoint.transform.localScale = new Vector3(0.01f, 0.01f, 0.0f);
 
@@ -88,39 +97,79 @@ public class WandController : MonoBehaviour
     void Awake()
     {
 
-        trackedObject = GetComponent<SteamVR_TrackedObject>();
+        //trackedObject = GetComponent<Valve.VR.SteamVR_TrackedObject>();
         tracking.AddRange(Enumerable.Repeat<Vector3>(Vector3.zero, 10));
     }
 
     public void PropergateOnGrab(GameObject g)
     {
-        if (g.GetComponent<Grabbable>() != null && g.GetComponent<Grabbable>().OnGrab(this))
+        if (g.GetComponent<IAxisGrabbable>() != null && g.GetComponent<IAxisGrabbable>().OnGrab(this))
         {
             draggingObjects.Add(g.gameObject);
         }
     }
 
+    /*
+     * On every update check for the active controller and check for any instantiated interactions
+     */
     void Update()
     {
-        bool gripDown = isOculusQuest?
-            OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) || OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger)
-            : controller.GetPressDown(gripButton);
-        
-        bool gripUp = isOculusQuest ?
-            OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger) || OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger)
-            : controller.GetPressUp(gripButton);
-        
-        bool gripping = isOculusQuest ?
-            OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) || OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger)
-            : controller.GetPress(gripButton);
-        
-        //bool upButtonDown = isOculusRift?
-        //    OVRInput.GetDown(OVRInput.Button.PrimaryThumbstickDown, OculusController) || OVRInput.GetDown(OVRInput.Button.SecondaryThumbstickDown, OculusController)
-        //    : 
+        activeController = OVRInput.GetActiveController(); // will always get active controller
+        bool gripDown = false;
+        bool gripUp = false;
+        bool gripping = false ;
+
+        #region if controller type is Oculus Touch
+        if (OculusController == activeController &&  OculusController == OVRInput.Controller.Touch || OculusController == OVRInput.Controller.LTouch || OculusController == OVRInput.Controller.RTouch)
+        {
+            // update the sphere colliders
+            UpdateSphereColliders(gameObject, gameObject.GetComponent<SphereCollider>());
+            
+            // Check the current status of Oculus controller buttons to determing whether to grab or not
+            gripDown = isOculusQuest && (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OculusController) 
+                                        || OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger, OculusController));
+
+            gripUp = isOculusQuest && (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger, OculusController) 
+                                      || OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger, OculusController));
+
+            gripping = isOculusQuest && (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OculusController) 
+                                        || OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger, OculusController));
+
+        }
+        #endregion
+
+        #region if controller type is Hands
+        else if (OculusController == OVRInput.Controller.LHand || OculusController == OVRInput.Controller.RHand || OculusController == OVRInput.Controller.Hands)
+        {
+            hand = gameObject.GetComponent<OVRHand>();
+
+            UpdateSphereColliders(gameObject, gameObject.GetComponent<SphereCollider>());
+            //gesture = GetComponentInChildren<GestureDetector>();
+
+            // If a hand is making a pinching gesture then it is assumed that it's grabbing (Gestures can be altered)
+            if (hand && hand.GetFingerIsPinching(OVRHand.HandFinger.Index))
+            {
+                // it should get to grabbing ofc
+                gripDown = true;
+                gripUp = false;
+                gripping = true;
+            }
+            else {
+                gripDown = false;
+                gripUp = true;
+                gripping = false;
+            }
+        }
+        #endregion
+
+
+        /* Check if object can be dragged and compare the objects dragging/grabbing priority
+         * against other draggable object in the proximity
+         */
         if (gripDown && intersectingGrabbables.Any(x => x!= null) && draggingObjects.Count == 0)
         {
             var potentialDrags = intersectingGrabbables.Where(x => x != null).ToList();
-            potentialDrags.Sort((x, y) => y.GetComponent<Grabbable>().GetPriority() - x.GetComponent<Grabbable>().GetPriority());
+            potentialDrags.Sort((x, y) => y.GetComponent<IAxisGrabbable>().GetPriority() - x.GetComponent<IAxisGrabbable>().GetPriority());
             if (potentialDrags.Count() > 0)
             {
                 PropergateOnGrab(potentialDrags.First().gameObject);
@@ -128,28 +177,26 @@ public class WandController : MonoBehaviour
         }
         else if (gripUp && draggingObjects.Count > 0)
         {
-            draggingObjects.Where(x => x != null).ForEach(x => x.GetComponent<Grabbable>().OnRelease(this));
+            draggingObjects.Where(x => x != null).ForEach(x => x.GetComponent<IAxisGrabbable>().OnRelease(this));
             draggingObjects.Clear();
         }
         else if (gripping && draggingObjects.Count > 0)
         {
-            draggingObjects.Where(x => x != null).ForEach(x => x.GetComponent<Grabbable>().OnDrag(this));            
+            draggingObjects.Where(x => x != null).ForEach(x => x.GetComponent<IAxisGrabbable>().OnDrag(this));            
         }
         
         if (draggingObjects.Count > 0)
         {
-            if(!isOculusQuest)
-            controller.TriggerHapticPulse(100);
+            if (!isOculusQuest)
+                isOculusQuest = false;
         }
-        
-        //brush actions : SteamVR_Controller.ButtonMask.Grip
-        
-        bool padPressDown = isOculusQuest ? OVRInput.Get(OVRInput.Button.PrimaryThumbstick) || OVRInput.Get(OVRInput.Button.SecondaryThumbstick)
-           : controller.GetPress(padButton);
-        
-        bool padPressUp = isOculusQuest ? OVRInput.GetUp(OVRInput.Button.PrimaryThumbstick) || OVRInput.GetUp(OVRInput.Button.SecondaryThumbstick)
-          : controller.GetPressUp(padButton);
-        
+
+        bool padPressDown = isOculusQuest ? OVRInput.Get(OVRInput.Button.PrimaryThumbstick, OculusController) || OVRInput.Get(OVRInput.Button.SecondaryThumbstick, OculusController)
+           : false;
+
+        bool padPressUp = isOculusQuest ? OVRInput.GetUp(OVRInput.Button.PrimaryThumbstick, OculusController) || OVRInput.GetUp(OVRInput.Button.SecondaryThumbstick, OculusController)
+          : false;
+
         #region details on demand
         //detail on demand actions
         if (VisualisationAttributes.detailsOnDemand)
@@ -225,24 +272,26 @@ public class WandController : MonoBehaviour
         tracking.RemoveAt(0);
         tracking.Add(transform.TransformPoint(new Vector3(0, -0.04f, 0)));
 
-     }
+    }
 
     void OnTriggerEnter(Collider col)
     {
+       
         if (draggingObjects.Count > 0)
             return;
 
-        var grabble = col.GetComponent<Grabbable>();
+        var grabble = col.GetComponent<IAxisGrabbable>();
         if (grabble != null && !intersectingGrabbables.Contains(col))
         {
             Collider activeGrabbable = intersectingGrabbables.FirstOrDefault();
             intersectingGrabbables.Add(col);
             intersectingGrabbables.RemoveAll(x => x == null);
-            intersectingGrabbables.Sort((x, y) => y.GetComponent<Grabbable>().GetPriority() - x.GetComponent<Grabbable>().GetPriority());
+            intersectingGrabbables.Sort((x, y) => y.GetComponent<IAxisGrabbable>().GetPriority() - x.GetComponent<IAxisGrabbable>().GetPriority());
             if (intersectingGrabbables[0] == col){
                 if (activeGrabbable != null && activeGrabbable != intersectingGrabbables[0])
                 {
-                    activeGrabbable.GetComponent<Grabbable>().OnExit(this);
+                    activeGrabbable.GetComponent<IAxisGrabbable>().OnExit(this);
+                    print("Trigger Highlight");// #EEGEvent
                 }
                 grabble.OnEnter(this);
             }
@@ -257,14 +306,14 @@ public class WandController : MonoBehaviour
     {
         intersectingGrabbables.RemoveAll(x => x == null);
 
-        var grabbable = col.GetComponent<Grabbable>();
+        var grabbable = col.GetComponent<IAxisGrabbable>();
         if (grabbable != null && intersectingGrabbables.Contains(col))
         {
             if (col == intersectingGrabbables[0]){
                 grabbable.OnExit(this);
                 intersectingGrabbables.RemoveAt(0);
                 if (intersectingGrabbables.Count > 0){
-                    intersectingGrabbables[0].GetComponent<Grabbable>().OnEnter(this);
+                    intersectingGrabbables[0].GetComponent<IAxisGrabbable>().OnEnter(this);
                 }
             } else {
                 intersectingGrabbables.Remove(col);
@@ -276,22 +325,106 @@ public class WandController : MonoBehaviour
     void SetIntersectingCollider(Collider col)
     {
         if (col != null){
-            if (intersectingCollider != null && col.GetComponent<Grabbable>().GetPriority() >= intersectingCollider.GetComponent<Grabbable>().GetPriority())
+            if (intersectingCollider != null && col.GetComponent<IAxisGrabbable>().GetPriority() >= intersectingCollider.GetComponent<IAxisGrabbable>().GetPriority())
             {
-                intersectingCollider.GetComponent<Grabbable>().OnExit(this);
+                intersectingCollider.GetComponent<IAxisGrabbable>().OnExit(this);
             }
             intersectingCollider = col;
-            intersectingCollider.GetComponent<Grabbable>().OnEnter(this);
+            intersectingCollider.GetComponent<IAxisGrabbable>().OnEnter(this);
             
         } else {
-            intersectingCollider.GetComponent<Grabbable>().OnExit(this);
+            intersectingCollider.GetComponent<IAxisGrabbable>().OnExit(this);
             intersectingCollider = null;
         }        
     }
 
-    public bool IsDragging(Grabbable grab)
+    void UpdateSphereColliders(GameObject controller, SphereCollider collider) {
+        List<GameObject> allControllers = GameObject.FindGameObjectsWithTag("Controller").ToList();
+        String name ="";
+
+        switch (controller.name) {
+            case "OVRLeftControllerPrefab":
+            case "OVRRightControllerPrefab":
+                name = "oculus_touch";
+                break;
+            case "OVRLeftHand":
+            case "OVRRightHand":
+                name = "hands";
+                break;
+            default:
+                break;
+        }
+
+        if (controller)
+        {
+            collider.enabled = true;
+
+            foreach (GameObject obj in allControllers)
+            {
+             
+/*                if (!GameObject.ReferenceEquals(obj, controller))
+                {
+                    obj.GetComponent<SphereCollider>().enabled = true;
+                }
+*/
+                switch (controller.name)
+                {
+                    case "OVRLeftControllerPrefab":
+                    case "OVRRightControllerPrefab":
+                        if (name == "oculus_touch")
+                        {
+                            obj.GetComponent<SphereCollider>().enabled = true;
+                        }
+                        else {
+                            obj.GetComponent<SphereCollider>().enabled = false;
+                        }
+                        break;
+                    case "OVRLeftHand":
+                    case "OVRRightHand":
+                        if (name == "hands")
+                        {
+                            obj.GetComponent<SphereCollider>().enabled = true;
+                        }
+                        else {
+                            obj.GetComponent<SphereCollider>().enabled = false;
+                        }
+                        break;
+
+                }
+            }
+        }
+
+    }
+
+    // if controller is not in use be it hand or oculus touch, then disable its sphere collider.
+    void colliderOff() {
+        gameObject.GetComponent<SphereCollider>().enabled = false;
+    }
+
+    void colliderOn() {
+        gameObject.GetComponent<SphereCollider>().enabled = true;
+    }
+
+    // Grab the sphere game object attached to the contoller gameobject
+    public GameObject GetSphere()
     {
-        return draggingObjects.Any(x => x.GetComponent<Grabbable>() == grab);
+        var transforms = this.GetComponentsInChildren<Transform>();
+        String childObjName = "Sphere";
+
+        foreach (Transform child in transforms)
+        {
+            if (child.name == childObjName)
+            {
+                return child.gameObject;
+            }
+        }
+
+        return null;
+    }
+
+    public bool IsDragging(IAxisGrabbable grab)
+    {
+        return draggingObjects.Any(x => x.GetComponent<IAxisGrabbable>() == grab);
     }
 
     public bool IsDragging()
@@ -303,7 +436,7 @@ public class WandController : MonoBehaviour
     {
         for (int i = 0; i < 15; ++i)
         {
-            controller.TriggerHapticPulse((ushort)(3900 * (15 - i) / 15.0f));
+            //controller.TriggerHapticPulse((ushort)(3900 * (15 - i) / 15.0f));
             yield return new WaitForEndOfFrame();
         }
     }
@@ -315,7 +448,7 @@ public class WandController : MonoBehaviour
         {
             for (float i = 0; i < length; i += Time.deltaTime)
             {
-                controller.TriggerHapticPulse((ushort)Mathf.Lerp(0, 3999, strength));
+                //controller.TriggerHapticPulse((ushort)Mathf.Lerp(0, 3999, strength));
                 yield return new WaitForEndOfFrame();
             }
         }

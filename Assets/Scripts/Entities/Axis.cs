@@ -9,7 +9,7 @@ using UnityEngine.Events;
 using System.Linq;
 using System.IO;
 
-public class Axis : MonoBehaviour, Grabbable {
+public class Axis : MonoBehaviour, IAxisGrabbable {
 
     [SerializeField] TextMeshPro label;
     [SerializeField] TextMeshPro minimumValueDimensionLabel;
@@ -358,7 +358,7 @@ public class Axis : MonoBehaviour, Grabbable {
 
     #endregion
 
-    int Grabbable.GetPriority()
+    int IAxisGrabbable.GetPriority()
     {
         return 5;
     }

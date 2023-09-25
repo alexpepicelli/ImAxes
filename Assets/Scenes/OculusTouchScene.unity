@@ -589,6 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a2f6b1d33014a478b9cdee3a430faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OculusController: 2
   isOculusQuest: 1
   theBrushingMaterial: {fileID: 2100000, guid: 574b245a2392a52469887ab44da72c1e, type: 2}
 --- !u!135 &1172610541
@@ -712,6 +713,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 1110917729942126971, guid: f39a9d103c4129b42a53567f6cd8356a,
+        type: 3}
+      propertyPath: m_showState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2169537291589126116, guid: f39a9d103c4129b42a53567f6cd8356a,
         type: 3}
       propertyPath: m_TagString
@@ -727,6 +733,11 @@ PrefabInstance:
       propertyPath: _hmd
       value: 
       objectReference: {fileID: 2034725549}
+    - target: {fileID: 5329703760711074568, guid: f39a9d103c4129b42a53567f6cd8356a,
+        type: 3}
+      propertyPath: m_showState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5329703760716487890, guid: f39a9d103c4129b42a53567f6cd8356a,
         type: 3}
       propertyPath: m_TagString
@@ -831,11 +842,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5329703760716487890, guid: f39a9d103c4129b42a53567f6cd8356a,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1172610541}
+      addedObject: {fileID: 1172610540}
     - targetCorrespondingSourceObject: {fileID: 5329703760716487890, guid: f39a9d103c4129b42a53567f6cd8356a,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1172610540}
+      addedObject: {fileID: 1172610541}
     - targetCorrespondingSourceObject: {fileID: 2621174870734115420, guid: f39a9d103c4129b42a53567f6cd8356a,
         type: 3}
       insertIndex: -1
@@ -932,6 +943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a2f6b1d33014a478b9cdee3a430faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OculusController: 96
   isOculusQuest: 1
   theBrushingMaterial: {fileID: 2100000, guid: 574b245a2392a52469887ab44da72c1e, type: 2}
 --- !u!135 &2034725559
@@ -967,6 +979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a2f6b1d33014a478b9cdee3a430faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OculusController: 96
   isOculusQuest: 1
   theBrushingMaterial: {fileID: 2100000, guid: 574b245a2392a52469887ab44da72c1e, type: 2}
 --- !u!135 &2034725561
@@ -1002,6 +1015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a2f6b1d33014a478b9cdee3a430faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OculusController: 1
   isOculusQuest: 1
   theBrushingMaterial: {fileID: 2100000, guid: 574b245a2392a52469887ab44da72c1e, type: 2}
 --- !u!1 &2143526637

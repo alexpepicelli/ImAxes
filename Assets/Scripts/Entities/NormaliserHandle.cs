@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
 
-public class NormaliserHandle : MonoBehaviour, Grabbable {
+public class NormaliserHandle : MonoBehaviour, IAxisGrabbable {
 
     [SerializeField]
     UnityEvent OnEntered;

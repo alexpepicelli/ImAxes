@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Linq;
 using Staxes;
 
-public class SPLOM3D : MonoBehaviour, Grabbable
+public class SPLOM3D : MonoBehaviour, IAxisGrabbable
 {
     Dictionary<Tuple<int, int, int>, List<GameObject>> ghostAxes = new Dictionary<Tuple<int, int, int>, List<GameObject>>();
 

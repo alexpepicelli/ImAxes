@@ -10,7 +10,7 @@ public interface UIComponent
     void OnComponentValueChange(float value);
 }
 
-public class AxisSlider : MonoBehaviour, Grabbable
+public class AxisSlider : MonoBehaviour, IAxisGrabbable
 {
 
     public GameObject parentSlider;
