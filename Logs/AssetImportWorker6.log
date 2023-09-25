@@ -1,0 +1,1859 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.9f1 (ea401c316338) revision 15351836'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Enterprise' Language: 'en' Physical Memory: 16221 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+C:/Users/pepicear/Documents/GitHub/ImAxes
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+54385
+Successfully changed project path to: C:/Users/pepicear/Documents/GitHub/ImAxes
+C:/Users/pepicear/Documents/GitHub/ImAxes
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [15064] Host "[IP] 10.220.98.111 [Port] 0 [Flags] 2 [Guid] 488911664 [EditorId] 488911664 [Version] 1048832 [Id] WindowsEditor(7,INM284054) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [15064] Host "[IP] 10.220.98.111 [Port] 0 [Flags] 2 [Guid] 488911664 [EditorId] 488911664 [Version] 1048832 [Id] WindowsEditor(7,INM284054) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 72.34 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 4.48 ms.
+Initialize engine version: 2022.3.9f1 (ea401c316338)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/pepicear/Documents/GitHub/ImAxes/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   NVIDIA
+    VRAM:     8072 MB
+    Driver:   31.0.15.3118
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.018357 seconds.
+- Loaded All Assemblies, in  0.401 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 808 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.172 seconds
+Domain Reload Profiling: 1570ms
+	BeginReloadAssembly (129ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (146ms)
+		LoadAssemblies (127ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (143ms)
+			TypeCache.Refresh (141ms)
+				TypeCache.ScanAssembly (128ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (1173ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1113ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (942ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (101ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.880 seconds
+Refreshing native plugins compatible for Editor in 50.20 ms, found 14 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+[XR] OVRP version 1.88.0
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.947 seconds
+Domain Reload Profiling: 1816ms
+	BeginReloadAssembly (167ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (619ms)
+		LoadAssemblies (513ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (211ms)
+			TypeCache.Refresh (158ms)
+				TypeCache.ScanAssembly (135ms)
+			ScanForSourceGeneratedMonoScriptInfo (37ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (947ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (729ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (124ms)
+			ProcessInitializeOnLoadAttributes (349ms)
+			ProcessInitializeOnLoadMethodAttributes (205ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 49.91 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.16 ms.
+Unloading 5166 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 146 unused Assets / (211.3 KB). Loaded Objects now: 5595.
+Memory consumption went from 204.0 MB to 203.8 MB.
+Total: 8.553400 ms (FindLiveObjects: 0.386500 ms CreateObjectMapping: 0.350100 ms MarkObjects: 7.547300 ms  DeleteObjects: 0.268300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/WitIntent.cs: b16c53bcdd4b02694d33f5fcb8acdf19 -> 
+  custom:scripting/monoscript/fileName/GrabPointsPoseFinder.cs: 2ce4e7dd89758cfe15cc84bbdaa5d275 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityFieldEditor.cs: 3e379a0d9898211fdf7bd80a30343891 -> 
+  custom:scripting/monoscript/fileName/CanvasMeshPointable.cs: c479bafc80e05db87d89b0e734294af3 -> 
+  custom:scripting/monoscript/fileName/CylinderEditor.cs: b3e556284986a11c8d6bd82a7d7bef7e -> 
+  custom:scripting/monoscript/fileName/GrabPoint.cs: a19e23b452c1156c6e2d489a5b9f5977 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/OneHandRotateTransformer.cs: b4ad4fec7dbc0022b27ef2f1444e1086 -> 
+  custom:scripting/monoscript/fileName/WitTraitValue.cs: c4fc68c99e4126ea4ce1abd10ab830cf -> 
+  custom:scripting/monoscript/fileName/IMonoBehaviourFilter.cs: 9cedc3648a1ac103150b8378e75e48c4 -> 
+  custom:scripting/monoscript/fileName/BezierSurfaceEditor.cs: 3bfdf637db9318a14fc832066acdc19a -> 
+  custom:scripting/monoscript/fileName/SnapSurfaceHelper.cs: 7310cd667c1f6f32da3156d4956a11cb -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVR.cs: c642c70bc2d53e104962e39be79e0283 -> 
+  custom:scripting/monoscript/fileName/ITween.cs: d765ab2d93516afd5cff5e65cdb523ff -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractable.cs: da4c91e5f510c5633065c5ee349670e0 -> 
+  custom:scripting/monoscript/fileName/InteractorGroup.cs: 075c37967371ab7213a5d5cca24ff1fc -> 60fe7361e8ecd7ffeba4477da21c55fe
+  custom:scripting/monoscript/fileName/WitHttp.cs: 65528eef0357ac8698cea4e277f16a7c -> 
+  custom:scripting/monoscript/fileName/BoxProximityField.cs: 8381476084cb2eebc09f6205ab260a5f -> 
+  custom:scripting/monoscript/fileName/ProcessStep.cs: c70de6d5eef34fc1abe9451b4eb02d17 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/IInteractorComparer.cs: 134007cf487fdfbaee924b7d31a3e8ab -> 
+  custom:scripting/monoscript/fileName/WitTrainingUtterance.cs: a06d2df3896850626c28c2eee2f3361f -> 
+  custom:scripting/monoscript/fileName/ITeleportArc.cs: 1ea6eacef0fbe7453ebeaaedd85bf98c -> 
+  custom:scripting/monoscript/fileName/CylinderSurface.cs: 06b7f3fe576c2b562f08ad1445def42f -> 5bee5d43e279f1a3b524f87759982fd3
+  custom:scripting/monoscript/fileName/TagMonoBehaviourFilter.cs: 899569d8afa40a8d293811b71b3f0a56 -> 
+  custom:scripting/monoscript/fileName/SphereSurface.cs: 6d8b2477044e484ea8579f6f1f45e3a8 -> 
+  custom:scripting/monoscript/fileName/LastKnownGoodDataModifier.cs: 0b2c17c40fb2875f055e57a3080d7c9d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WitEntityRole.cs: 8b2af296196ddab171c9825f773f77da -> 
+  custom:scripting/monoscript/fileName/PointableCylinder.cs: 9a62d083874bdd860515054a450ac594 -> 
+  custom:scripting/monoscript/fileName/AudioEncoding.cs: f84b3952f084caac261984fbd264acec -> 7f68c8ddbd6875f735f3280c1aa36e92
+  custom:scripting/monoscript/fileName/InteractorDriver.cs: 285df5cb75aa79644c75f1cfa1d96ee4 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ISnapPoseProvider.cs: 3ec1f733df4df3213c9abc4abfa84cf1 -> 
+  custom:scripting/monoscript/fileName/IDropZoneSlotsProvider.cs: fc82a4709de8cea85e0be7e46ba6942f -> 
+  custom:scripting/monoscript/fileName/IAudioInputSource.cs: 9cedc902c969604d8ecab3d4c3d431d7 -> 938d3583ac997fe47e013c96006b1b9d
+  custom:scripting/monoscript/fileName/BoxProximityFieldEditor.cs: 3ca172dc25f45b576b1261d9f0fc6a13 -> 
+  custom:scripting/monoscript/fileName/ArcRangeModifier.cs: df4e86005874fa14c26dde0e58fe01b3 -> 
+  custom:scripting/monoscript/fileName/TrainUtterances.cs: fad5269aa3542e54bceac07b82fa9fb2 -> 
+  custom:scripting/monoscript/fileName/OVRSkeletonDataProviders.cs: c9301a8aea506ae86c85f3531883f294 -> 
+  custom:scripting/monoscript/fileName/BoxEditor.cs: 6cb10ba4aeba036613100827e384c6dd -> 
+  custom:scripting/monoscript/fileName/BoxSurface.cs: 64c4f1d5c8f509e2ebfbbe8cc0454ae3 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecordable.cs: be9aebb9e35f1a89cf251d5ebe16b65e -> 
+  custom:scripting/monoscript/fileName/TwoHandFreeTransformer.cs: 5484f45a8b713e7524e309309f536d2e -> 
+  custom:scripting/monoscript/fileName/InteractorDriverGroup.cs: 25a18cbb0a76e7a8f37930efac2dc5e3 -> 
+  custom:scripting/monoscript/fileName/InteractableTransformableConnection.cs: aa199f160bbadaf2d2b7430adb4b19a9 -> 
+  custom:scripting/monoscript/fileName/JointLocking.cs: 04ef49fdef9b40429c44bd8bb4f83933 -> 
+  custom:scripting/monoscript/fileName/OneHandTranslateTransformer.cs: e5593db0756115f769defd5b1bc42e7e -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/WitResponse.cs: 85febed2f7a25f57ec48693bd452c142 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationHand.cs: b7c0c166a2ca9babc479709621d65436 -> 
+  custom:scripting/monoscript/fileName/TagInteractableFilter.cs: 6c02bfd80ff65fe2d5965298b17e0457 -> 
+  custom:scripting/monoscript/fileName/PointableCylinderEditor.cs: 6340733d6723a340786b526e9320784f -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PointProximityField.cs: 0f95fb408e97956db7a3762247f8adc0 -> 
+  custom:scripting/monoscript/fileName/SnapAddress.cs: c2a235d307f5033a6468630481616552 -> 
+  custom:scripting/monoscript/fileName/InteractorGroupMulti.cs: 6bc778766dfc2f0ec0ad2013ae6c3d21 -> 
+  custom:scripting/monoscript/fileName/MicBase.cs: 1ee5e56060961d5fcfcdfe4529504890 -> 47b01f48927768722a8422b4ac545006
+  custom:scripting/monoscript/fileName/DropZoneSequentialSlotsProvider.cs: 7cdedd3fff635f926ee01eb94826964d -> 
+  custom:scripting/monoscript/fileName/SnapPoint.cs: 75b9e5a0f94c20895cbed2ad0cae1535 -> 
+  custom:scripting/monoscript/fileName/WitTrait.cs: 3139215512626b390a96d2cb63ff9eda -> 
+  custom:scripting/monoscript/fileName/ITransformable.cs: 215a3f4eeb91cb88c54863506271ef62 -> 
+  custom:scripting/monoscript/fileName/CoroutineUtility.cs: fab89599511ae356a01c13a28fda4240 -> 821d19c5ac6a7e6baf82a95f7b4d30bf
+  custom:scripting/monoscript/fileName/TeleportTurningGate.cs: 575c2ab79bdb37717f3efb10cff4d8ea -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVREditor.cs: 296ebd2207288873d91d6a862e3b5272 -> 
+  custom:scripting/monoscript/fileName/ColliderSurface.cs: b1cd8447e0ce952dcc7d7b666e8fca92 -> fc86642c94a9542e787a844561e4e4f2
+  custom:scripting/monoscript/fileName/IInteractableRegistry.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionHand.cs: 39d5de62c6b9f655efb66d407ad08fff -> 
+  custom:scripting/monoscript/fileName/TTSStreamToggle.cs: 386098d9b6e67cd0a4ee56f3a7972a48 -> 0132d2e4cd28c22eddc3810c7daa80a8
+  custom:scripting/monoscript/fileName/HandGrabInteractorVisual.cs: 4e78a3e45d86e390b096cc34598495d6 -> 
+  custom:scripting/monoscript/fileName/WitRole.cs: d05ae217608bc7de182f2476f0c8e04d -> 
+  custom:scripting/monoscript/fileName/WitIncomingEntity.cs: 78d455e2834b5f65d08838e068a6b637 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityField.cs: d46f096ca0f256553da6db049bd8e1f0 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialAnimationUnityEventWrapper.cs: 5bbd9cbd699e0cf1a0713e4cfca29cff -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationDataModifier.cs: bbc3acc82de59e5fbec702d8f8197eed -> 
+  custom:scripting/monoscript/fileName/WitEntity.cs: f3634f6b005d657d9256924b6ee7724f -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/Payload.cs: 20bf3ab20e64bae704c38145b44c13ac -> 
+  custom:scripting/monoscript/fileName/EnsureWitIntentsStep.cs: b136f8e7ef96058daebe6e4670855769 -> 
+  custom:scripting/monoscript/fileName/HandGrabPointEditor.cs: 1de61d722aec3955a0ced3ddd1649237 -> 
+  custom:scripting/monoscript/fileName/AimingStabilizedOrigin.cs: 8e9de4ec8ed1eca16b6b5ccdd53afdc0 -> 
+  custom:scripting/monoscript/fileName/WitConfigurationData.cs: 1b59f7289bf740e9ef9f2be93d10f3d4 -> 
+  custom:scripting/monoscript/fileName/VoiceUnityRequest.cs: e67404959cad22b5a8fdd8bc15940a60 -> 
+  custom:scripting/monoscript/fileName/SyncWitEntitiesStep.cs: 2ad573a8b9afd7f1740d493d07a4c0da -> 
+  custom:scripting/monoscript/fileName/PointableDelegate.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/PointablePlane.cs: 0c63873222e6ee1c4bb906924cab90d1 -> 
+  custom:scripting/monoscript/fileName/SphereEditor.cs: 276cafd8aae7e32d736a0c4daa10ab21 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialProgressTracker.cs: 750c2b9f9840ccd08a8a372bd71d691e -> 
+  custom:scripting/monoscript/fileName/CircleProximityField.cs: 3470d85e5a68b53f46ca8356f6863551 -> 
+  custom:scripting/monoscript/fileName/Transformable.cs: 5a246a64658742dc20c886d79003f704 -> 
+  custom:scripting/monoscript/fileName/InteractionOVRCameraRig.cs: 19e5e98fb10016c5e6956c7b291d0f17 -> 
+  custom:scripting/monoscript/fileName/ObtainIdmData.cs: 93689dcf59e4155113dc068b963c769d -> 
+  custom:scripting/monoscript/fileName/HandGrabPoint.cs: f8f9a4aeaae4341c0efe8cc3e2aa5fd8 -> 
+  custom:scripting/monoscript/fileName/PointableGroup.cs: aea7bf2c731b6179d62dad93c7f1a961 -> 
+  custom:scripting/monoscript/fileName/TransformableUnityEventWrapper.cs: aa0309b765937680c8aa9e4e094215f7 -> 
+  custom:scripting/monoscript/fileName/MicDebug.cs: 0703043cca43f55a99276c84b88d73fb -> 75d2f3a208b34ca2e9e43f6d5775eb91
+  custom:scripting/monoscript/fileName/OneHandPhysicsJointTransformer.cs: e946e3b4b5cd8cde3f541291179028e9 -> 
+  custom:scripting/monoscript/fileName/WitApplication.cs: 19806fe5aebcf74124ed49d589a7e43e -> 
+  custom:scripting/monoscript/fileName/IInteractorDriver.cs: fc0a89f4490fc0584b64c6fc827ee895 -> 
+  custom:scripting/monoscript/fileName/GrabbableUnityEventWrapper.cs: 33df70b122ad7f22db2cbfaa0b81510a -> 
+  custom:scripting/monoscript/fileName/BezierSurface.cs: da0b185221f59d400e85940f5ce71c91 -> 
+  custom:scripting/monoscript/fileName/InteractorComparer.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecorder.cs: d6ebfdaa7663426067642c12a6222914 -> 
+  custom:scripting/monoscript/fileName/IProximityField.cs: 1b8f3ef3bb8397988a6923ea34f554a3 -> 
+  custom:scripting/monoscript/fileName/CanvasRenderTextureMesh.cs: ba9623d0f846f302f4c58ca374ea8422 -> 
+  custom:scripting/monoscript/fileName/HandGrabInteractionUtilities.cs: 5e1b87f0c932124d19544f2653fcf382 -> 
+  custom:scripting/monoscript/fileName/OneHandFreeTransformer.cs: 80b454bb7a7e54382c3e5a83c645a9b0 -> 
+  custom:scripting/monoscript/fileName/TwoHandPlaneTransformer.cs: 82508aadcccc9aaae16a3d02dab1f1dd -> 
+  custom:scripting/monoscript/fileName/IWitHttp.cs: 91506f2edcd3bae61fa15b5c8c35b6d5 -> 
+  custom:scripting/monoscript/fileName/JointRotationHistoryModifier.cs: b84eeaa16ce785ca3e0b5335f31473cc -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceData.cs: 879b5b5a667decd113f2ef27fec58193 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/FingerGrabAPI.cs: f38129e37b49d6e3a171bd504092712b -> 
+  custom:scripting/monoscript/fileName/DummyDataModifier.cs: ebbb5589f565d8685d37bb183b4c3ff4 -> 
+  custom:scripting/monoscript/fileName/IDistanceInteractable.cs: c2d2949b74e1e24067c043dc8ee82c5a -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SyntheticHandModifier.cs: 873320c031209152e80a3521b7c6e3f2 -> 
+  custom:scripting/monoscript/fileName/ISnapSurface.cs: e613c1039942a8c6f8524e6d36ccbc1b -> 
+  custom:scripting/monoscript/fileName/HandGrab.cs: 50288240abd576346d83074011541b5b -> 
+  custom:scripting/monoscript/fileName/TTSSpeakerInput.cs: 827d47b543f4663c13881e200e539afd -> 9224de466064073281bc72c5b8b2748c
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionDataModifier.cs: da29522a4b6eb1cb5f6511bdbdd27a95 -> 
+  custom:scripting/monoscript/fileName/WitTrainingEntity.cs: f6d2096c03af45821ae473c66af255f2 -> 
+  custom:scripting/monoscript/fileName/WitEntityKeyword.cs: b5b67313fa30a40635477940a31ddbde -> 
+  custom:scripting/monoscript/fileName/PointableGrabbableConnection.cs: 35ac7dedcc44186f6f6c7bf3730e6343 -> 
+  custom:scripting/monoscript/fileName/FixedScaleDataModifier.cs: 89e1be89d924ac28373337b3361e61dd -> 
+  custom:scripting/monoscript/fileName/PointablePlaneEditor.cs: 37a91ecc3d62d378d68629c686a51361 -> 
+  custom:scripting/monoscript/fileName/WitTrainer.cs: 5fb3c95ba24e9cf857cd9b4cee94291b -> 
+  custom:scripting/monoscript/fileName/IInteractableFilter.cs: 81259a32cb7c13def6a0b70f08c66048 -> 
+  custom:scripting/monoscript/fileName/TTSStatusLabel.cs: 17147acb333fe55f1217dee5b341ea9e -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractor.cs: 76b4b17e6eac72d8f5a16e87fd0e63b5 -> 
+  custom:scripting/monoscript/fileName/IAspectProvider.cs: 9859c5919d893814fee2cdd590f4f949 -> 
+  custom:scripting/monoscript/fileName/OnConduitFailedParameterResolutionAttribute.cs: 60901a81960a7c5a81c752381f8034ab -> 
+  custom:scripting/monoscript/fileName/Mic.cs: 525051591b471bdbfa16530d37dcb655 -> 5fc48121bdfa6f25d9345006a81f8860
+  custom:scripting/monoscript/fileName/TTSCacheToggle.cs: fef530a103c6b74722a7b6f18941e54c -> 410df47b336bde136543845320d773f8
+  custom:scripting/monoscript/fileName/MicPermissionsManager.cs: 81a336319435a61331b696a347e78b9e -> f25de0368c3638f9a3bd7e7f63f0755a
+  custom:scripting/monoscript/fileName/StepRunner.cs: 6ab640738f608e4b47206553c39b2c58 -> 
+  custom:scripting/monoscript/fileName/WitUnityRequest.cs: 2bd88b304dddeb742392b5d5568e7bf7 -> 156bc76d85c310a98e115eec74a771cd
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CircleProximityFieldEditor.cs: 55b157de94575afe7fdac58cd51e3b1c -> 
+  custom:scripting/monoscript/fileName/TTSErrorText.cs: f03cdbc7b1d745067e8f357414e703b1 -> 21a4d51c9f7822c5dae2e2c7e2605044
+  custom:scripting/monoscript/fileName/FingerPinchAPI.cs: 478ca37299a2b7ce3d309683ce89043a -> 
+  custom:scripting/monoscript/fileName/IPointableSurface.cs: d7a8e441db2730be64c585bb12bf4db1 -> 
+  custom:scripting/monoscript/fileName/PhysicsTransformable.cs: 5811faf37734ce7ec9b28418c4758de1 -> 
+  custom:scripting/monoscript/fileName/PitchRemap.cs: 5b7277eeb0a8effc4822cb897b70f197 -> 
+  custom:scripting/monoscript/fileName/WitOutgoingEntity.cs: c7126ba0b7fa09ef7a925f4dc186e5b7 -> 
+  custom:scripting/monoscript/fileName/LocomotionGateVisual.cs: e25bbb39051f52b97c3e93bb37ab390d -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceUtility.cs: eee5b9af7f1fc7fc0da148c8bdf0ad4f -> 
+  custom:scripting/monoscript/fileName/HandleEntityResolutionFailureAttribute.cs: c6e2d1dd1bcaba0322547519e0e12ac7 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.821 seconds
+Refreshing native plugins compatible for Editor in 56.53 ms, found 14 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.637 seconds
+Domain Reload Profiling: 2446ms
+	BeginReloadAssembly (218ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (486ms)
+		LoadAssemblies (571ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (33ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (1637ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (767ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (140ms)
+			ProcessInitializeOnLoadAttributes (359ms)
+			ProcessInitializeOnLoadMethodAttributes (215ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 55.26 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.20 ms.
+Unloading 5024 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 122 unused Assets / (191.7 KB). Loaded Objects now: 5599.
+Memory consumption went from 173.0 MB to 172.8 MB.
+Total: 10.028300 ms (FindLiveObjects: 0.383400 ms CreateObjectMapping: 0.427800 ms MarkObjects: 9.006300 ms  DeleteObjects: 0.209700 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/WitIntent.cs: b16c53bcdd4b02694d33f5fcb8acdf19 -> 
+  custom:scripting/monoscript/fileName/GrabPointsPoseFinder.cs: 2ce4e7dd89758cfe15cc84bbdaa5d275 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityFieldEditor.cs: 3e379a0d9898211fdf7bd80a30343891 -> 
+  custom:scripting/monoscript/fileName/CanvasMeshPointable.cs: c479bafc80e05db87d89b0e734294af3 -> 
+  custom:scripting/monoscript/fileName/CylinderEditor.cs: b3e556284986a11c8d6bd82a7d7bef7e -> 
+  custom:scripting/monoscript/fileName/GrabPoint.cs: a19e23b452c1156c6e2d489a5b9f5977 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/OneHandRotateTransformer.cs: b4ad4fec7dbc0022b27ef2f1444e1086 -> 
+  custom:scripting/monoscript/fileName/WitTraitValue.cs: c4fc68c99e4126ea4ce1abd10ab830cf -> 
+  custom:scripting/monoscript/fileName/IMonoBehaviourFilter.cs: 9cedc3648a1ac103150b8378e75e48c4 -> 
+  custom:scripting/monoscript/fileName/BezierSurfaceEditor.cs: 3bfdf637db9318a14fc832066acdc19a -> 
+  custom:scripting/monoscript/fileName/SnapSurfaceHelper.cs: 7310cd667c1f6f32da3156d4956a11cb -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVR.cs: c642c70bc2d53e104962e39be79e0283 -> 
+  custom:scripting/monoscript/fileName/ITween.cs: d765ab2d93516afd5cff5e65cdb523ff -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractable.cs: da4c91e5f510c5633065c5ee349670e0 -> 
+  custom:scripting/monoscript/fileName/InteractorGroup.cs: 075c37967371ab7213a5d5cca24ff1fc -> 60fe7361e8ecd7ffeba4477da21c55fe
+  custom:scripting/monoscript/fileName/WitHttp.cs: 65528eef0357ac8698cea4e277f16a7c -> 
+  custom:scripting/monoscript/fileName/BoxProximityField.cs: 8381476084cb2eebc09f6205ab260a5f -> 
+  custom:scripting/monoscript/fileName/ProcessStep.cs: c70de6d5eef34fc1abe9451b4eb02d17 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/IInteractorComparer.cs: 134007cf487fdfbaee924b7d31a3e8ab -> 
+  custom:scripting/monoscript/fileName/WitTrainingUtterance.cs: a06d2df3896850626c28c2eee2f3361f -> 
+  custom:scripting/monoscript/fileName/ITeleportArc.cs: 1ea6eacef0fbe7453ebeaaedd85bf98c -> 
+  custom:scripting/monoscript/fileName/CylinderSurface.cs: 06b7f3fe576c2b562f08ad1445def42f -> 5bee5d43e279f1a3b524f87759982fd3
+  custom:scripting/monoscript/fileName/TagMonoBehaviourFilter.cs: 899569d8afa40a8d293811b71b3f0a56 -> 
+  custom:scripting/monoscript/fileName/SphereSurface.cs: 6d8b2477044e484ea8579f6f1f45e3a8 -> 
+  custom:scripting/monoscript/fileName/LastKnownGoodDataModifier.cs: 0b2c17c40fb2875f055e57a3080d7c9d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WitEntityRole.cs: 8b2af296196ddab171c9825f773f77da -> 
+  custom:scripting/monoscript/fileName/PointableCylinder.cs: 9a62d083874bdd860515054a450ac594 -> 
+  custom:scripting/monoscript/fileName/AudioEncoding.cs: f84b3952f084caac261984fbd264acec -> 7f68c8ddbd6875f735f3280c1aa36e92
+  custom:scripting/monoscript/fileName/InteractorDriver.cs: 285df5cb75aa79644c75f1cfa1d96ee4 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ISnapPoseProvider.cs: 3ec1f733df4df3213c9abc4abfa84cf1 -> 
+  custom:scripting/monoscript/fileName/IDropZoneSlotsProvider.cs: fc82a4709de8cea85e0be7e46ba6942f -> 
+  custom:scripting/monoscript/fileName/IAudioInputSource.cs: 9cedc902c969604d8ecab3d4c3d431d7 -> 938d3583ac997fe47e013c96006b1b9d
+  custom:scripting/monoscript/fileName/BoxProximityFieldEditor.cs: 3ca172dc25f45b576b1261d9f0fc6a13 -> 
+  custom:scripting/monoscript/fileName/ArcRangeModifier.cs: df4e86005874fa14c26dde0e58fe01b3 -> 
+  custom:scripting/monoscript/fileName/TrainUtterances.cs: fad5269aa3542e54bceac07b82fa9fb2 -> 
+  custom:scripting/monoscript/fileName/OVRSkeletonDataProviders.cs: c9301a8aea506ae86c85f3531883f294 -> 
+  custom:scripting/monoscript/fileName/BoxEditor.cs: 6cb10ba4aeba036613100827e384c6dd -> 
+  custom:scripting/monoscript/fileName/BoxSurface.cs: 64c4f1d5c8f509e2ebfbbe8cc0454ae3 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecordable.cs: be9aebb9e35f1a89cf251d5ebe16b65e -> 
+  custom:scripting/monoscript/fileName/TwoHandFreeTransformer.cs: 5484f45a8b713e7524e309309f536d2e -> 
+  custom:scripting/monoscript/fileName/InteractorDriverGroup.cs: 25a18cbb0a76e7a8f37930efac2dc5e3 -> 
+  custom:scripting/monoscript/fileName/InteractableTransformableConnection.cs: aa199f160bbadaf2d2b7430adb4b19a9 -> 
+  custom:scripting/monoscript/fileName/JointLocking.cs: 04ef49fdef9b40429c44bd8bb4f83933 -> 
+  custom:scripting/monoscript/fileName/OneHandTranslateTransformer.cs: e5593db0756115f769defd5b1bc42e7e -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/WitResponse.cs: 85febed2f7a25f57ec48693bd452c142 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationHand.cs: b7c0c166a2ca9babc479709621d65436 -> 
+  custom:scripting/monoscript/fileName/TagInteractableFilter.cs: 6c02bfd80ff65fe2d5965298b17e0457 -> 
+  custom:scripting/monoscript/fileName/PointableCylinderEditor.cs: 6340733d6723a340786b526e9320784f -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PointProximityField.cs: 0f95fb408e97956db7a3762247f8adc0 -> 
+  custom:scripting/monoscript/fileName/SnapAddress.cs: c2a235d307f5033a6468630481616552 -> 
+  custom:scripting/monoscript/fileName/InteractorGroupMulti.cs: 6bc778766dfc2f0ec0ad2013ae6c3d21 -> 
+  custom:scripting/monoscript/fileName/MicBase.cs: 1ee5e56060961d5fcfcdfe4529504890 -> 47b01f48927768722a8422b4ac545006
+  custom:scripting/monoscript/fileName/DropZoneSequentialSlotsProvider.cs: 7cdedd3fff635f926ee01eb94826964d -> 
+  custom:scripting/monoscript/fileName/SnapPoint.cs: 75b9e5a0f94c20895cbed2ad0cae1535 -> 
+  custom:scripting/monoscript/fileName/WitTrait.cs: 3139215512626b390a96d2cb63ff9eda -> 
+  custom:scripting/monoscript/fileName/ITransformable.cs: 215a3f4eeb91cb88c54863506271ef62 -> 
+  custom:scripting/monoscript/fileName/CoroutineUtility.cs: fab89599511ae356a01c13a28fda4240 -> 821d19c5ac6a7e6baf82a95f7b4d30bf
+  custom:scripting/monoscript/fileName/TeleportTurningGate.cs: 575c2ab79bdb37717f3efb10cff4d8ea -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVREditor.cs: 296ebd2207288873d91d6a862e3b5272 -> 
+  custom:scripting/monoscript/fileName/ColliderSurface.cs: b1cd8447e0ce952dcc7d7b666e8fca92 -> fc86642c94a9542e787a844561e4e4f2
+  custom:scripting/monoscript/fileName/IInteractableRegistry.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionHand.cs: 39d5de62c6b9f655efb66d407ad08fff -> 
+  custom:scripting/monoscript/fileName/TTSStreamToggle.cs: 386098d9b6e67cd0a4ee56f3a7972a48 -> 0132d2e4cd28c22eddc3810c7daa80a8
+  custom:scripting/monoscript/fileName/HandGrabInteractorVisual.cs: 4e78a3e45d86e390b096cc34598495d6 -> 
+  custom:scripting/monoscript/fileName/WitRole.cs: d05ae217608bc7de182f2476f0c8e04d -> 
+  custom:scripting/monoscript/fileName/WitIncomingEntity.cs: 78d455e2834b5f65d08838e068a6b637 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityField.cs: d46f096ca0f256553da6db049bd8e1f0 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialAnimationUnityEventWrapper.cs: 5bbd9cbd699e0cf1a0713e4cfca29cff -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationDataModifier.cs: bbc3acc82de59e5fbec702d8f8197eed -> 
+  custom:scripting/monoscript/fileName/WitEntity.cs: f3634f6b005d657d9256924b6ee7724f -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/Payload.cs: 20bf3ab20e64bae704c38145b44c13ac -> 
+  custom:scripting/monoscript/fileName/EnsureWitIntentsStep.cs: b136f8e7ef96058daebe6e4670855769 -> 
+  custom:scripting/monoscript/fileName/HandGrabPointEditor.cs: 1de61d722aec3955a0ced3ddd1649237 -> 
+  custom:scripting/monoscript/fileName/AimingStabilizedOrigin.cs: 8e9de4ec8ed1eca16b6b5ccdd53afdc0 -> 
+  custom:scripting/monoscript/fileName/WitConfigurationData.cs: 1b59f7289bf740e9ef9f2be93d10f3d4 -> 
+  custom:scripting/monoscript/fileName/VoiceUnityRequest.cs: e67404959cad22b5a8fdd8bc15940a60 -> 
+  custom:scripting/monoscript/fileName/SyncWitEntitiesStep.cs: 2ad573a8b9afd7f1740d493d07a4c0da -> 
+  custom:scripting/monoscript/fileName/PointableDelegate.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/PointablePlane.cs: 0c63873222e6ee1c4bb906924cab90d1 -> 
+  custom:scripting/monoscript/fileName/SphereEditor.cs: 276cafd8aae7e32d736a0c4daa10ab21 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialProgressTracker.cs: 750c2b9f9840ccd08a8a372bd71d691e -> 
+  custom:scripting/monoscript/fileName/CircleProximityField.cs: 3470d85e5a68b53f46ca8356f6863551 -> 
+  custom:scripting/monoscript/fileName/Transformable.cs: 5a246a64658742dc20c886d79003f704 -> 
+  custom:scripting/monoscript/fileName/InteractionOVRCameraRig.cs: 19e5e98fb10016c5e6956c7b291d0f17 -> 
+  custom:scripting/monoscript/fileName/ObtainIdmData.cs: 93689dcf59e4155113dc068b963c769d -> 
+  custom:scripting/monoscript/fileName/HandGrabPoint.cs: f8f9a4aeaae4341c0efe8cc3e2aa5fd8 -> 
+  custom:scripting/monoscript/fileName/PointableGroup.cs: aea7bf2c731b6179d62dad93c7f1a961 -> 
+  custom:scripting/monoscript/fileName/TransformableUnityEventWrapper.cs: aa0309b765937680c8aa9e4e094215f7 -> 
+  custom:scripting/monoscript/fileName/MicDebug.cs: 0703043cca43f55a99276c84b88d73fb -> 75d2f3a208b34ca2e9e43f6d5775eb91
+  custom:scripting/monoscript/fileName/OneHandPhysicsJointTransformer.cs: e946e3b4b5cd8cde3f541291179028e9 -> 
+  custom:scripting/monoscript/fileName/WitApplication.cs: 19806fe5aebcf74124ed49d589a7e43e -> 
+  custom:scripting/monoscript/fileName/IInteractorDriver.cs: fc0a89f4490fc0584b64c6fc827ee895 -> 
+  custom:scripting/monoscript/fileName/GrabbableUnityEventWrapper.cs: 33df70b122ad7f22db2cbfaa0b81510a -> 
+  custom:scripting/monoscript/fileName/BezierSurface.cs: da0b185221f59d400e85940f5ce71c91 -> 
+  custom:scripting/monoscript/fileName/InteractorComparer.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecorder.cs: d6ebfdaa7663426067642c12a6222914 -> 
+  custom:scripting/monoscript/fileName/IProximityField.cs: 1b8f3ef3bb8397988a6923ea34f554a3 -> 
+  custom:scripting/monoscript/fileName/CanvasRenderTextureMesh.cs: ba9623d0f846f302f4c58ca374ea8422 -> 
+  custom:scripting/monoscript/fileName/HandGrabInteractionUtilities.cs: 5e1b87f0c932124d19544f2653fcf382 -> 
+  custom:scripting/monoscript/fileName/OneHandFreeTransformer.cs: 80b454bb7a7e54382c3e5a83c645a9b0 -> 
+  custom:scripting/monoscript/fileName/TwoHandPlaneTransformer.cs: 82508aadcccc9aaae16a3d02dab1f1dd -> 
+  custom:scripting/monoscript/fileName/IWitHttp.cs: 91506f2edcd3bae61fa15b5c8c35b6d5 -> 
+  custom:scripting/monoscript/fileName/JointRotationHistoryModifier.cs: b84eeaa16ce785ca3e0b5335f31473cc -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceData.cs: 879b5b5a667decd113f2ef27fec58193 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/FingerGrabAPI.cs: f38129e37b49d6e3a171bd504092712b -> 
+  custom:scripting/monoscript/fileName/DummyDataModifier.cs: ebbb5589f565d8685d37bb183b4c3ff4 -> 
+  custom:scripting/monoscript/fileName/IDistanceInteractable.cs: c2d2949b74e1e24067c043dc8ee82c5a -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SyntheticHandModifier.cs: 873320c031209152e80a3521b7c6e3f2 -> 
+  custom:scripting/monoscript/fileName/ISnapSurface.cs: e613c1039942a8c6f8524e6d36ccbc1b -> 
+  custom:scripting/monoscript/fileName/HandGrab.cs: 50288240abd576346d83074011541b5b -> 
+  custom:scripting/monoscript/fileName/TTSSpeakerInput.cs: 827d47b543f4663c13881e200e539afd -> 9224de466064073281bc72c5b8b2748c
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionDataModifier.cs: da29522a4b6eb1cb5f6511bdbdd27a95 -> 
+  custom:scripting/monoscript/fileName/WitTrainingEntity.cs: f6d2096c03af45821ae473c66af255f2 -> 
+  custom:scripting/monoscript/fileName/WitEntityKeyword.cs: b5b67313fa30a40635477940a31ddbde -> 
+  custom:scripting/monoscript/fileName/PointableGrabbableConnection.cs: 35ac7dedcc44186f6f6c7bf3730e6343 -> 
+  custom:scripting/monoscript/fileName/FixedScaleDataModifier.cs: 89e1be89d924ac28373337b3361e61dd -> 
+  custom:scripting/monoscript/fileName/PointablePlaneEditor.cs: 37a91ecc3d62d378d68629c686a51361 -> 
+  custom:scripting/monoscript/fileName/WitTrainer.cs: 5fb3c95ba24e9cf857cd9b4cee94291b -> 
+  custom:scripting/monoscript/fileName/IInteractableFilter.cs: 81259a32cb7c13def6a0b70f08c66048 -> 
+  custom:scripting/monoscript/fileName/TTSStatusLabel.cs: 17147acb333fe55f1217dee5b341ea9e -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractor.cs: 76b4b17e6eac72d8f5a16e87fd0e63b5 -> 
+  custom:scripting/monoscript/fileName/IAspectProvider.cs: 9859c5919d893814fee2cdd590f4f949 -> 
+  custom:scripting/monoscript/fileName/OnConduitFailedParameterResolutionAttribute.cs: 60901a81960a7c5a81c752381f8034ab -> 
+  custom:scripting/monoscript/fileName/Mic.cs: 525051591b471bdbfa16530d37dcb655 -> 5fc48121bdfa6f25d9345006a81f8860
+  custom:scripting/monoscript/fileName/TTSCacheToggle.cs: fef530a103c6b74722a7b6f18941e54c -> 410df47b336bde136543845320d773f8
+  custom:scripting/monoscript/fileName/MicPermissionsManager.cs: 81a336319435a61331b696a347e78b9e -> f25de0368c3638f9a3bd7e7f63f0755a
+  custom:scripting/monoscript/fileName/StepRunner.cs: 6ab640738f608e4b47206553c39b2c58 -> 
+  custom:scripting/monoscript/fileName/WitUnityRequest.cs: 2bd88b304dddeb742392b5d5568e7bf7 -> 156bc76d85c310a98e115eec74a771cd
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CircleProximityFieldEditor.cs: 55b157de94575afe7fdac58cd51e3b1c -> 
+  custom:scripting/monoscript/fileName/TTSErrorText.cs: f03cdbc7b1d745067e8f357414e703b1 -> 21a4d51c9f7822c5dae2e2c7e2605044
+  custom:scripting/monoscript/fileName/FingerPinchAPI.cs: 478ca37299a2b7ce3d309683ce89043a -> 
+  custom:scripting/monoscript/fileName/IPointableSurface.cs: d7a8e441db2730be64c585bb12bf4db1 -> 
+  custom:scripting/monoscript/fileName/PhysicsTransformable.cs: 5811faf37734ce7ec9b28418c4758de1 -> 
+  custom:scripting/monoscript/fileName/PitchRemap.cs: 5b7277eeb0a8effc4822cb897b70f197 -> 
+  custom:scripting/monoscript/fileName/WitOutgoingEntity.cs: c7126ba0b7fa09ef7a925f4dc186e5b7 -> 
+  custom:scripting/monoscript/fileName/LocomotionGateVisual.cs: e25bbb39051f52b97c3e93bb37ab390d -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceUtility.cs: eee5b9af7f1fc7fc0da148c8bdf0ad4f -> 
+  custom:scripting/monoscript/fileName/HandleEntityResolutionFailureAttribute.cs: c6e2d1dd1bcaba0322547519e0e12ac7 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 13972.885815 seconds.
+  path: Assets/Meshes/axis_mesh.fbx
+  artifactKey: Guid(4fe201dbcc2db4b4e93ee029a5aaeab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/axis_mesh.fbx using Guid(4fe201dbcc2db4b4e93ee029a5aaeab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e50fff2d1cce30fe44b7bf99e2671b6e') in 0.139810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Meshs/AnchorModel.fbx
+  artifactKey: Guid(80e6035dc653427458a8ff49ad454eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Meshs/AnchorModel.fbx using Guid(80e6035dc653427458a8ff49ad454eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '923e62583664c18fbf821d98c77eebb7') in 0.082922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 13.601514 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08df6e761f9dbeb4457fa9aff5521b33') in 0.066740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 9.750958 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '980c62c4eae6339eb0c5eff504172508') in 0.035439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 40.793394 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0fd6f1b19c6734b991a6130f6017cc5') in 0.033556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 3.575890 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '631d128978088e48c60c563dfdf4d97b') in 0.034998 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 6.200908 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c2aa962ec0c728b9c977e5f76fa0830') in 0.033492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 8.609364 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1a975f3b72f33050679e6b0e4d66107') in 0.032326 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 4.001814 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd24a80e7d5ae32d71c04cea23abbf9e1') in 0.031674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 7.610513 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457bd540a8acf633a0d8c557d81970f5') in 0.033286 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.793 seconds
+Refreshing native plugins compatible for Editor in 52.48 ms, found 14 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.571 seconds
+Domain Reload Profiling: 2347ms
+	BeginReloadAssembly (238ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (435ms)
+		LoadAssemblies (530ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1572ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (737ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (40ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (143ms)
+			ProcessInitializeOnLoadAttributes (346ms)
+			ProcessInitializeOnLoadMethodAttributes (187ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 51.81 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+Unloading 5023 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 121 unused Assets / (190.8 KB). Loaded Objects now: 5649.
+Memory consumption went from 173.6 MB to 173.4 MB.
+Total: 8.248700 ms (FindLiveObjects: 0.512800 ms CreateObjectMapping: 0.513600 ms MarkObjects: 7.006200 ms  DeleteObjects: 0.215000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/WitIntent.cs: b16c53bcdd4b02694d33f5fcb8acdf19 -> 
+  custom:scripting/monoscript/fileName/GrabPointsPoseFinder.cs: 2ce4e7dd89758cfe15cc84bbdaa5d275 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityFieldEditor.cs: 3e379a0d9898211fdf7bd80a30343891 -> 
+  custom:scripting/monoscript/fileName/CanvasMeshPointable.cs: c479bafc80e05db87d89b0e734294af3 -> 
+  custom:scripting/monoscript/fileName/CylinderEditor.cs: b3e556284986a11c8d6bd82a7d7bef7e -> 
+  custom:scripting/monoscript/fileName/GrabPoint.cs: a19e23b452c1156c6e2d489a5b9f5977 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/OneHandRotateTransformer.cs: b4ad4fec7dbc0022b27ef2f1444e1086 -> 
+  custom:scripting/monoscript/fileName/WitTraitValue.cs: c4fc68c99e4126ea4ce1abd10ab830cf -> 
+  custom:scripting/monoscript/fileName/IMonoBehaviourFilter.cs: 9cedc3648a1ac103150b8378e75e48c4 -> 
+  custom:scripting/monoscript/fileName/BezierSurfaceEditor.cs: 3bfdf637db9318a14fc832066acdc19a -> 
+  custom:scripting/monoscript/fileName/SnapSurfaceHelper.cs: 7310cd667c1f6f32da3156d4956a11cb -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVR.cs: c642c70bc2d53e104962e39be79e0283 -> 
+  custom:scripting/monoscript/fileName/ITween.cs: d765ab2d93516afd5cff5e65cdb523ff -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractable.cs: da4c91e5f510c5633065c5ee349670e0 -> 
+  custom:scripting/monoscript/fileName/InteractorGroup.cs: 075c37967371ab7213a5d5cca24ff1fc -> 60fe7361e8ecd7ffeba4477da21c55fe
+  custom:scripting/monoscript/fileName/WitHttp.cs: 65528eef0357ac8698cea4e277f16a7c -> 
+  custom:scripting/monoscript/fileName/BoxProximityField.cs: 8381476084cb2eebc09f6205ab260a5f -> 
+  custom:scripting/monoscript/fileName/ProcessStep.cs: c70de6d5eef34fc1abe9451b4eb02d17 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/IInteractorComparer.cs: 134007cf487fdfbaee924b7d31a3e8ab -> 
+  custom:scripting/monoscript/fileName/WitTrainingUtterance.cs: a06d2df3896850626c28c2eee2f3361f -> 
+  custom:scripting/monoscript/fileName/ITeleportArc.cs: 1ea6eacef0fbe7453ebeaaedd85bf98c -> 
+  custom:scripting/monoscript/fileName/CylinderSurface.cs: 06b7f3fe576c2b562f08ad1445def42f -> 5bee5d43e279f1a3b524f87759982fd3
+  custom:scripting/monoscript/fileName/TagMonoBehaviourFilter.cs: 899569d8afa40a8d293811b71b3f0a56 -> 
+  custom:scripting/monoscript/fileName/SphereSurface.cs: 6d8b2477044e484ea8579f6f1f45e3a8 -> 
+  custom:scripting/monoscript/fileName/LastKnownGoodDataModifier.cs: 0b2c17c40fb2875f055e57a3080d7c9d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WitEntityRole.cs: 8b2af296196ddab171c9825f773f77da -> 
+  custom:scripting/monoscript/fileName/PointableCylinder.cs: 9a62d083874bdd860515054a450ac594 -> 
+  custom:scripting/monoscript/fileName/AudioEncoding.cs: f84b3952f084caac261984fbd264acec -> 7f68c8ddbd6875f735f3280c1aa36e92
+  custom:scripting/monoscript/fileName/InteractorDriver.cs: 285df5cb75aa79644c75f1cfa1d96ee4 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ISnapPoseProvider.cs: 3ec1f733df4df3213c9abc4abfa84cf1 -> 
+  custom:scripting/monoscript/fileName/IDropZoneSlotsProvider.cs: fc82a4709de8cea85e0be7e46ba6942f -> 
+  custom:scripting/monoscript/fileName/IAudioInputSource.cs: 9cedc902c969604d8ecab3d4c3d431d7 -> 938d3583ac997fe47e013c96006b1b9d
+  custom:scripting/monoscript/fileName/BoxProximityFieldEditor.cs: 3ca172dc25f45b576b1261d9f0fc6a13 -> 
+  custom:scripting/monoscript/fileName/ArcRangeModifier.cs: df4e86005874fa14c26dde0e58fe01b3 -> 
+  custom:scripting/monoscript/fileName/TrainUtterances.cs: fad5269aa3542e54bceac07b82fa9fb2 -> 
+  custom:scripting/monoscript/fileName/OVRSkeletonDataProviders.cs: c9301a8aea506ae86c85f3531883f294 -> 
+  custom:scripting/monoscript/fileName/BoxEditor.cs: 6cb10ba4aeba036613100827e384c6dd -> 
+  custom:scripting/monoscript/fileName/BoxSurface.cs: 64c4f1d5c8f509e2ebfbbe8cc0454ae3 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecordable.cs: be9aebb9e35f1a89cf251d5ebe16b65e -> 
+  custom:scripting/monoscript/fileName/TwoHandFreeTransformer.cs: 5484f45a8b713e7524e309309f536d2e -> 
+  custom:scripting/monoscript/fileName/InteractorDriverGroup.cs: 25a18cbb0a76e7a8f37930efac2dc5e3 -> 
+  custom:scripting/monoscript/fileName/InteractableTransformableConnection.cs: aa199f160bbadaf2d2b7430adb4b19a9 -> 
+  custom:scripting/monoscript/fileName/JointLocking.cs: 04ef49fdef9b40429c44bd8bb4f83933 -> 
+  custom:scripting/monoscript/fileName/OneHandTranslateTransformer.cs: e5593db0756115f769defd5b1bc42e7e -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/WitResponse.cs: 85febed2f7a25f57ec48693bd452c142 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationHand.cs: b7c0c166a2ca9babc479709621d65436 -> 
+  custom:scripting/monoscript/fileName/TagInteractableFilter.cs: 6c02bfd80ff65fe2d5965298b17e0457 -> 
+  custom:scripting/monoscript/fileName/PointableCylinderEditor.cs: 6340733d6723a340786b526e9320784f -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PointProximityField.cs: 0f95fb408e97956db7a3762247f8adc0 -> 
+  custom:scripting/monoscript/fileName/SnapAddress.cs: c2a235d307f5033a6468630481616552 -> 
+  custom:scripting/monoscript/fileName/InteractorGroupMulti.cs: 6bc778766dfc2f0ec0ad2013ae6c3d21 -> 
+  custom:scripting/monoscript/fileName/MicBase.cs: 1ee5e56060961d5fcfcdfe4529504890 -> 47b01f48927768722a8422b4ac545006
+  custom:scripting/monoscript/fileName/DropZoneSequentialSlotsProvider.cs: 7cdedd3fff635f926ee01eb94826964d -> 
+  custom:scripting/monoscript/fileName/SnapPoint.cs: 75b9e5a0f94c20895cbed2ad0cae1535 -> 
+  custom:scripting/monoscript/fileName/WitTrait.cs: 3139215512626b390a96d2cb63ff9eda -> 
+  custom:scripting/monoscript/fileName/ITransformable.cs: 215a3f4eeb91cb88c54863506271ef62 -> 
+  custom:scripting/monoscript/fileName/CoroutineUtility.cs: fab89599511ae356a01c13a28fda4240 -> 821d19c5ac6a7e6baf82a95f7b4d30bf
+  custom:scripting/monoscript/fileName/TeleportTurningGate.cs: 575c2ab79bdb37717f3efb10cff4d8ea -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVREditor.cs: 296ebd2207288873d91d6a862e3b5272 -> 
+  custom:scripting/monoscript/fileName/ColliderSurface.cs: b1cd8447e0ce952dcc7d7b666e8fca92 -> fc86642c94a9542e787a844561e4e4f2
+  custom:scripting/monoscript/fileName/IInteractableRegistry.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionHand.cs: 39d5de62c6b9f655efb66d407ad08fff -> 
+  custom:scripting/monoscript/fileName/TTSStreamToggle.cs: 386098d9b6e67cd0a4ee56f3a7972a48 -> 0132d2e4cd28c22eddc3810c7daa80a8
+  custom:scripting/monoscript/fileName/HandGrabInteractorVisual.cs: 4e78a3e45d86e390b096cc34598495d6 -> 
+  custom:scripting/monoscript/fileName/WitRole.cs: d05ae217608bc7de182f2476f0c8e04d -> 
+  custom:scripting/monoscript/fileName/WitIncomingEntity.cs: 78d455e2834b5f65d08838e068a6b637 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityField.cs: d46f096ca0f256553da6db049bd8e1f0 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialAnimationUnityEventWrapper.cs: 5bbd9cbd699e0cf1a0713e4cfca29cff -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationDataModifier.cs: bbc3acc82de59e5fbec702d8f8197eed -> 
+  custom:scripting/monoscript/fileName/WitEntity.cs: f3634f6b005d657d9256924b6ee7724f -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/Payload.cs: 20bf3ab20e64bae704c38145b44c13ac -> 
+  custom:scripting/monoscript/fileName/EnsureWitIntentsStep.cs: b136f8e7ef96058daebe6e4670855769 -> 
+  custom:scripting/monoscript/fileName/HandGrabPointEditor.cs: 1de61d722aec3955a0ced3ddd1649237 -> 
+  custom:scripting/monoscript/fileName/AimingStabilizedOrigin.cs: 8e9de4ec8ed1eca16b6b5ccdd53afdc0 -> 
+  custom:scripting/monoscript/fileName/WitConfigurationData.cs: 1b59f7289bf740e9ef9f2be93d10f3d4 -> 
+  custom:scripting/monoscript/fileName/VoiceUnityRequest.cs: e67404959cad22b5a8fdd8bc15940a60 -> 
+  custom:scripting/monoscript/fileName/SyncWitEntitiesStep.cs: 2ad573a8b9afd7f1740d493d07a4c0da -> 
+  custom:scripting/monoscript/fileName/PointableDelegate.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/PointablePlane.cs: 0c63873222e6ee1c4bb906924cab90d1 -> 
+  custom:scripting/monoscript/fileName/SphereEditor.cs: 276cafd8aae7e32d736a0c4daa10ab21 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialProgressTracker.cs: 750c2b9f9840ccd08a8a372bd71d691e -> 
+  custom:scripting/monoscript/fileName/CircleProximityField.cs: 3470d85e5a68b53f46ca8356f6863551 -> 
+  custom:scripting/monoscript/fileName/Transformable.cs: 5a246a64658742dc20c886d79003f704 -> 
+  custom:scripting/monoscript/fileName/InteractionOVRCameraRig.cs: 19e5e98fb10016c5e6956c7b291d0f17 -> 
+  custom:scripting/monoscript/fileName/ObtainIdmData.cs: 93689dcf59e4155113dc068b963c769d -> 
+  custom:scripting/monoscript/fileName/HandGrabPoint.cs: f8f9a4aeaae4341c0efe8cc3e2aa5fd8 -> 
+  custom:scripting/monoscript/fileName/PointableGroup.cs: aea7bf2c731b6179d62dad93c7f1a961 -> 
+  custom:scripting/monoscript/fileName/TransformableUnityEventWrapper.cs: aa0309b765937680c8aa9e4e094215f7 -> 
+  custom:scripting/monoscript/fileName/MicDebug.cs: 0703043cca43f55a99276c84b88d73fb -> 75d2f3a208b34ca2e9e43f6d5775eb91
+  custom:scripting/monoscript/fileName/OneHandPhysicsJointTransformer.cs: e946e3b4b5cd8cde3f541291179028e9 -> 
+  custom:scripting/monoscript/fileName/WitApplication.cs: 19806fe5aebcf74124ed49d589a7e43e -> 
+  custom:scripting/monoscript/fileName/IInteractorDriver.cs: fc0a89f4490fc0584b64c6fc827ee895 -> 
+  custom:scripting/monoscript/fileName/GrabbableUnityEventWrapper.cs: 33df70b122ad7f22db2cbfaa0b81510a -> 
+  custom:scripting/monoscript/fileName/BezierSurface.cs: da0b185221f59d400e85940f5ce71c91 -> 
+  custom:scripting/monoscript/fileName/InteractorComparer.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecorder.cs: d6ebfdaa7663426067642c12a6222914 -> 
+  custom:scripting/monoscript/fileName/IProximityField.cs: 1b8f3ef3bb8397988a6923ea34f554a3 -> 
+  custom:scripting/monoscript/fileName/CanvasRenderTextureMesh.cs: ba9623d0f846f302f4c58ca374ea8422 -> 
+  custom:scripting/monoscript/fileName/HandGrabInteractionUtilities.cs: 5e1b87f0c932124d19544f2653fcf382 -> 
+  custom:scripting/monoscript/fileName/OneHandFreeTransformer.cs: 80b454bb7a7e54382c3e5a83c645a9b0 -> 
+  custom:scripting/monoscript/fileName/TwoHandPlaneTransformer.cs: 82508aadcccc9aaae16a3d02dab1f1dd -> 
+  custom:scripting/monoscript/fileName/IWitHttp.cs: 91506f2edcd3bae61fa15b5c8c35b6d5 -> 
+  custom:scripting/monoscript/fileName/JointRotationHistoryModifier.cs: b84eeaa16ce785ca3e0b5335f31473cc -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceData.cs: 879b5b5a667decd113f2ef27fec58193 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/FingerGrabAPI.cs: f38129e37b49d6e3a171bd504092712b -> 
+  custom:scripting/monoscript/fileName/DummyDataModifier.cs: ebbb5589f565d8685d37bb183b4c3ff4 -> 
+  custom:scripting/monoscript/fileName/IDistanceInteractable.cs: c2d2949b74e1e24067c043dc8ee82c5a -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SyntheticHandModifier.cs: 873320c031209152e80a3521b7c6e3f2 -> 
+  custom:scripting/monoscript/fileName/ISnapSurface.cs: e613c1039942a8c6f8524e6d36ccbc1b -> 
+  custom:scripting/monoscript/fileName/HandGrab.cs: 50288240abd576346d83074011541b5b -> 
+  custom:scripting/monoscript/fileName/TTSSpeakerInput.cs: 827d47b543f4663c13881e200e539afd -> 9224de466064073281bc72c5b8b2748c
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionDataModifier.cs: da29522a4b6eb1cb5f6511bdbdd27a95 -> 
+  custom:scripting/monoscript/fileName/WitTrainingEntity.cs: f6d2096c03af45821ae473c66af255f2 -> 
+  custom:scripting/monoscript/fileName/WitEntityKeyword.cs: b5b67313fa30a40635477940a31ddbde -> 
+  custom:scripting/monoscript/fileName/PointableGrabbableConnection.cs: 35ac7dedcc44186f6f6c7bf3730e6343 -> 
+  custom:scripting/monoscript/fileName/FixedScaleDataModifier.cs: 89e1be89d924ac28373337b3361e61dd -> 
+  custom:scripting/monoscript/fileName/PointablePlaneEditor.cs: 37a91ecc3d62d378d68629c686a51361 -> 
+  custom:scripting/monoscript/fileName/WitTrainer.cs: 5fb3c95ba24e9cf857cd9b4cee94291b -> 
+  custom:scripting/monoscript/fileName/IInteractableFilter.cs: 81259a32cb7c13def6a0b70f08c66048 -> 
+  custom:scripting/monoscript/fileName/TTSStatusLabel.cs: 17147acb333fe55f1217dee5b341ea9e -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractor.cs: 76b4b17e6eac72d8f5a16e87fd0e63b5 -> 
+  custom:scripting/monoscript/fileName/IAspectProvider.cs: 9859c5919d893814fee2cdd590f4f949 -> 
+  custom:scripting/monoscript/fileName/OnConduitFailedParameterResolutionAttribute.cs: 60901a81960a7c5a81c752381f8034ab -> 
+  custom:scripting/monoscript/fileName/Mic.cs: 525051591b471bdbfa16530d37dcb655 -> 5fc48121bdfa6f25d9345006a81f8860
+  custom:scripting/monoscript/fileName/TTSCacheToggle.cs: fef530a103c6b74722a7b6f18941e54c -> 410df47b336bde136543845320d773f8
+  custom:scripting/monoscript/fileName/MicPermissionsManager.cs: 81a336319435a61331b696a347e78b9e -> f25de0368c3638f9a3bd7e7f63f0755a
+  custom:scripting/monoscript/fileName/StepRunner.cs: 6ab640738f608e4b47206553c39b2c58 -> 
+  custom:scripting/monoscript/fileName/WitUnityRequest.cs: 2bd88b304dddeb742392b5d5568e7bf7 -> 156bc76d85c310a98e115eec74a771cd
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CircleProximityFieldEditor.cs: 55b157de94575afe7fdac58cd51e3b1c -> 
+  custom:scripting/monoscript/fileName/TTSErrorText.cs: f03cdbc7b1d745067e8f357414e703b1 -> 21a4d51c9f7822c5dae2e2c7e2605044
+  custom:scripting/monoscript/fileName/FingerPinchAPI.cs: 478ca37299a2b7ce3d309683ce89043a -> 
+  custom:scripting/monoscript/fileName/IPointableSurface.cs: d7a8e441db2730be64c585bb12bf4db1 -> 
+  custom:scripting/monoscript/fileName/PhysicsTransformable.cs: 5811faf37734ce7ec9b28418c4758de1 -> 
+  custom:scripting/monoscript/fileName/PitchRemap.cs: 5b7277eeb0a8effc4822cb897b70f197 -> 
+  custom:scripting/monoscript/fileName/WitOutgoingEntity.cs: c7126ba0b7fa09ef7a925f4dc186e5b7 -> 
+  custom:scripting/monoscript/fileName/LocomotionGateVisual.cs: e25bbb39051f52b97c3e93bb37ab390d -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceUtility.cs: eee5b9af7f1fc7fc0da148c8bdf0ad4f -> 
+  custom:scripting/monoscript/fileName/HandleEntityResolutionFailureAttribute.cs: c6e2d1dd1bcaba0322547519e0e12ac7 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.733 seconds
+Refreshing native plugins compatible for Editor in 50.70 ms, found 14 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.519 seconds
+Domain Reload Profiling: 2240ms
+	BeginReloadAssembly (209ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (429ms)
+		LoadAssemblies (509ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (28ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (1520ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (711ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (130ms)
+			ProcessInitializeOnLoadAttributes (341ms)
+			ProcessInitializeOnLoadMethodAttributes (186ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 52.34 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+Unloading 5023 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 121 unused Assets / (191.0 KB). Loaded Objects now: 5653.
+Memory consumption went from 173.6 MB to 173.4 MB.
+Total: 6.858700 ms (FindLiveObjects: 0.374100 ms CreateObjectMapping: 0.356300 ms MarkObjects: 5.916800 ms  DeleteObjects: 0.210600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/WitIntent.cs: b16c53bcdd4b02694d33f5fcb8acdf19 -> 
+  custom:scripting/monoscript/fileName/GrabPointsPoseFinder.cs: 2ce4e7dd89758cfe15cc84bbdaa5d275 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityFieldEditor.cs: 3e379a0d9898211fdf7bd80a30343891 -> 
+  custom:scripting/monoscript/fileName/CanvasMeshPointable.cs: c479bafc80e05db87d89b0e734294af3 -> 
+  custom:scripting/monoscript/fileName/CylinderEditor.cs: b3e556284986a11c8d6bd82a7d7bef7e -> 
+  custom:scripting/monoscript/fileName/GrabPoint.cs: a19e23b452c1156c6e2d489a5b9f5977 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/OneHandRotateTransformer.cs: b4ad4fec7dbc0022b27ef2f1444e1086 -> 
+  custom:scripting/monoscript/fileName/WitTraitValue.cs: c4fc68c99e4126ea4ce1abd10ab830cf -> 
+  custom:scripting/monoscript/fileName/IMonoBehaviourFilter.cs: 9cedc3648a1ac103150b8378e75e48c4 -> 
+  custom:scripting/monoscript/fileName/BezierSurfaceEditor.cs: 3bfdf637db9318a14fc832066acdc19a -> 
+  custom:scripting/monoscript/fileName/SnapSurfaceHelper.cs: 7310cd667c1f6f32da3156d4956a11cb -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVR.cs: c642c70bc2d53e104962e39be79e0283 -> 
+  custom:scripting/monoscript/fileName/ITween.cs: d765ab2d93516afd5cff5e65cdb523ff -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractable.cs: da4c91e5f510c5633065c5ee349670e0 -> 
+  custom:scripting/monoscript/fileName/InteractorGroup.cs: 075c37967371ab7213a5d5cca24ff1fc -> 60fe7361e8ecd7ffeba4477da21c55fe
+  custom:scripting/monoscript/fileName/WitHttp.cs: 65528eef0357ac8698cea4e277f16a7c -> 
+  custom:scripting/monoscript/fileName/BoxProximityField.cs: 8381476084cb2eebc09f6205ab260a5f -> 
+  custom:scripting/monoscript/fileName/ProcessStep.cs: c70de6d5eef34fc1abe9451b4eb02d17 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/IInteractorComparer.cs: 134007cf487fdfbaee924b7d31a3e8ab -> 
+  custom:scripting/monoscript/fileName/WitTrainingUtterance.cs: a06d2df3896850626c28c2eee2f3361f -> 
+  custom:scripting/monoscript/fileName/ITeleportArc.cs: 1ea6eacef0fbe7453ebeaaedd85bf98c -> 
+  custom:scripting/monoscript/fileName/CylinderSurface.cs: 06b7f3fe576c2b562f08ad1445def42f -> 5bee5d43e279f1a3b524f87759982fd3
+  custom:scripting/monoscript/fileName/TagMonoBehaviourFilter.cs: 899569d8afa40a8d293811b71b3f0a56 -> 
+  custom:scripting/monoscript/fileName/SphereSurface.cs: 6d8b2477044e484ea8579f6f1f45e3a8 -> 
+  custom:scripting/monoscript/fileName/LastKnownGoodDataModifier.cs: 0b2c17c40fb2875f055e57a3080d7c9d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WitEntityRole.cs: 8b2af296196ddab171c9825f773f77da -> 
+  custom:scripting/monoscript/fileName/PointableCylinder.cs: 9a62d083874bdd860515054a450ac594 -> 
+  custom:scripting/monoscript/fileName/AudioEncoding.cs: f84b3952f084caac261984fbd264acec -> 7f68c8ddbd6875f735f3280c1aa36e92
+  custom:scripting/monoscript/fileName/InteractorDriver.cs: 285df5cb75aa79644c75f1cfa1d96ee4 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ISnapPoseProvider.cs: 3ec1f733df4df3213c9abc4abfa84cf1 -> 
+  custom:scripting/monoscript/fileName/IDropZoneSlotsProvider.cs: fc82a4709de8cea85e0be7e46ba6942f -> 
+  custom:scripting/monoscript/fileName/IAudioInputSource.cs: 9cedc902c969604d8ecab3d4c3d431d7 -> 938d3583ac997fe47e013c96006b1b9d
+  custom:scripting/monoscript/fileName/BoxProximityFieldEditor.cs: 3ca172dc25f45b576b1261d9f0fc6a13 -> 
+  custom:scripting/monoscript/fileName/ArcRangeModifier.cs: df4e86005874fa14c26dde0e58fe01b3 -> 
+  custom:scripting/monoscript/fileName/TrainUtterances.cs: fad5269aa3542e54bceac07b82fa9fb2 -> 
+  custom:scripting/monoscript/fileName/OVRSkeletonDataProviders.cs: c9301a8aea506ae86c85f3531883f294 -> 
+  custom:scripting/monoscript/fileName/BoxEditor.cs: 6cb10ba4aeba036613100827e384c6dd -> 
+  custom:scripting/monoscript/fileName/BoxSurface.cs: 64c4f1d5c8f509e2ebfbbe8cc0454ae3 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecordable.cs: be9aebb9e35f1a89cf251d5ebe16b65e -> 
+  custom:scripting/monoscript/fileName/TwoHandFreeTransformer.cs: 5484f45a8b713e7524e309309f536d2e -> 
+  custom:scripting/monoscript/fileName/InteractorDriverGroup.cs: 25a18cbb0a76e7a8f37930efac2dc5e3 -> 
+  custom:scripting/monoscript/fileName/InteractableTransformableConnection.cs: aa199f160bbadaf2d2b7430adb4b19a9 -> 
+  custom:scripting/monoscript/fileName/JointLocking.cs: 04ef49fdef9b40429c44bd8bb4f83933 -> 
+  custom:scripting/monoscript/fileName/OneHandTranslateTransformer.cs: e5593db0756115f769defd5b1bc42e7e -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/WitResponse.cs: 85febed2f7a25f57ec48693bd452c142 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationHand.cs: b7c0c166a2ca9babc479709621d65436 -> 
+  custom:scripting/monoscript/fileName/TagInteractableFilter.cs: 6c02bfd80ff65fe2d5965298b17e0457 -> 
+  custom:scripting/monoscript/fileName/PointableCylinderEditor.cs: 6340733d6723a340786b526e9320784f -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PointProximityField.cs: 0f95fb408e97956db7a3762247f8adc0 -> 
+  custom:scripting/monoscript/fileName/SnapAddress.cs: c2a235d307f5033a6468630481616552 -> 
+  custom:scripting/monoscript/fileName/InteractorGroupMulti.cs: 6bc778766dfc2f0ec0ad2013ae6c3d21 -> 
+  custom:scripting/monoscript/fileName/MicBase.cs: 1ee5e56060961d5fcfcdfe4529504890 -> 47b01f48927768722a8422b4ac545006
+  custom:scripting/monoscript/fileName/DropZoneSequentialSlotsProvider.cs: 7cdedd3fff635f926ee01eb94826964d -> 
+  custom:scripting/monoscript/fileName/SnapPoint.cs: 75b9e5a0f94c20895cbed2ad0cae1535 -> 
+  custom:scripting/monoscript/fileName/WitTrait.cs: 3139215512626b390a96d2cb63ff9eda -> 
+  custom:scripting/monoscript/fileName/ITransformable.cs: 215a3f4eeb91cb88c54863506271ef62 -> 
+  custom:scripting/monoscript/fileName/CoroutineUtility.cs: fab89599511ae356a01c13a28fda4240 -> 821d19c5ac6a7e6baf82a95f7b4d30bf
+  custom:scripting/monoscript/fileName/TeleportTurningGate.cs: 575c2ab79bdb37717f3efb10cff4d8ea -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVREditor.cs: 296ebd2207288873d91d6a862e3b5272 -> 
+  custom:scripting/monoscript/fileName/ColliderSurface.cs: b1cd8447e0ce952dcc7d7b666e8fca92 -> fc86642c94a9542e787a844561e4e4f2
+  custom:scripting/monoscript/fileName/IInteractableRegistry.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionHand.cs: 39d5de62c6b9f655efb66d407ad08fff -> 
+  custom:scripting/monoscript/fileName/TTSStreamToggle.cs: 386098d9b6e67cd0a4ee56f3a7972a48 -> 0132d2e4cd28c22eddc3810c7daa80a8
+  custom:scripting/monoscript/fileName/HandGrabInteractorVisual.cs: 4e78a3e45d86e390b096cc34598495d6 -> 
+  custom:scripting/monoscript/fileName/WitRole.cs: d05ae217608bc7de182f2476f0c8e04d -> 
+  custom:scripting/monoscript/fileName/WitIncomingEntity.cs: 78d455e2834b5f65d08838e068a6b637 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityField.cs: d46f096ca0f256553da6db049bd8e1f0 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialAnimationUnityEventWrapper.cs: 5bbd9cbd699e0cf1a0713e4cfca29cff -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationDataModifier.cs: bbc3acc82de59e5fbec702d8f8197eed -> 
+  custom:scripting/monoscript/fileName/WitEntity.cs: f3634f6b005d657d9256924b6ee7724f -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/Payload.cs: 20bf3ab20e64bae704c38145b44c13ac -> 
+  custom:scripting/monoscript/fileName/EnsureWitIntentsStep.cs: b136f8e7ef96058daebe6e4670855769 -> 
+  custom:scripting/monoscript/fileName/HandGrabPointEditor.cs: 1de61d722aec3955a0ced3ddd1649237 -> 
+  custom:scripting/monoscript/fileName/AimingStabilizedOrigin.cs: 8e9de4ec8ed1eca16b6b5ccdd53afdc0 -> 
+  custom:scripting/monoscript/fileName/WitConfigurationData.cs: 1b59f7289bf740e9ef9f2be93d10f3d4 -> 
+  custom:scripting/monoscript/fileName/VoiceUnityRequest.cs: e67404959cad22b5a8fdd8bc15940a60 -> 
+  custom:scripting/monoscript/fileName/SyncWitEntitiesStep.cs: 2ad573a8b9afd7f1740d493d07a4c0da -> 
+  custom:scripting/monoscript/fileName/PointableDelegate.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/PointablePlane.cs: 0c63873222e6ee1c4bb906924cab90d1 -> 
+  custom:scripting/monoscript/fileName/SphereEditor.cs: 276cafd8aae7e32d736a0c4daa10ab21 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialProgressTracker.cs: 750c2b9f9840ccd08a8a372bd71d691e -> 
+  custom:scripting/monoscript/fileName/CircleProximityField.cs: 3470d85e5a68b53f46ca8356f6863551 -> 
+  custom:scripting/monoscript/fileName/Transformable.cs: 5a246a64658742dc20c886d79003f704 -> 
+  custom:scripting/monoscript/fileName/InteractionOVRCameraRig.cs: 19e5e98fb10016c5e6956c7b291d0f17 -> 
+  custom:scripting/monoscript/fileName/ObtainIdmData.cs: 93689dcf59e4155113dc068b963c769d -> 
+  custom:scripting/monoscript/fileName/HandGrabPoint.cs: f8f9a4aeaae4341c0efe8cc3e2aa5fd8 -> 
+  custom:scripting/monoscript/fileName/PointableGroup.cs: aea7bf2c731b6179d62dad93c7f1a961 -> 
+  custom:scripting/monoscript/fileName/TransformableUnityEventWrapper.cs: aa0309b765937680c8aa9e4e094215f7 -> 
+  custom:scripting/monoscript/fileName/MicDebug.cs: 0703043cca43f55a99276c84b88d73fb -> 75d2f3a208b34ca2e9e43f6d5775eb91
+  custom:scripting/monoscript/fileName/OneHandPhysicsJointTransformer.cs: e946e3b4b5cd8cde3f541291179028e9 -> 
+  custom:scripting/monoscript/fileName/WitApplication.cs: 19806fe5aebcf74124ed49d589a7e43e -> 
+  custom:scripting/monoscript/fileName/IInteractorDriver.cs: fc0a89f4490fc0584b64c6fc827ee895 -> 
+  custom:scripting/monoscript/fileName/GrabbableUnityEventWrapper.cs: 33df70b122ad7f22db2cbfaa0b81510a -> 
+  custom:scripting/monoscript/fileName/BezierSurface.cs: da0b185221f59d400e85940f5ce71c91 -> 
+  custom:scripting/monoscript/fileName/InteractorComparer.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecorder.cs: d6ebfdaa7663426067642c12a6222914 -> 
+  custom:scripting/monoscript/fileName/IProximityField.cs: 1b8f3ef3bb8397988a6923ea34f554a3 -> 
+  custom:scripting/monoscript/fileName/CanvasRenderTextureMesh.cs: ba9623d0f846f302f4c58ca374ea8422 -> 
+  custom:scripting/monoscript/fileName/HandGrabInteractionUtilities.cs: 5e1b87f0c932124d19544f2653fcf382 -> 
+  custom:scripting/monoscript/fileName/OneHandFreeTransformer.cs: 80b454bb7a7e54382c3e5a83c645a9b0 -> 
+  custom:scripting/monoscript/fileName/TwoHandPlaneTransformer.cs: 82508aadcccc9aaae16a3d02dab1f1dd -> 
+  custom:scripting/monoscript/fileName/IWitHttp.cs: 91506f2edcd3bae61fa15b5c8c35b6d5 -> 
+  custom:scripting/monoscript/fileName/JointRotationHistoryModifier.cs: b84eeaa16ce785ca3e0b5335f31473cc -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceData.cs: 879b5b5a667decd113f2ef27fec58193 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/FingerGrabAPI.cs: f38129e37b49d6e3a171bd504092712b -> 
+  custom:scripting/monoscript/fileName/DummyDataModifier.cs: ebbb5589f565d8685d37bb183b4c3ff4 -> 
+  custom:scripting/monoscript/fileName/IDistanceInteractable.cs: c2d2949b74e1e24067c043dc8ee82c5a -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SyntheticHandModifier.cs: 873320c031209152e80a3521b7c6e3f2 -> 
+  custom:scripting/monoscript/fileName/ISnapSurface.cs: e613c1039942a8c6f8524e6d36ccbc1b -> 
+  custom:scripting/monoscript/fileName/HandGrab.cs: 50288240abd576346d83074011541b5b -> 
+  custom:scripting/monoscript/fileName/TTSSpeakerInput.cs: 827d47b543f4663c13881e200e539afd -> 9224de466064073281bc72c5b8b2748c
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionDataModifier.cs: da29522a4b6eb1cb5f6511bdbdd27a95 -> 
+  custom:scripting/monoscript/fileName/WitTrainingEntity.cs: f6d2096c03af45821ae473c66af255f2 -> 
+  custom:scripting/monoscript/fileName/WitEntityKeyword.cs: b5b67313fa30a40635477940a31ddbde -> 
+  custom:scripting/monoscript/fileName/PointableGrabbableConnection.cs: 35ac7dedcc44186f6f6c7bf3730e6343 -> 
+  custom:scripting/monoscript/fileName/FixedScaleDataModifier.cs: 89e1be89d924ac28373337b3361e61dd -> 
+  custom:scripting/monoscript/fileName/PointablePlaneEditor.cs: 37a91ecc3d62d378d68629c686a51361 -> 
+  custom:scripting/monoscript/fileName/WitTrainer.cs: 5fb3c95ba24e9cf857cd9b4cee94291b -> 
+  custom:scripting/monoscript/fileName/IInteractableFilter.cs: 81259a32cb7c13def6a0b70f08c66048 -> 
+  custom:scripting/monoscript/fileName/TTSStatusLabel.cs: 17147acb333fe55f1217dee5b341ea9e -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractor.cs: 76b4b17e6eac72d8f5a16e87fd0e63b5 -> 
+  custom:scripting/monoscript/fileName/IAspectProvider.cs: 9859c5919d893814fee2cdd590f4f949 -> 
+  custom:scripting/monoscript/fileName/OnConduitFailedParameterResolutionAttribute.cs: 60901a81960a7c5a81c752381f8034ab -> 
+  custom:scripting/monoscript/fileName/Mic.cs: 525051591b471bdbfa16530d37dcb655 -> 5fc48121bdfa6f25d9345006a81f8860
+  custom:scripting/monoscript/fileName/TTSCacheToggle.cs: fef530a103c6b74722a7b6f18941e54c -> 410df47b336bde136543845320d773f8
+  custom:scripting/monoscript/fileName/MicPermissionsManager.cs: 81a336319435a61331b696a347e78b9e -> f25de0368c3638f9a3bd7e7f63f0755a
+  custom:scripting/monoscript/fileName/StepRunner.cs: 6ab640738f608e4b47206553c39b2c58 -> 
+  custom:scripting/monoscript/fileName/WitUnityRequest.cs: 2bd88b304dddeb742392b5d5568e7bf7 -> 156bc76d85c310a98e115eec74a771cd
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CircleProximityFieldEditor.cs: 55b157de94575afe7fdac58cd51e3b1c -> 
+  custom:scripting/monoscript/fileName/TTSErrorText.cs: f03cdbc7b1d745067e8f357414e703b1 -> 21a4d51c9f7822c5dae2e2c7e2605044
+  custom:scripting/monoscript/fileName/FingerPinchAPI.cs: 478ca37299a2b7ce3d309683ce89043a -> 
+  custom:scripting/monoscript/fileName/IPointableSurface.cs: d7a8e441db2730be64c585bb12bf4db1 -> 
+  custom:scripting/monoscript/fileName/PhysicsTransformable.cs: 5811faf37734ce7ec9b28418c4758de1 -> 
+  custom:scripting/monoscript/fileName/PitchRemap.cs: 5b7277eeb0a8effc4822cb897b70f197 -> 
+  custom:scripting/monoscript/fileName/WitOutgoingEntity.cs: c7126ba0b7fa09ef7a925f4dc186e5b7 -> 
+  custom:scripting/monoscript/fileName/LocomotionGateVisual.cs: e25bbb39051f52b97c3e93bb37ab390d -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceUtility.cs: eee5b9af7f1fc7fc0da148c8bdf0ad4f -> 
+  custom:scripting/monoscript/fileName/HandleEntityResolutionFailureAttribute.cs: c6e2d1dd1bcaba0322547519e0e12ac7 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 223.327135 seconds.
+  path: Assets/Plugins/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be2c3221a0fe1c4c30a17ca08a321010') in 0.053273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 37.640665 seconds.
+  path: Assets/Oculus/Interaction/Samples/Fonts/Roboto-Bold SDF.asset
+  artifactKey: Guid(a6446991ef31ced4190c53c206cf4b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Fonts/Roboto-Bold SDF.asset using Guid(a6446991ef31ced4190c53c206cf4b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618de658eaa5a73a88f2681db58d662f') in 0.073625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Oculus/Interaction/Samples/Fonts/Roboto-Regular SDF.asset
+  artifactKey: Guid(fc41d5815b9a5bb48be4c84a746c4ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Fonts/Roboto-Regular SDF.asset using Guid(fc41d5815b9a5bb48be4c84a746c4ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd18bb30a9773c26af37a6b7a2a447c96') in 0.019207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 2.989594 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54f6fc9364cb211c9ef1fc86e2ffde5f') in 0.070574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 4.365521 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a1a58095d918a0e69ebfda13497ad9f') in 0.040376 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 3.974887 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f5775123296eebd2f92e6a84884cd08') in 0.038421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 16.131118 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e30251ce53153ab19d2a26f57da51f43') in 0.038402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 0.364301 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd17e4e9f54020829ec6c378dc1b020dd') in 0.036482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 0.763325 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb13af15c1f3ab90d1c24c14372267fb') in 0.034691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 136
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.771 seconds
+Refreshing native plugins compatible for Editor in 51.84 ms, found 14 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.630 seconds
+Domain Reload Profiling: 2389ms
+	BeginReloadAssembly (224ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (422ms)
+		LoadAssemblies (511ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1630ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (753ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (142ms)
+			ProcessInitializeOnLoadAttributes (354ms)
+			ProcessInitializeOnLoadMethodAttributes (202ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 51.66 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+Unloading 5023 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 121 unused Assets / (190.9 KB). Loaded Objects now: 5660.
+Memory consumption went from 173.7 MB to 173.5 MB.
+Total: 7.274600 ms (FindLiveObjects: 0.422600 ms CreateObjectMapping: 0.425400 ms MarkObjects: 6.201900 ms  DeleteObjects: 0.223100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/WitIntent.cs: b16c53bcdd4b02694d33f5fcb8acdf19 -> 
+  custom:scripting/monoscript/fileName/GrabPointsPoseFinder.cs: 2ce4e7dd89758cfe15cc84bbdaa5d275 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityFieldEditor.cs: 3e379a0d9898211fdf7bd80a30343891 -> 
+  custom:scripting/monoscript/fileName/CanvasMeshPointable.cs: c479bafc80e05db87d89b0e734294af3 -> 
+  custom:scripting/monoscript/fileName/CylinderEditor.cs: b3e556284986a11c8d6bd82a7d7bef7e -> 
+  custom:scripting/monoscript/fileName/GrabPoint.cs: a19e23b452c1156c6e2d489a5b9f5977 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/OneHandRotateTransformer.cs: b4ad4fec7dbc0022b27ef2f1444e1086 -> 
+  custom:scripting/monoscript/fileName/WitTraitValue.cs: c4fc68c99e4126ea4ce1abd10ab830cf -> 
+  custom:scripting/monoscript/fileName/IMonoBehaviourFilter.cs: 9cedc3648a1ac103150b8378e75e48c4 -> 
+  custom:scripting/monoscript/fileName/BezierSurfaceEditor.cs: 3bfdf637db9318a14fc832066acdc19a -> 
+  custom:scripting/monoscript/fileName/SnapSurfaceHelper.cs: 7310cd667c1f6f32da3156d4956a11cb -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVR.cs: c642c70bc2d53e104962e39be79e0283 -> 
+  custom:scripting/monoscript/fileName/ITween.cs: d765ab2d93516afd5cff5e65cdb523ff -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractable.cs: da4c91e5f510c5633065c5ee349670e0 -> 
+  custom:scripting/monoscript/fileName/InteractorGroup.cs: 075c37967371ab7213a5d5cca24ff1fc -> 60fe7361e8ecd7ffeba4477da21c55fe
+  custom:scripting/monoscript/fileName/WitHttp.cs: 65528eef0357ac8698cea4e277f16a7c -> 
+  custom:scripting/monoscript/fileName/BoxProximityField.cs: 8381476084cb2eebc09f6205ab260a5f -> 
+  custom:scripting/monoscript/fileName/ProcessStep.cs: c70de6d5eef34fc1abe9451b4eb02d17 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/IInteractorComparer.cs: 134007cf487fdfbaee924b7d31a3e8ab -> 
+  custom:scripting/monoscript/fileName/WitTrainingUtterance.cs: a06d2df3896850626c28c2eee2f3361f -> 
+  custom:scripting/monoscript/fileName/ITeleportArc.cs: 1ea6eacef0fbe7453ebeaaedd85bf98c -> 
+  custom:scripting/monoscript/fileName/CylinderSurface.cs: 06b7f3fe576c2b562f08ad1445def42f -> 5bee5d43e279f1a3b524f87759982fd3
+  custom:scripting/monoscript/fileName/TagMonoBehaviourFilter.cs: 899569d8afa40a8d293811b71b3f0a56 -> 
+  custom:scripting/monoscript/fileName/SphereSurface.cs: 6d8b2477044e484ea8579f6f1f45e3a8 -> 
+  custom:scripting/monoscript/fileName/LastKnownGoodDataModifier.cs: 0b2c17c40fb2875f055e57a3080d7c9d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WitEntityRole.cs: 8b2af296196ddab171c9825f773f77da -> 
+  custom:scripting/monoscript/fileName/PointableCylinder.cs: 9a62d083874bdd860515054a450ac594 -> 
+  custom:scripting/monoscript/fileName/AudioEncoding.cs: f84b3952f084caac261984fbd264acec -> 7f68c8ddbd6875f735f3280c1aa36e92
+  custom:scripting/monoscript/fileName/InteractorDriver.cs: 285df5cb75aa79644c75f1cfa1d96ee4 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ISnapPoseProvider.cs: 3ec1f733df4df3213c9abc4abfa84cf1 -> 
+  custom:scripting/monoscript/fileName/IDropZoneSlotsProvider.cs: fc82a4709de8cea85e0be7e46ba6942f -> 
+  custom:scripting/monoscript/fileName/IAudioInputSource.cs: 9cedc902c969604d8ecab3d4c3d431d7 -> 938d3583ac997fe47e013c96006b1b9d
+  custom:scripting/monoscript/fileName/BoxProximityFieldEditor.cs: 3ca172dc25f45b576b1261d9f0fc6a13 -> 
+  custom:scripting/monoscript/fileName/ArcRangeModifier.cs: df4e86005874fa14c26dde0e58fe01b3 -> 
+  custom:scripting/monoscript/fileName/TrainUtterances.cs: fad5269aa3542e54bceac07b82fa9fb2 -> 
+  custom:scripting/monoscript/fileName/OVRSkeletonDataProviders.cs: c9301a8aea506ae86c85f3531883f294 -> 
+  custom:scripting/monoscript/fileName/BoxEditor.cs: 6cb10ba4aeba036613100827e384c6dd -> 
+  custom:scripting/monoscript/fileName/BoxSurface.cs: 64c4f1d5c8f509e2ebfbbe8cc0454ae3 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecordable.cs: be9aebb9e35f1a89cf251d5ebe16b65e -> 
+  custom:scripting/monoscript/fileName/TwoHandFreeTransformer.cs: 5484f45a8b713e7524e309309f536d2e -> 
+  custom:scripting/monoscript/fileName/InteractorDriverGroup.cs: 25a18cbb0a76e7a8f37930efac2dc5e3 -> 
+  custom:scripting/monoscript/fileName/InteractableTransformableConnection.cs: aa199f160bbadaf2d2b7430adb4b19a9 -> 
+  custom:scripting/monoscript/fileName/JointLocking.cs: 04ef49fdef9b40429c44bd8bb4f83933 -> 
+  custom:scripting/monoscript/fileName/OneHandTranslateTransformer.cs: e5593db0756115f769defd5b1bc42e7e -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/WitResponse.cs: 85febed2f7a25f57ec48693bd452c142 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationHand.cs: b7c0c166a2ca9babc479709621d65436 -> 
+  custom:scripting/monoscript/fileName/TagInteractableFilter.cs: 6c02bfd80ff65fe2d5965298b17e0457 -> 
+  custom:scripting/monoscript/fileName/PointableCylinderEditor.cs: 6340733d6723a340786b526e9320784f -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PointProximityField.cs: 0f95fb408e97956db7a3762247f8adc0 -> 
+  custom:scripting/monoscript/fileName/SnapAddress.cs: c2a235d307f5033a6468630481616552 -> 
+  custom:scripting/monoscript/fileName/InteractorGroupMulti.cs: 6bc778766dfc2f0ec0ad2013ae6c3d21 -> 
+  custom:scripting/monoscript/fileName/MicBase.cs: 1ee5e56060961d5fcfcdfe4529504890 -> 47b01f48927768722a8422b4ac545006
+  custom:scripting/monoscript/fileName/DropZoneSequentialSlotsProvider.cs: 7cdedd3fff635f926ee01eb94826964d -> 
+  custom:scripting/monoscript/fileName/SnapPoint.cs: 75b9e5a0f94c20895cbed2ad0cae1535 -> 
+  custom:scripting/monoscript/fileName/WitTrait.cs: 3139215512626b390a96d2cb63ff9eda -> 
+  custom:scripting/monoscript/fileName/ITransformable.cs: 215a3f4eeb91cb88c54863506271ef62 -> 
+  custom:scripting/monoscript/fileName/CoroutineUtility.cs: fab89599511ae356a01c13a28fda4240 -> 821d19c5ac6a7e6baf82a95f7b4d30bf
+  custom:scripting/monoscript/fileName/TeleportTurningGate.cs: 575c2ab79bdb37717f3efb10cff4d8ea -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVREditor.cs: 296ebd2207288873d91d6a862e3b5272 -> 
+  custom:scripting/monoscript/fileName/ColliderSurface.cs: b1cd8447e0ce952dcc7d7b666e8fca92 -> fc86642c94a9542e787a844561e4e4f2
+  custom:scripting/monoscript/fileName/IInteractableRegistry.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionHand.cs: 39d5de62c6b9f655efb66d407ad08fff -> 
+  custom:scripting/monoscript/fileName/TTSStreamToggle.cs: 386098d9b6e67cd0a4ee56f3a7972a48 -> 0132d2e4cd28c22eddc3810c7daa80a8
+  custom:scripting/monoscript/fileName/HandGrabInteractorVisual.cs: 4e78a3e45d86e390b096cc34598495d6 -> 
+  custom:scripting/monoscript/fileName/WitRole.cs: d05ae217608bc7de182f2476f0c8e04d -> 
+  custom:scripting/monoscript/fileName/WitIncomingEntity.cs: 78d455e2834b5f65d08838e068a6b637 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityField.cs: d46f096ca0f256553da6db049bd8e1f0 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialAnimationUnityEventWrapper.cs: 5bbd9cbd699e0cf1a0713e4cfca29cff -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationDataModifier.cs: bbc3acc82de59e5fbec702d8f8197eed -> 
+  custom:scripting/monoscript/fileName/WitEntity.cs: f3634f6b005d657d9256924b6ee7724f -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/Payload.cs: 20bf3ab20e64bae704c38145b44c13ac -> 
+  custom:scripting/monoscript/fileName/EnsureWitIntentsStep.cs: b136f8e7ef96058daebe6e4670855769 -> 
+  custom:scripting/monoscript/fileName/HandGrabPointEditor.cs: 1de61d722aec3955a0ced3ddd1649237 -> 
+  custom:scripting/monoscript/fileName/AimingStabilizedOrigin.cs: 8e9de4ec8ed1eca16b6b5ccdd53afdc0 -> 
+  custom:scripting/monoscript/fileName/WitConfigurationData.cs: 1b59f7289bf740e9ef9f2be93d10f3d4 -> 
+  custom:scripting/monoscript/fileName/VoiceUnityRequest.cs: e67404959cad22b5a8fdd8bc15940a60 -> 
+  custom:scripting/monoscript/fileName/SyncWitEntitiesStep.cs: 2ad573a8b9afd7f1740d493d07a4c0da -> 
+  custom:scripting/monoscript/fileName/PointableDelegate.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/PointablePlane.cs: 0c63873222e6ee1c4bb906924cab90d1 -> 
+  custom:scripting/monoscript/fileName/SphereEditor.cs: 276cafd8aae7e32d736a0c4daa10ab21 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialProgressTracker.cs: 750c2b9f9840ccd08a8a372bd71d691e -> 
+  custom:scripting/monoscript/fileName/CircleProximityField.cs: 3470d85e5a68b53f46ca8356f6863551 -> 
+  custom:scripting/monoscript/fileName/Transformable.cs: 5a246a64658742dc20c886d79003f704 -> 
+  custom:scripting/monoscript/fileName/InteractionOVRCameraRig.cs: 19e5e98fb10016c5e6956c7b291d0f17 -> 
+  custom:scripting/monoscript/fileName/ObtainIdmData.cs: 93689dcf59e4155113dc068b963c769d -> 
+  custom:scripting/monoscript/fileName/HandGrabPoint.cs: f8f9a4aeaae4341c0efe8cc3e2aa5fd8 -> 
+  custom:scripting/monoscript/fileName/PointableGroup.cs: aea7bf2c731b6179d62dad93c7f1a961 -> 
+  custom:scripting/monoscript/fileName/TransformableUnityEventWrapper.cs: aa0309b765937680c8aa9e4e094215f7 -> 
+  custom:scripting/monoscript/fileName/MicDebug.cs: 0703043cca43f55a99276c84b88d73fb -> 75d2f3a208b34ca2e9e43f6d5775eb91
+  custom:scripting/monoscript/fileName/OneHandPhysicsJointTransformer.cs: e946e3b4b5cd8cde3f541291179028e9 -> 
+  custom:scripting/monoscript/fileName/WitApplication.cs: 19806fe5aebcf74124ed49d589a7e43e -> 
+  custom:scripting/monoscript/fileName/IInteractorDriver.cs: fc0a89f4490fc0584b64c6fc827ee895 -> 
+  custom:scripting/monoscript/fileName/GrabbableUnityEventWrapper.cs: 33df70b122ad7f22db2cbfaa0b81510a -> 
+  custom:scripting/monoscript/fileName/BezierSurface.cs: da0b185221f59d400e85940f5ce71c91 -> 
+  custom:scripting/monoscript/fileName/InteractorComparer.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecorder.cs: d6ebfdaa7663426067642c12a6222914 -> 
+  custom:scripting/monoscript/fileName/IProximityField.cs: 1b8f3ef3bb8397988a6923ea34f554a3 -> 
+  custom:scripting/monoscript/fileName/CanvasRenderTextureMesh.cs: ba9623d0f846f302f4c58ca374ea8422 -> 
+  custom:scripting/monoscript/fileName/HandGrabInteractionUtilities.cs: 5e1b87f0c932124d19544f2653fcf382 -> 
+  custom:scripting/monoscript/fileName/OneHandFreeTransformer.cs: 80b454bb7a7e54382c3e5a83c645a9b0 -> 
+  custom:scripting/monoscript/fileName/TwoHandPlaneTransformer.cs: 82508aadcccc9aaae16a3d02dab1f1dd -> 
+  custom:scripting/monoscript/fileName/IWitHttp.cs: 91506f2edcd3bae61fa15b5c8c35b6d5 -> 
+  custom:scripting/monoscript/fileName/JointRotationHistoryModifier.cs: b84eeaa16ce785ca3e0b5335f31473cc -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceData.cs: 879b5b5a667decd113f2ef27fec58193 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/FingerGrabAPI.cs: f38129e37b49d6e3a171bd504092712b -> 
+  custom:scripting/monoscript/fileName/DummyDataModifier.cs: ebbb5589f565d8685d37bb183b4c3ff4 -> 
+  custom:scripting/monoscript/fileName/IDistanceInteractable.cs: c2d2949b74e1e24067c043dc8ee82c5a -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SyntheticHandModifier.cs: 873320c031209152e80a3521b7c6e3f2 -> 
+  custom:scripting/monoscript/fileName/ISnapSurface.cs: e613c1039942a8c6f8524e6d36ccbc1b -> 
+  custom:scripting/monoscript/fileName/HandGrab.cs: 50288240abd576346d83074011541b5b -> 
+  custom:scripting/monoscript/fileName/TTSSpeakerInput.cs: 827d47b543f4663c13881e200e539afd -> 9224de466064073281bc72c5b8b2748c
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionDataModifier.cs: da29522a4b6eb1cb5f6511bdbdd27a95 -> 
+  custom:scripting/monoscript/fileName/WitTrainingEntity.cs: f6d2096c03af45821ae473c66af255f2 -> 
+  custom:scripting/monoscript/fileName/WitEntityKeyword.cs: b5b67313fa30a40635477940a31ddbde -> 
+  custom:scripting/monoscript/fileName/PointableGrabbableConnection.cs: 35ac7dedcc44186f6f6c7bf3730e6343 -> 
+  custom:scripting/monoscript/fileName/FixedScaleDataModifier.cs: 89e1be89d924ac28373337b3361e61dd -> 
+  custom:scripting/monoscript/fileName/PointablePlaneEditor.cs: 37a91ecc3d62d378d68629c686a51361 -> 
+  custom:scripting/monoscript/fileName/WitTrainer.cs: 5fb3c95ba24e9cf857cd9b4cee94291b -> 
+  custom:scripting/monoscript/fileName/IInteractableFilter.cs: 81259a32cb7c13def6a0b70f08c66048 -> 
+  custom:scripting/monoscript/fileName/TTSStatusLabel.cs: 17147acb333fe55f1217dee5b341ea9e -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractor.cs: 76b4b17e6eac72d8f5a16e87fd0e63b5 -> 
+  custom:scripting/monoscript/fileName/IAspectProvider.cs: 9859c5919d893814fee2cdd590f4f949 -> 
+  custom:scripting/monoscript/fileName/OnConduitFailedParameterResolutionAttribute.cs: 60901a81960a7c5a81c752381f8034ab -> 
+  custom:scripting/monoscript/fileName/Mic.cs: 525051591b471bdbfa16530d37dcb655 -> 5fc48121bdfa6f25d9345006a81f8860
+  custom:scripting/monoscript/fileName/TTSCacheToggle.cs: fef530a103c6b74722a7b6f18941e54c -> 410df47b336bde136543845320d773f8
+  custom:scripting/monoscript/fileName/MicPermissionsManager.cs: 81a336319435a61331b696a347e78b9e -> f25de0368c3638f9a3bd7e7f63f0755a
+  custom:scripting/monoscript/fileName/StepRunner.cs: 6ab640738f608e4b47206553c39b2c58 -> 
+  custom:scripting/monoscript/fileName/WitUnityRequest.cs: 2bd88b304dddeb742392b5d5568e7bf7 -> 156bc76d85c310a98e115eec74a771cd
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CircleProximityFieldEditor.cs: 55b157de94575afe7fdac58cd51e3b1c -> 
+  custom:scripting/monoscript/fileName/TTSErrorText.cs: f03cdbc7b1d745067e8f357414e703b1 -> 21a4d51c9f7822c5dae2e2c7e2605044
+  custom:scripting/monoscript/fileName/FingerPinchAPI.cs: 478ca37299a2b7ce3d309683ce89043a -> 
+  custom:scripting/monoscript/fileName/IPointableSurface.cs: d7a8e441db2730be64c585bb12bf4db1 -> 
+  custom:scripting/monoscript/fileName/PhysicsTransformable.cs: 5811faf37734ce7ec9b28418c4758de1 -> 
+  custom:scripting/monoscript/fileName/PitchRemap.cs: 5b7277eeb0a8effc4822cb897b70f197 -> 
+  custom:scripting/monoscript/fileName/WitOutgoingEntity.cs: c7126ba0b7fa09ef7a925f4dc186e5b7 -> 
+  custom:scripting/monoscript/fileName/LocomotionGateVisual.cs: e25bbb39051f52b97c3e93bb37ab390d -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceUtility.cs: eee5b9af7f1fc7fc0da148c8bdf0ad4f -> 
+  custom:scripting/monoscript/fileName/HandleEntityResolutionFailureAttribute.cs: c6e2d1dd1bcaba0322547519e0e12ac7 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 231.371761 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.135424 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/plugins/textmesh pro/resources/fonts & materials/liberationsans sdf.asset in SourceAssetDB has modification time of '2023-09-25T05:36:55.393993Z' while content on disk has modification time of '2019-04-16T22:57:56Z'
+  ERROR: Build asset version error: assets/plugins/textmesh pro/resources/fonts & materials/liberationsans sdf.asset in SourceAssetDB has modification time of '2023-09-25T05:36:55.393993Z' while content on disk has modification time of '2019-04-16T22:57:56Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 2.631949 seconds.
+  path: Assets/Prefabs/Axis.prefab
+  artifactKey: Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Axis.prefab using Guid(c061a8385aca89546a8f90550de16cf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36278122aa47c1a84163fa8672a604c') in 0.043904 seconds
+Number of updated asset objects reloaded before import = 11
+Number of asset objects unloaded after import = 145
+========================================================================
+Received Import Request.
+  Time since last request: 14.903719 seconds.
+  path: Assets/Plugins/TextMesh Pro/Shaders/TMPro_Mobile.cginc
+  artifactKey: Guid(c334973cef89a9840b0b0c507e0377ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TextMesh Pro/Shaders/TMPro_Mobile.cginc using Guid(c334973cef89a9840b0b0c507e0377ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed4948e3d3b156c358d774882348c13a') in 0.001484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.351899 seconds.
+  path: Assets/Plugins/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30796653c4dfc1f2480bca9d8b60487c') in 0.000503 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.605196 seconds.
+  path: Assets/Plugins/ViveMenuToolkit
+  artifactKey: Guid(dd1ad3538c3485245a6abd487434ce8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/ViveMenuToolkit using Guid(dd1ad3538c3485245a6abd487434ce8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03566cc78335feb7e0cefb4e0c4601f5') in 0.000624 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 207.179847 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro.cginc
+  artifactKey: Guid(407bc68d299748449bbf7f48ee690f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Shaders/TMPro.cginc using Guid(407bc68d299748449bbf7f48ee690f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2f603c20fc83149d951696e0b5ff78e') in 0.001633 seconds
+Number of updated asset objects reloaded before import = 7
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
+  artifactKey: Guid(d930090c0cd643c7b55f19a38538c162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc using Guid(d930090c0cd643c7b55f19a38538c162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c686a485411b244d6b24147d7663491') in 0.001316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.879 seconds
+Refreshing native plugins compatible for Editor in 51.11 ms, found 14 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.661 seconds
+Domain Reload Profiling: 2528ms
+	BeginReloadAssembly (255ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (76ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (519ms)
+		LoadAssemblies (613ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (1662ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (739ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (134ms)
+			ProcessInitializeOnLoadAttributes (350ms)
+			ProcessInitializeOnLoadMethodAttributes (196ms)
+			AfterProcessingInitializeOnLoad (18ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 52.55 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.23 ms.
+Unloading 5025 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 123 unused Assets / (296.6 KB). Loaded Objects now: 5665.
+Memory consumption went from 174.3 MB to 174.1 MB.
+Total: 8.321900 ms (FindLiveObjects: 0.392400 ms CreateObjectMapping: 0.403900 ms MarkObjects: 7.237300 ms  DeleteObjects: 0.287300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/WitIntent.cs: b16c53bcdd4b02694d33f5fcb8acdf19 -> 
+  custom:scripting/monoscript/fileName/GrabPointsPoseFinder.cs: 2ce4e7dd89758cfe15cc84bbdaa5d275 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityFieldEditor.cs: 3e379a0d9898211fdf7bd80a30343891 -> 
+  custom:scripting/monoscript/fileName/CanvasMeshPointable.cs: c479bafc80e05db87d89b0e734294af3 -> 
+  custom:scripting/monoscript/fileName/CylinderEditor.cs: b3e556284986a11c8d6bd82a7d7bef7e -> 
+  custom:scripting/monoscript/fileName/GrabPoint.cs: a19e23b452c1156c6e2d489a5b9f5977 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/OneHandRotateTransformer.cs: b4ad4fec7dbc0022b27ef2f1444e1086 -> 
+  custom:scripting/monoscript/fileName/WitTraitValue.cs: c4fc68c99e4126ea4ce1abd10ab830cf -> 
+  custom:scripting/monoscript/fileName/IMonoBehaviourFilter.cs: 9cedc3648a1ac103150b8378e75e48c4 -> 
+  custom:scripting/monoscript/fileName/BezierSurfaceEditor.cs: 3bfdf637db9318a14fc832066acdc19a -> 
+  custom:scripting/monoscript/fileName/SnapSurfaceHelper.cs: 7310cd667c1f6f32da3156d4956a11cb -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVR.cs: c642c70bc2d53e104962e39be79e0283 -> 
+  custom:scripting/monoscript/fileName/ITween.cs: d765ab2d93516afd5cff5e65cdb523ff -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractable.cs: da4c91e5f510c5633065c5ee349670e0 -> 
+  custom:scripting/monoscript/fileName/InteractorGroup.cs: 075c37967371ab7213a5d5cca24ff1fc -> 60fe7361e8ecd7ffeba4477da21c55fe
+  custom:scripting/monoscript/fileName/WitHttp.cs: 65528eef0357ac8698cea4e277f16a7c -> 
+  custom:scripting/monoscript/fileName/BoxProximityField.cs: 8381476084cb2eebc09f6205ab260a5f -> 
+  custom:scripting/monoscript/fileName/ProcessStep.cs: c70de6d5eef34fc1abe9451b4eb02d17 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/IInteractorComparer.cs: 134007cf487fdfbaee924b7d31a3e8ab -> 
+  custom:scripting/monoscript/fileName/WitTrainingUtterance.cs: a06d2df3896850626c28c2eee2f3361f -> 
+  custom:scripting/monoscript/fileName/ITeleportArc.cs: 1ea6eacef0fbe7453ebeaaedd85bf98c -> 
+  custom:scripting/monoscript/fileName/CylinderSurface.cs: 06b7f3fe576c2b562f08ad1445def42f -> 5bee5d43e279f1a3b524f87759982fd3
+  custom:scripting/monoscript/fileName/TagMonoBehaviourFilter.cs: 899569d8afa40a8d293811b71b3f0a56 -> 
+  custom:scripting/monoscript/fileName/SphereSurface.cs: 6d8b2477044e484ea8579f6f1f45e3a8 -> 
+  custom:scripting/monoscript/fileName/LastKnownGoodDataModifier.cs: 0b2c17c40fb2875f055e57a3080d7c9d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WitEntityRole.cs: 8b2af296196ddab171c9825f773f77da -> 
+  custom:scripting/monoscript/fileName/PointableCylinder.cs: 9a62d083874bdd860515054a450ac594 -> 
+  custom:scripting/monoscript/fileName/AudioEncoding.cs: f84b3952f084caac261984fbd264acec -> 7f68c8ddbd6875f735f3280c1aa36e92
+  custom:scripting/monoscript/fileName/InteractorDriver.cs: 285df5cb75aa79644c75f1cfa1d96ee4 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ISnapPoseProvider.cs: 3ec1f733df4df3213c9abc4abfa84cf1 -> 
+  custom:scripting/monoscript/fileName/IDropZoneSlotsProvider.cs: fc82a4709de8cea85e0be7e46ba6942f -> 
+  custom:scripting/monoscript/fileName/IAudioInputSource.cs: 9cedc902c969604d8ecab3d4c3d431d7 -> 938d3583ac997fe47e013c96006b1b9d
+  custom:scripting/monoscript/fileName/BoxProximityFieldEditor.cs: 3ca172dc25f45b576b1261d9f0fc6a13 -> 
+  custom:scripting/monoscript/fileName/ArcRangeModifier.cs: df4e86005874fa14c26dde0e58fe01b3 -> 
+  custom:scripting/monoscript/fileName/TrainUtterances.cs: fad5269aa3542e54bceac07b82fa9fb2 -> 
+  custom:scripting/monoscript/fileName/OVRSkeletonDataProviders.cs: c9301a8aea506ae86c85f3531883f294 -> 
+  custom:scripting/monoscript/fileName/BoxEditor.cs: 6cb10ba4aeba036613100827e384c6dd -> 
+  custom:scripting/monoscript/fileName/BoxSurface.cs: 64c4f1d5c8f509e2ebfbbe8cc0454ae3 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecordable.cs: be9aebb9e35f1a89cf251d5ebe16b65e -> 
+  custom:scripting/monoscript/fileName/TwoHandFreeTransformer.cs: 5484f45a8b713e7524e309309f536d2e -> 
+  custom:scripting/monoscript/fileName/InteractorDriverGroup.cs: 25a18cbb0a76e7a8f37930efac2dc5e3 -> 
+  custom:scripting/monoscript/fileName/InteractableTransformableConnection.cs: aa199f160bbadaf2d2b7430adb4b19a9 -> 
+  custom:scripting/monoscript/fileName/JointLocking.cs: 04ef49fdef9b40429c44bd8bb4f83933 -> 
+  custom:scripting/monoscript/fileName/OneHandTranslateTransformer.cs: e5593db0756115f769defd5b1bc42e7e -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/WitResponse.cs: 85febed2f7a25f57ec48693bd452c142 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationHand.cs: b7c0c166a2ca9babc479709621d65436 -> 
+  custom:scripting/monoscript/fileName/TagInteractableFilter.cs: 6c02bfd80ff65fe2d5965298b17e0457 -> 
+  custom:scripting/monoscript/fileName/PointableCylinderEditor.cs: 6340733d6723a340786b526e9320784f -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PointProximityField.cs: 0f95fb408e97956db7a3762247f8adc0 -> 
+  custom:scripting/monoscript/fileName/SnapAddress.cs: c2a235d307f5033a6468630481616552 -> 
+  custom:scripting/monoscript/fileName/InteractorGroupMulti.cs: 6bc778766dfc2f0ec0ad2013ae6c3d21 -> 
+  custom:scripting/monoscript/fileName/MicBase.cs: 1ee5e56060961d5fcfcdfe4529504890 -> 47b01f48927768722a8422b4ac545006
+  custom:scripting/monoscript/fileName/DropZoneSequentialSlotsProvider.cs: 7cdedd3fff635f926ee01eb94826964d -> 
+  custom:scripting/monoscript/fileName/SnapPoint.cs: 75b9e5a0f94c20895cbed2ad0cae1535 -> 
+  custom:scripting/monoscript/fileName/WitTrait.cs: 3139215512626b390a96d2cb63ff9eda -> 
+  custom:scripting/monoscript/fileName/ITransformable.cs: 215a3f4eeb91cb88c54863506271ef62 -> 
+  custom:scripting/monoscript/fileName/CoroutineUtility.cs: fab89599511ae356a01c13a28fda4240 -> 821d19c5ac6a7e6baf82a95f7b4d30bf
+  custom:scripting/monoscript/fileName/TeleportTurningGate.cs: 575c2ab79bdb37717f3efb10cff4d8ea -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVREditor.cs: 296ebd2207288873d91d6a862e3b5272 -> 
+  custom:scripting/monoscript/fileName/ColliderSurface.cs: b1cd8447e0ce952dcc7d7b666e8fca92 -> fc86642c94a9542e787a844561e4e4f2
+  custom:scripting/monoscript/fileName/IInteractableRegistry.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionHand.cs: 39d5de62c6b9f655efb66d407ad08fff -> 
+  custom:scripting/monoscript/fileName/TTSStreamToggle.cs: 386098d9b6e67cd0a4ee56f3a7972a48 -> 0132d2e4cd28c22eddc3810c7daa80a8
+  custom:scripting/monoscript/fileName/HandGrabInteractorVisual.cs: 4e78a3e45d86e390b096cc34598495d6 -> 
+  custom:scripting/monoscript/fileName/WitRole.cs: d05ae217608bc7de182f2476f0c8e04d -> 
+  custom:scripting/monoscript/fileName/WitIncomingEntity.cs: 78d455e2834b5f65d08838e068a6b637 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityField.cs: d46f096ca0f256553da6db049bd8e1f0 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialAnimationUnityEventWrapper.cs: 5bbd9cbd699e0cf1a0713e4cfca29cff -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationDataModifier.cs: bbc3acc82de59e5fbec702d8f8197eed -> 
+  custom:scripting/monoscript/fileName/WitEntity.cs: f3634f6b005d657d9256924b6ee7724f -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/Payload.cs: 20bf3ab20e64bae704c38145b44c13ac -> 
+  custom:scripting/monoscript/fileName/EnsureWitIntentsStep.cs: b136f8e7ef96058daebe6e4670855769 -> 
+  custom:scripting/monoscript/fileName/HandGrabPointEditor.cs: 1de61d722aec3955a0ced3ddd1649237 -> 
+  custom:scripting/monoscript/fileName/AimingStabilizedOrigin.cs: 8e9de4ec8ed1eca16b6b5ccdd53afdc0 -> 
+  custom:scripting/monoscript/fileName/WitConfigurationData.cs: 1b59f7289bf740e9ef9f2be93d10f3d4 -> 
+  custom:scripting/monoscript/fileName/VoiceUnityRequest.cs: e67404959cad22b5a8fdd8bc15940a60 -> 
+  custom:scripting/monoscript/fileName/SyncWitEntitiesStep.cs: 2ad573a8b9afd7f1740d493d07a4c0da -> 
+  custom:scripting/monoscript/fileName/PointableDelegate.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/PointablePlane.cs: 0c63873222e6ee1c4bb906924cab90d1 -> 
+  custom:scripting/monoscript/fileName/SphereEditor.cs: 276cafd8aae7e32d736a0c4daa10ab21 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialProgressTracker.cs: 750c2b9f9840ccd08a8a372bd71d691e -> 
+  custom:scripting/monoscript/fileName/CircleProximityField.cs: 3470d85e5a68b53f46ca8356f6863551 -> 
+  custom:scripting/monoscript/fileName/Transformable.cs: 5a246a64658742dc20c886d79003f704 -> 
+  custom:scripting/monoscript/fileName/InteractionOVRCameraRig.cs: 19e5e98fb10016c5e6956c7b291d0f17 -> 
+  custom:scripting/monoscript/fileName/ObtainIdmData.cs: 93689dcf59e4155113dc068b963c769d -> 
+  custom:scripting/monoscript/fileName/HandGrabPoint.cs: f8f9a4aeaae4341c0efe8cc3e2aa5fd8 -> 
+  custom:scripting/monoscript/fileName/PointableGroup.cs: aea7bf2c731b6179d62dad93c7f1a961 -> 
+  custom:scripting/monoscript/fileName/TransformableUnityEventWrapper.cs: aa0309b765937680c8aa9e4e094215f7 -> 
+  custom:scripting/monoscript/fileName/MicDebug.cs: 0703043cca43f55a99276c84b88d73fb -> 75d2f3a208b34ca2e9e43f6d5775eb91
+  custom:scripting/monoscript/fileName/OneHandPhysicsJointTransformer.cs: e946e3b4b5cd8cde3f541291179028e9 -> 
+  custom:scripting/monoscript/fileName/WitApplication.cs: 19806fe5aebcf74124ed49d589a7e43e -> 
+  custom:scripting/monoscript/fileName/IInteractorDriver.cs: fc0a89f4490fc0584b64c6fc827ee895 -> 
+  custom:scripting/monoscript/fileName/GrabbableUnityEventWrapper.cs: 33df70b122ad7f22db2cbfaa0b81510a -> 
+  custom:scripting/monoscript/fileName/BezierSurface.cs: da0b185221f59d400e85940f5ce71c91 -> 
+  custom:scripting/monoscript/fileName/InteractorComparer.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecorder.cs: d6ebfdaa7663426067642c12a6222914 -> 
+  custom:scripting/monoscript/fileName/IProximityField.cs: 1b8f3ef3bb8397988a6923ea34f554a3 -> 
+  custom:scripting/monoscript/fileName/CanvasRenderTextureMesh.cs: ba9623d0f846f302f4c58ca374ea8422 -> 
+  custom:scripting/monoscript/fileName/HandGrabInteractionUtilities.cs: 5e1b87f0c932124d19544f2653fcf382 -> 
+  custom:scripting/monoscript/fileName/OneHandFreeTransformer.cs: 80b454bb7a7e54382c3e5a83c645a9b0 -> 
+  custom:scripting/monoscript/fileName/TwoHandPlaneTransformer.cs: 82508aadcccc9aaae16a3d02dab1f1dd -> 
+  custom:scripting/monoscript/fileName/IWitHttp.cs: 91506f2edcd3bae61fa15b5c8c35b6d5 -> 
+  custom:scripting/monoscript/fileName/JointRotationHistoryModifier.cs: b84eeaa16ce785ca3e0b5335f31473cc -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceData.cs: 879b5b5a667decd113f2ef27fec58193 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/FingerGrabAPI.cs: f38129e37b49d6e3a171bd504092712b -> 
+  custom:scripting/monoscript/fileName/DummyDataModifier.cs: ebbb5589f565d8685d37bb183b4c3ff4 -> 
+  custom:scripting/monoscript/fileName/IDistanceInteractable.cs: c2d2949b74e1e24067c043dc8ee82c5a -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SyntheticHandModifier.cs: 873320c031209152e80a3521b7c6e3f2 -> 
+  custom:scripting/monoscript/fileName/ISnapSurface.cs: e613c1039942a8c6f8524e6d36ccbc1b -> 
+  custom:scripting/monoscript/fileName/HandGrab.cs: 50288240abd576346d83074011541b5b -> 
+  custom:scripting/monoscript/fileName/TTSSpeakerInput.cs: 827d47b543f4663c13881e200e539afd -> 9224de466064073281bc72c5b8b2748c
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionDataModifier.cs: da29522a4b6eb1cb5f6511bdbdd27a95 -> 
+  custom:scripting/monoscript/fileName/WitTrainingEntity.cs: f6d2096c03af45821ae473c66af255f2 -> 
+  custom:scripting/monoscript/fileName/WitEntityKeyword.cs: b5b67313fa30a40635477940a31ddbde -> 
+  custom:scripting/monoscript/fileName/PointableGrabbableConnection.cs: 35ac7dedcc44186f6f6c7bf3730e6343 -> 
+  custom:scripting/monoscript/fileName/FixedScaleDataModifier.cs: 89e1be89d924ac28373337b3361e61dd -> 
+  custom:scripting/monoscript/fileName/PointablePlaneEditor.cs: 37a91ecc3d62d378d68629c686a51361 -> 
+  custom:scripting/monoscript/fileName/WitTrainer.cs: 5fb3c95ba24e9cf857cd9b4cee94291b -> 
+  custom:scripting/monoscript/fileName/IInteractableFilter.cs: 81259a32cb7c13def6a0b70f08c66048 -> 
+  custom:scripting/monoscript/fileName/TTSStatusLabel.cs: 17147acb333fe55f1217dee5b341ea9e -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractor.cs: 76b4b17e6eac72d8f5a16e87fd0e63b5 -> 
+  custom:scripting/monoscript/fileName/IAspectProvider.cs: 9859c5919d893814fee2cdd590f4f949 -> 
+  custom:scripting/monoscript/fileName/OnConduitFailedParameterResolutionAttribute.cs: 60901a81960a7c5a81c752381f8034ab -> 
+  custom:scripting/monoscript/fileName/Mic.cs: 525051591b471bdbfa16530d37dcb655 -> 5fc48121bdfa6f25d9345006a81f8860
+  custom:scripting/monoscript/fileName/TTSCacheToggle.cs: fef530a103c6b74722a7b6f18941e54c -> 410df47b336bde136543845320d773f8
+  custom:scripting/monoscript/fileName/MicPermissionsManager.cs: 81a336319435a61331b696a347e78b9e -> f25de0368c3638f9a3bd7e7f63f0755a
+  custom:scripting/monoscript/fileName/StepRunner.cs: 6ab640738f608e4b47206553c39b2c58 -> 
+  custom:scripting/monoscript/fileName/WitUnityRequest.cs: 2bd88b304dddeb742392b5d5568e7bf7 -> 156bc76d85c310a98e115eec74a771cd
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CircleProximityFieldEditor.cs: 55b157de94575afe7fdac58cd51e3b1c -> 
+  custom:scripting/monoscript/fileName/TTSErrorText.cs: f03cdbc7b1d745067e8f357414e703b1 -> 21a4d51c9f7822c5dae2e2c7e2605044
+  custom:scripting/monoscript/fileName/FingerPinchAPI.cs: 478ca37299a2b7ce3d309683ce89043a -> 
+  custom:scripting/monoscript/fileName/IPointableSurface.cs: d7a8e441db2730be64c585bb12bf4db1 -> 
+  custom:scripting/monoscript/fileName/PhysicsTransformable.cs: 5811faf37734ce7ec9b28418c4758de1 -> 
+  custom:scripting/monoscript/fileName/PitchRemap.cs: 5b7277eeb0a8effc4822cb897b70f197 -> 
+  custom:scripting/monoscript/fileName/WitOutgoingEntity.cs: c7126ba0b7fa09ef7a925f4dc186e5b7 -> 
+  custom:scripting/monoscript/fileName/LocomotionGateVisual.cs: e25bbb39051f52b97c3e93bb37ab390d -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceUtility.cs: eee5b9af7f1fc7fc0da148c8bdf0ad4f -> 
+  custom:scripting/monoscript/fileName/HandleEntityResolutionFailureAttribute.cs: c6e2d1dd1bcaba0322547519e0e12ac7 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.778 seconds
+Refreshing native plugins compatible for Editor in 51.39 ms, found 14 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.596 seconds
+Domain Reload Profiling: 2362ms
+	BeginReloadAssembly (198ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (473ms)
+		LoadAssemblies (554ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (27ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1597ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (762ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (152ms)
+			ProcessInitializeOnLoadAttributes (346ms)
+			ProcessInitializeOnLoadMethodAttributes (207ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 59.76 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.15 ms.
+Unloading 5025 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 123 unused Assets / (296.9 KB). Loaded Objects now: 5669.
+Memory consumption went from 174.3 MB to 174.1 MB.
+Total: 9.475100 ms (FindLiveObjects: 0.491700 ms CreateObjectMapping: 0.475600 ms MarkObjects: 8.158200 ms  DeleteObjects: 0.348900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/WitIntent.cs: b16c53bcdd4b02694d33f5fcb8acdf19 -> 
+  custom:scripting/monoscript/fileName/GrabPointsPoseFinder.cs: 2ce4e7dd89758cfe15cc84bbdaa5d275 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityFieldEditor.cs: 3e379a0d9898211fdf7bd80a30343891 -> 
+  custom:scripting/monoscript/fileName/CanvasMeshPointable.cs: c479bafc80e05db87d89b0e734294af3 -> 
+  custom:scripting/monoscript/fileName/CylinderEditor.cs: b3e556284986a11c8d6bd82a7d7bef7e -> 
+  custom:scripting/monoscript/fileName/GrabPoint.cs: a19e23b452c1156c6e2d489a5b9f5977 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/OneHandRotateTransformer.cs: b4ad4fec7dbc0022b27ef2f1444e1086 -> 
+  custom:scripting/monoscript/fileName/WitTraitValue.cs: c4fc68c99e4126ea4ce1abd10ab830cf -> 
+  custom:scripting/monoscript/fileName/IMonoBehaviourFilter.cs: 9cedc3648a1ac103150b8378e75e48c4 -> 
+  custom:scripting/monoscript/fileName/BezierSurfaceEditor.cs: 3bfdf637db9318a14fc832066acdc19a -> 
+  custom:scripting/monoscript/fileName/SnapSurfaceHelper.cs: 7310cd667c1f6f32da3156d4956a11cb -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVR.cs: c642c70bc2d53e104962e39be79e0283 -> 
+  custom:scripting/monoscript/fileName/ITween.cs: d765ab2d93516afd5cff5e65cdb523ff -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractable.cs: da4c91e5f510c5633065c5ee349670e0 -> 
+  custom:scripting/monoscript/fileName/InteractorGroup.cs: 075c37967371ab7213a5d5cca24ff1fc -> 60fe7361e8ecd7ffeba4477da21c55fe
+  custom:scripting/monoscript/fileName/WitHttp.cs: 65528eef0357ac8698cea4e277f16a7c -> 
+  custom:scripting/monoscript/fileName/BoxProximityField.cs: 8381476084cb2eebc09f6205ab260a5f -> 
+  custom:scripting/monoscript/fileName/ProcessStep.cs: c70de6d5eef34fc1abe9451b4eb02d17 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/IInteractorComparer.cs: 134007cf487fdfbaee924b7d31a3e8ab -> 
+  custom:scripting/monoscript/fileName/WitTrainingUtterance.cs: a06d2df3896850626c28c2eee2f3361f -> 
+  custom:scripting/monoscript/fileName/ITeleportArc.cs: 1ea6eacef0fbe7453ebeaaedd85bf98c -> 
+  custom:scripting/monoscript/fileName/CylinderSurface.cs: 06b7f3fe576c2b562f08ad1445def42f -> 5bee5d43e279f1a3b524f87759982fd3
+  custom:scripting/monoscript/fileName/TagMonoBehaviourFilter.cs: 899569d8afa40a8d293811b71b3f0a56 -> 
+  custom:scripting/monoscript/fileName/SphereSurface.cs: 6d8b2477044e484ea8579f6f1f45e3a8 -> 
+  custom:scripting/monoscript/fileName/LastKnownGoodDataModifier.cs: 0b2c17c40fb2875f055e57a3080d7c9d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/WitEntityRole.cs: 8b2af296196ddab171c9825f773f77da -> 
+  custom:scripting/monoscript/fileName/PointableCylinder.cs: 9a62d083874bdd860515054a450ac594 -> 
+  custom:scripting/monoscript/fileName/AudioEncoding.cs: f84b3952f084caac261984fbd264acec -> 7f68c8ddbd6875f735f3280c1aa36e92
+  custom:scripting/monoscript/fileName/InteractorDriver.cs: 285df5cb75aa79644c75f1cfa1d96ee4 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ISnapPoseProvider.cs: 3ec1f733df4df3213c9abc4abfa84cf1 -> 
+  custom:scripting/monoscript/fileName/IDropZoneSlotsProvider.cs: fc82a4709de8cea85e0be7e46ba6942f -> 
+  custom:scripting/monoscript/fileName/IAudioInputSource.cs: 9cedc902c969604d8ecab3d4c3d431d7 -> 938d3583ac997fe47e013c96006b1b9d
+  custom:scripting/monoscript/fileName/BoxProximityFieldEditor.cs: 3ca172dc25f45b576b1261d9f0fc6a13 -> 
+  custom:scripting/monoscript/fileName/ArcRangeModifier.cs: df4e86005874fa14c26dde0e58fe01b3 -> 
+  custom:scripting/monoscript/fileName/TrainUtterances.cs: fad5269aa3542e54bceac07b82fa9fb2 -> 
+  custom:scripting/monoscript/fileName/OVRSkeletonDataProviders.cs: c9301a8aea506ae86c85f3531883f294 -> 
+  custom:scripting/monoscript/fileName/BoxEditor.cs: 6cb10ba4aeba036613100827e384c6dd -> 
+  custom:scripting/monoscript/fileName/BoxSurface.cs: 64c4f1d5c8f509e2ebfbbe8cc0454ae3 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecordable.cs: be9aebb9e35f1a89cf251d5ebe16b65e -> 
+  custom:scripting/monoscript/fileName/TwoHandFreeTransformer.cs: 5484f45a8b713e7524e309309f536d2e -> 
+  custom:scripting/monoscript/fileName/InteractorDriverGroup.cs: 25a18cbb0a76e7a8f37930efac2dc5e3 -> 
+  custom:scripting/monoscript/fileName/InteractableTransformableConnection.cs: aa199f160bbadaf2d2b7430adb4b19a9 -> 
+  custom:scripting/monoscript/fileName/JointLocking.cs: 04ef49fdef9b40429c44bd8bb4f83933 -> 
+  custom:scripting/monoscript/fileName/OneHandTranslateTransformer.cs: e5593db0756115f769defd5b1bc42e7e -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/WitResponse.cs: 85febed2f7a25f57ec48693bd452c142 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationHand.cs: b7c0c166a2ca9babc479709621d65436 -> 
+  custom:scripting/monoscript/fileName/TagInteractableFilter.cs: 6c02bfd80ff65fe2d5965298b17e0457 -> 
+  custom:scripting/monoscript/fileName/PointableCylinderEditor.cs: 6340733d6723a340786b526e9320784f -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PointProximityField.cs: 0f95fb408e97956db7a3762247f8adc0 -> 
+  custom:scripting/monoscript/fileName/SnapAddress.cs: c2a235d307f5033a6468630481616552 -> 
+  custom:scripting/monoscript/fileName/InteractorGroupMulti.cs: 6bc778766dfc2f0ec0ad2013ae6c3d21 -> 
+  custom:scripting/monoscript/fileName/MicBase.cs: 1ee5e56060961d5fcfcdfe4529504890 -> 47b01f48927768722a8422b4ac545006
+  custom:scripting/monoscript/fileName/DropZoneSequentialSlotsProvider.cs: 7cdedd3fff635f926ee01eb94826964d -> 
+  custom:scripting/monoscript/fileName/SnapPoint.cs: 75b9e5a0f94c20895cbed2ad0cae1535 -> 
+  custom:scripting/monoscript/fileName/WitTrait.cs: 3139215512626b390a96d2cb63ff9eda -> 
+  custom:scripting/monoscript/fileName/ITransformable.cs: 215a3f4eeb91cb88c54863506271ef62 -> 
+  custom:scripting/monoscript/fileName/CoroutineUtility.cs: fab89599511ae356a01c13a28fda4240 -> 821d19c5ac6a7e6baf82a95f7b4d30bf
+  custom:scripting/monoscript/fileName/TeleportTurningGate.cs: 575c2ab79bdb37717f3efb10cff4d8ea -> 
+  custom:scripting/monoscript/fileName/InputDataProviderUpdateTriggerOVREditor.cs: 296ebd2207288873d91d6a862e3b5272 -> 
+  custom:scripting/monoscript/fileName/ColliderSurface.cs: b1cd8447e0ce952dcc7d7b666e8fca92 -> fc86642c94a9542e787a844561e4e4f2
+  custom:scripting/monoscript/fileName/IInteractableRegistry.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionHand.cs: 39d5de62c6b9f655efb66d407ad08fff -> 
+  custom:scripting/monoscript/fileName/TTSStreamToggle.cs: 386098d9b6e67cd0a4ee56f3a7972a48 -> 0132d2e4cd28c22eddc3810c7daa80a8
+  custom:scripting/monoscript/fileName/HandGrabInteractorVisual.cs: 4e78a3e45d86e390b096cc34598495d6 -> 
+  custom:scripting/monoscript/fileName/WitRole.cs: d05ae217608bc7de182f2476f0c8e04d -> 
+  custom:scripting/monoscript/fileName/WitIncomingEntity.cs: 78d455e2834b5f65d08838e068a6b637 -> 
+  custom:scripting/monoscript/fileName/CylinderProximityField.cs: d46f096ca0f256553da6db049bd8e1f0 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialAnimationUnityEventWrapper.cs: 5bbd9cbd699e0cf1a0713e4cfca29cff -> 
+  custom:scripting/monoscript/fileName/OneEuroFilterRotationDataModifier.cs: bbc3acc82de59e5fbec702d8f8197eed -> 
+  custom:scripting/monoscript/fileName/WitEntity.cs: f3634f6b005d657d9256924b6ee7724f -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/Payload.cs: 20bf3ab20e64bae704c38145b44c13ac -> 
+  custom:scripting/monoscript/fileName/EnsureWitIntentsStep.cs: b136f8e7ef96058daebe6e4670855769 -> 
+  custom:scripting/monoscript/fileName/HandGrabPointEditor.cs: 1de61d722aec3955a0ced3ddd1649237 -> 
+  custom:scripting/monoscript/fileName/AimingStabilizedOrigin.cs: 8e9de4ec8ed1eca16b6b5ccdd53afdc0 -> 
+  custom:scripting/monoscript/fileName/WitConfigurationData.cs: 1b59f7289bf740e9ef9f2be93d10f3d4 -> 
+  custom:scripting/monoscript/fileName/VoiceUnityRequest.cs: e67404959cad22b5a8fdd8bc15940a60 -> 
+  custom:scripting/monoscript/fileName/SyncWitEntitiesStep.cs: 2ad573a8b9afd7f1740d493d07a4c0da -> 
+  custom:scripting/monoscript/fileName/PointableDelegate.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/PointablePlane.cs: 0c63873222e6ee1c4bb906924cab90d1 -> 
+  custom:scripting/monoscript/fileName/SphereEditor.cs: 276cafd8aae7e32d736a0c4daa10ab21 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/LocomotionTutorialProgressTracker.cs: 750c2b9f9840ccd08a8a372bd71d691e -> 
+  custom:scripting/monoscript/fileName/CircleProximityField.cs: 3470d85e5a68b53f46ca8356f6863551 -> 
+  custom:scripting/monoscript/fileName/Transformable.cs: 5a246a64658742dc20c886d79003f704 -> 
+  custom:scripting/monoscript/fileName/InteractionOVRCameraRig.cs: 19e5e98fb10016c5e6956c7b291d0f17 -> 
+  custom:scripting/monoscript/fileName/ObtainIdmData.cs: 93689dcf59e4155113dc068b963c769d -> 
+  custom:scripting/monoscript/fileName/HandGrabPoint.cs: f8f9a4aeaae4341c0efe8cc3e2aa5fd8 -> 
+  custom:scripting/monoscript/fileName/PointableGroup.cs: aea7bf2c731b6179d62dad93c7f1a961 -> 
+  custom:scripting/monoscript/fileName/TransformableUnityEventWrapper.cs: aa0309b765937680c8aa9e4e094215f7 -> 
+  custom:scripting/monoscript/fileName/MicDebug.cs: 0703043cca43f55a99276c84b88d73fb -> 75d2f3a208b34ca2e9e43f6d5775eb91
+  custom:scripting/monoscript/fileName/OneHandPhysicsJointTransformer.cs: e946e3b4b5cd8cde3f541291179028e9 -> 
+  custom:scripting/monoscript/fileName/WitApplication.cs: 19806fe5aebcf74124ed49d589a7e43e -> 
+  custom:scripting/monoscript/fileName/IInteractorDriver.cs: fc0a89f4490fc0584b64c6fc827ee895 -> 
+  custom:scripting/monoscript/fileName/GrabbableUnityEventWrapper.cs: 33df70b122ad7f22db2cbfaa0b81510a -> 
+  custom:scripting/monoscript/fileName/BezierSurface.cs: da0b185221f59d400e85940f5ce71c91 -> 
+  custom:scripting/monoscript/fileName/InteractorComparer.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/HandPoseRecorder.cs: d6ebfdaa7663426067642c12a6222914 -> 
+  custom:scripting/monoscript/fileName/IProximityField.cs: 1b8f3ef3bb8397988a6923ea34f554a3 -> 
+  custom:scripting/monoscript/fileName/CanvasRenderTextureMesh.cs: ba9623d0f846f302f4c58ca374ea8422 -> 
+  custom:scripting/monoscript/fileName/HandGrabInteractionUtilities.cs: 5e1b87f0c932124d19544f2653fcf382 -> 
+  custom:scripting/monoscript/fileName/OneHandFreeTransformer.cs: 80b454bb7a7e54382c3e5a83c645a9b0 -> 
+  custom:scripting/monoscript/fileName/TwoHandPlaneTransformer.cs: 82508aadcccc9aaae16a3d02dab1f1dd -> 
+  custom:scripting/monoscript/fileName/IWitHttp.cs: 91506f2edcd3bae61fa15b5c8c35b6d5 -> 
+  custom:scripting/monoscript/fileName/JointRotationHistoryModifier.cs: b84eeaa16ce785ca3e0b5335f31473cc -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceData.cs: 879b5b5a667decd113f2ef27fec58193 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/FingerGrabAPI.cs: f38129e37b49d6e3a171bd504092712b -> 
+  custom:scripting/monoscript/fileName/DummyDataModifier.cs: ebbb5589f565d8685d37bb183b4c3ff4 -> 
+  custom:scripting/monoscript/fileName/IDistanceInteractable.cs: c2d2949b74e1e24067c043dc8ee82c5a -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SyntheticHandModifier.cs: 873320c031209152e80a3521b7c6e3f2 -> 
+  custom:scripting/monoscript/fileName/ISnapSurface.cs: e613c1039942a8c6f8524e6d36ccbc1b -> 
+  custom:scripting/monoscript/fileName/HandGrab.cs: 50288240abd576346d83074011541b5b -> 
+  custom:scripting/monoscript/fileName/TTSSpeakerInput.cs: 827d47b543f4663c13881e200e539afd -> 9224de466064073281bc72c5b8b2748c
+  custom:scripting/monoscript/fileName/OneEuroFilterPositionDataModifier.cs: da29522a4b6eb1cb5f6511bdbdd27a95 -> 
+  custom:scripting/monoscript/fileName/WitTrainingEntity.cs: f6d2096c03af45821ae473c66af255f2 -> 
+  custom:scripting/monoscript/fileName/WitEntityKeyword.cs: b5b67313fa30a40635477940a31ddbde -> 
+  custom:scripting/monoscript/fileName/PointableGrabbableConnection.cs: 35ac7dedcc44186f6f6c7bf3730e6343 -> 
+  custom:scripting/monoscript/fileName/FixedScaleDataModifier.cs: 89e1be89d924ac28373337b3361e61dd -> 
+  custom:scripting/monoscript/fileName/PointablePlaneEditor.cs: 37a91ecc3d62d378d68629c686a51361 -> 
+  custom:scripting/monoscript/fileName/WitTrainer.cs: 5fb3c95ba24e9cf857cd9b4cee94291b -> 
+  custom:scripting/monoscript/fileName/IInteractableFilter.cs: 81259a32cb7c13def6a0b70f08c66048 -> 
+  custom:scripting/monoscript/fileName/TTSStatusLabel.cs: 17147acb333fe55f1217dee5b341ea9e -> 
+  custom:scripting/monoscript/fileName/DropZoneInteractor.cs: 76b4b17e6eac72d8f5a16e87fd0e63b5 -> 
+  custom:scripting/monoscript/fileName/IAspectProvider.cs: 9859c5919d893814fee2cdd590f4f949 -> 
+  custom:scripting/monoscript/fileName/OnConduitFailedParameterResolutionAttribute.cs: 60901a81960a7c5a81c752381f8034ab -> 
+  custom:scripting/monoscript/fileName/Mic.cs: 525051591b471bdbfa16530d37dcb655 -> 5fc48121bdfa6f25d9345006a81f8860
+  custom:scripting/monoscript/fileName/TTSCacheToggle.cs: fef530a103c6b74722a7b6f18941e54c -> 410df47b336bde136543845320d773f8
+  custom:scripting/monoscript/fileName/MicPermissionsManager.cs: 81a336319435a61331b696a347e78b9e -> f25de0368c3638f9a3bd7e7f63f0755a
+  custom:scripting/monoscript/fileName/StepRunner.cs: 6ab640738f608e4b47206553c39b2c58 -> 
+  custom:scripting/monoscript/fileName/WitUnityRequest.cs: 2bd88b304dddeb742392b5d5568e7bf7 -> 156bc76d85c310a98e115eec74a771cd
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CircleProximityFieldEditor.cs: 55b157de94575afe7fdac58cd51e3b1c -> 
+  custom:scripting/monoscript/fileName/TTSErrorText.cs: f03cdbc7b1d745067e8f357414e703b1 -> 21a4d51c9f7822c5dae2e2c7e2605044
+  custom:scripting/monoscript/fileName/FingerPinchAPI.cs: 478ca37299a2b7ce3d309683ce89043a -> 
+  custom:scripting/monoscript/fileName/IPointableSurface.cs: d7a8e441db2730be64c585bb12bf4db1 -> 
+  custom:scripting/monoscript/fileName/PhysicsTransformable.cs: 5811faf37734ce7ec9b28418c4758de1 -> 
+  custom:scripting/monoscript/fileName/PitchRemap.cs: 5b7277eeb0a8effc4822cb897b70f197 -> 
+  custom:scripting/monoscript/fileName/WitOutgoingEntity.cs: c7126ba0b7fa09ef7a925f4dc186e5b7 -> 
+  custom:scripting/monoscript/fileName/LocomotionGateVisual.cs: e25bbb39051f52b97c3e93bb37ab390d -> 
+  custom:scripting/monoscript/fileName/TTSWitVoiceUtility.cs: eee5b9af7f1fc7fc0da148c8bdf0ad4f -> 
+  custom:scripting/monoscript/fileName/HandleEntityResolutionFailureAttribute.cs: c6e2d1dd1bcaba0322547519e0e12ac7 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3708.348428 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/DistanceGrab/Materials/Ball03WithOutline.mat
+  artifactKey: Guid(9cba9da727fd742f5b4083909359be0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/DistanceGrab/Materials/Ball03WithOutline.mat using Guid(9cba9da727fd742f5b4083909359be0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '749676af51ec0f17c5ff1630e29cdcd6') in 0.128384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.694187 seconds.
+  path: Assets/Plugins/SteamVR/InteractionSystem/Longbow/Textures/ArrowAlbedoTransparency.tga
+  artifactKey: Guid(456569c675d05804d94bbf510b956cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/SteamVR/InteractionSystem/Longbow/Textures/ArrowAlbedoTransparency.tga using Guid(456569c675d05804d94bbf510b956cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4590ffdf9dda2de10cad3bd7fa2c034') in 0.027944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.574403 seconds.
+  path: Assets/Oculus/Interaction/Samples/Objects/Props/BigRedButton/Textures/Podium/Podium_AlbedoTransparency.png
+  artifactKey: Guid(b9144ea4006475045917ff432df651ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Objects/Props/BigRedButton/Textures/Podium/Podium_AlbedoTransparency.png using Guid(b9144ea4006475045917ff432df651ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1160c0704cd990b3563113f4d1d3529d') in 0.024578 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Oculus/Interaction/Runtime/Textures/Reticle-Dot.png
+  artifactKey: Guid(aa3a2b3718100f84fb5d8ff9adb8ccb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Runtime/Textures/Reticle-Dot.png using Guid(aa3a2b3718100f84fb5d8ff9adb8ccb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610a12ac1a21d914e2a584c37895ba18') in 0.035418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
