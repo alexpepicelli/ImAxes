@@ -195,7 +195,7 @@ public class SPLOM3D : MonoBehaviour, Grabbable
 
     public void initialiseBaseScatterplot(Visualization visualizationBase, Axis x, Axis y, Axis z)
     {
-        THE3DSPLOM = new Visualization[SceneManager.Instance.dataObject.NbDimensions, SceneManager.Instance.dataObject.NbDimensions, SceneManager.Instance.dataObject.NbDimensions];
+        THE3DSPLOM = new Visualization[AxesSceneManager.Instance.dataObject.NbDimensions, AxesSceneManager.Instance.dataObject.NbDimensions, AxesSceneManager.Instance.dataObject.NbDimensions];
 
         baseVisualization = visualizationBase;
         visualizationBase.TheSPLOMReference = this.gameObject;

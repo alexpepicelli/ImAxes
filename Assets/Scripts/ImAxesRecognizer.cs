@@ -33,13 +33,13 @@ public class ImAxesRecognizer : MonoBehaviour
 
     void Start()
     {
-        adjacency = new AdjacencyMatrix<Visualization>(SceneManager.Instance.sceneAxes.Count);
-        SceneManager.Instance.OnAxisAdded.AddListener(OnAxisAdded);
+        adjacency = new AdjacencyMatrix<Visualization>(AxesSceneManager.Instance.sceneAxes.Count);
+        AxesSceneManager.Instance.OnAxisAdded.AddListener(OnAxisAdded);
     }
 
     void OnAxisAdded(Axis axis)
     {
-        adjacency.Resize(SceneManager.Instance.sceneAxes.Count);
+        adjacency.Resize(AxesSceneManager.Instance.sceneAxes.Count);
     }
 
     //RULES SP =====================
@@ -136,7 +136,7 @@ public class ImAxesRecognizer : MonoBehaviour
     void ParseScene_V2()
     {
         // get all the current axes
-        A = SceneManager.Instance.sceneAxes;
+        A = AxesSceneManager.Instance.sceneAxes;
         // ==============================================================================
         // ======================== PASS0: PARSING SPs ==================================
         // ==============================================================================

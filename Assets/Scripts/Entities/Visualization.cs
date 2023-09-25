@@ -194,7 +194,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
 
             Mesh mToUpdate = histogramObject.GetComponentInChildren<MeshFilter>().mesh;
 
-            VisualisationFactory.UpdatetHistogramMesh(SceneManager.Instance.dataObject,
+            VisualisationFactory.UpdatetHistogramMesh(AxesSceneManager.Instance.dataObject,
             axes[0].axisId,
             (int)HISTOGRAM_BIN_SIZE,
             false,
@@ -222,7 +222,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
 
             Mesh mToUpdate = histogramObject.GetComponentInChildren<MeshFilter>().mesh;
 
-            VisualisationFactory.UpdatetHistogramMesh(SceneManager.Instance.dataObject,
+            VisualisationFactory.UpdatetHistogramMesh(AxesSceneManager.Instance.dataObject,
             axes[0].axisId,
             (int)HISTOGRAM_BIN_SIZE,
             false,
@@ -344,7 +344,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
 
         if (axes.Count == 1)
         {
-            Staxes.Tuple<GameObject, Vector3[]> histT = VisualisationFactory.Instance.CreateBarHistogramView(SceneManager.Instance.dataObject,
+            Staxes.Tuple<GameObject, Vector3[]> histT = VisualisationFactory.Instance.CreateBarHistogramView(AxesSceneManager.Instance.dataObject,
                 axes[0].axisId,
                 (int)HISTOGRAM_BIN_SIZE,
                 false,
@@ -370,7 +370,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
             referenceAxis.horizontal = axisH;
             referenceAxis.vertical = axisV;
 
-            Staxes.Tuple<GameObject, View> parallelT = VisualisationFactory.Instance.CreateSingle2DView(SceneManager.Instance.dataObject, axes[0].axisId, axes[1].axisId, -1, VisualisationAttributes.Instance.LinkedAttribute,
+            Staxes.Tuple<GameObject, View> parallelT = VisualisationFactory.Instance.CreateSingle2DView(AxesSceneManager.Instance.dataObject, axes[0].axisId, axes[1].axisId, -1, VisualisationAttributes.Instance.LinkedAttribute,
                 MeshTopology.Lines, VisualisationFactory.Instance.linesGraphMaterial, true);
             GameObject parallel = parallelT.Item1;
             parallel.transform.SetParent(parallelCoordsObject.transform, false);
@@ -384,7 +384,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
             DetailsOnDemandComponent.VisualizationReference = this;
             parallelT.Item1.GetComponentInChildren<DetailsOnDemand>().setTransformParent(transform);
 
-            Staxes.Tuple<GameObject, View> scatter2DT = VisualisationFactory.Instance.CreateSingle2DView(SceneManager.Instance.dataObject, axisH.axisId, axisV.axisId, -1, VisualisationAttributes.Instance.LinkedAttribute, MeshTopology.Points,
+            Staxes.Tuple<GameObject, View> scatter2DT = VisualisationFactory.Instance.CreateSingle2DView(AxesSceneManager.Instance.dataObject, axisH.axisId, axisV.axisId, -1, VisualisationAttributes.Instance.LinkedAttribute, MeshTopology.Points,
                 VisualisationAttributes.Instance.LinkedAttribute < 0 ? VisualisationFactory.Instance.pointCloudMaterial : VisualisationFactory.Instance.connectedPointLineMaterial);
             GameObject scatter2 = scatter2DT.Item1;
 
@@ -438,7 +438,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
             if (horizontal != null && axisV != null && depth != null)
             {
 
-                Staxes.Tuple<GameObject, View> scatter3DT = VisualisationFactory.Instance.CreateSingle2DView(SceneManager.Instance.dataObject,
+                Staxes.Tuple<GameObject, View> scatter3DT = VisualisationFactory.Instance.CreateSingle2DView(AxesSceneManager.Instance.dataObject,
                     referenceAxis.horizontal.axisId, referenceAxis.vertical.axisId, referenceAxis.depth.axisId, VisualisationAttributes.Instance.LinkedAttribute, MeshTopology.Points,
                     VisualisationAttributes.Instance.LinkedAttribute < 0 ? VisualisationFactory.Instance.pointCloudMaterial : VisualisationFactory.Instance.connectedPointLineMaterial, false);
 
@@ -476,7 +476,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
             referenceAxis.horizontal2 = axisH2;
 
             //create the linked visualisation
-            var linkedView = VisualisationFactory.Instance.CreateLinked2DScatterplotsViews(SceneManager.Instance.dataObject,
+            var linkedView = VisualisationFactory.Instance.CreateLinked2DScatterplotsViews(AxesSceneManager.Instance.dataObject,
                 axisH1.axisId, axisV1.axisId, axisH2.axisId, axisV2.axisId,
                 VisualisationFactory.Instance.linkedViewsMaterial);
             linkedView.Item1.transform.SetParent(linkedScatterplots.transform, false);
@@ -1013,7 +1013,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
         {
             case ViewType.Histogram:
                 {
-                    float[] x = SceneManager.Instance.dataObject.getDimension(axes[0].axisId);
+                    float[] x = AxesSceneManager.Instance.dataObject.getDimension(axes[0].axisId);
                     points = new Vector3?[x.Length];
 
                     for (int i = 0; i < x.Length; i++)
@@ -1055,7 +1055,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
             {
                 if (referenceAxis.vertical == axes[index])
                 {
-                    float[] x = SceneManager.Instance.dataObject.getDimension(axes[index].axisId);
+                    float[] x = AxesSceneManager.Instance.dataObject.getDimension(axes[index].axisId);
                     points = new Vector3?[x.Length];
                     for (int i = 0; i < x.Length; i++)
                     {
@@ -1068,7 +1068,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
                 }
                 else
                 {
-                    float[] y = SceneManager.Instance.dataObject.getDimension(axes[index].axisId);
+                    float[] y = AxesSceneManager.Instance.dataObject.getDimension(axes[index].axisId);
                     points = new Vector3?[y.Length];
                     for (int i = 0; i < y.Length; i++)
                     {
@@ -1089,7 +1089,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
             {
                 if (referenceAxis.vertical == axes[index])
                 {
-                    float[] x = SceneManager.Instance.dataObject.getDimension(axes[index].axisId);
+                    float[] x = AxesSceneManager.Instance.dataObject.getDimension(axes[index].axisId);
                     points = new Vector3?[x.Length];
                     for (int i = 0; i < x.Length; i++)
                     {
@@ -1103,7 +1103,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
                 }
                 else if (referenceAxis.horizontal == axes[index])
                 {
-                    float[] y = SceneManager.Instance.dataObject.getDimension(axes[index].axisId);
+                    float[] y = AxesSceneManager.Instance.dataObject.getDimension(axes[index].axisId);
                     points = new Vector3?[y.Length];
                     for (int i = 0; i < y.Length; i++)
                     {
@@ -1117,7 +1117,7 @@ public class Visualization : MonoBehaviour, Grabbable, Brushable
                 }
                 else if (referenceAxis.depth == axes[index])
                 {
-                    float[] z = SceneManager.Instance.dataObject.getDimension(axes[index].axisId);
+                    float[] z = AxesSceneManager.Instance.dataObject.getDimension(axes[index].axisId);
                     points = new Vector3?[z.Length];
                     for (int i = 0; i < z.Length; i++)
                     {

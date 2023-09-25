@@ -26,7 +26,7 @@ public class ImAxesMenuSystem : MonoBehaviour
     {
         foreach (var dropdown in AttributeDropdowns)
         {
-            dropdown.AddOptions(SceneManager.Instance.dataObject.Identifiers.ToList());
+            dropdown.AddOptions(AxesSceneManager.Instance.dataObject.Identifiers.ToList());
         }
 
         UpdateGradientButtons();
@@ -69,11 +69,11 @@ public class ImAxesMenuSystem : MonoBehaviour
 
         if (VisualisationAttributes.Instance.SizeAttribute >= 0)
         {
-            VisualisationAttributes.Instance.sizes = SceneManager.Instance.dataObject.getDimension(VisualisationAttributes.Instance.SizeAttribute);
+            VisualisationAttributes.Instance.sizes = AxesSceneManager.Instance.dataObject.getDimension(VisualisationAttributes.Instance.SizeAttribute);
         }
         else
         {
-            VisualisationAttributes.Instance.sizes = Enumerable.Range(0, SceneManager.Instance.dataObject.DataPoints).Select(_ => 1f).ToArray();
+            VisualisationAttributes.Instance.sizes = Enumerable.Range(0, AxesSceneManager.Instance.dataObject.DataPoints).Select(_ => 1f).ToArray();
         }
 
         EventManager.TriggerEvent(ApplicationConfiguration.OnScatterplotAttributeChanged, VisualisationAttributes.Instance.SizeAttribute);
@@ -177,12 +177,12 @@ public class ImAxesMenuSystem : MonoBehaviour
 
         if (VisualisationAttributes.Instance.IsGradientColor)
         {
-            VisualisationAttributes.Instance.colors = VisualisationAttributes.getContinuousColors(VisualisationAttributes.Instance.MinGradientColor, VisualisationAttributes.Instance.MaxGradientColor, SceneManager.Instance.dataObject.getDimension(VisualisationAttributes.Instance.ColoredAttribute));
+            VisualisationAttributes.Instance.colors = VisualisationAttributes.getContinuousColors(VisualisationAttributes.Instance.MinGradientColor, VisualisationAttributes.Instance.MaxGradientColor, AxesSceneManager.Instance.dataObject.getDimension(VisualisationAttributes.Instance.ColoredAttribute));
         }
         else
         {
 
-            List<float> categories = SceneManager.Instance.dataObject.getNumberOfCategories(VisualisationAttributes.Instance.ColoredAttribute);
+            List<float> categories = AxesSceneManager.Instance.dataObject.getNumberOfCategories(VisualisationAttributes.Instance.ColoredAttribute);
             int nbCategories = categories.Count;
             Color[] palette = Colors.generateColorPalette(nbCategories);
 
@@ -192,7 +192,7 @@ public class ImAxesMenuSystem : MonoBehaviour
                 indexCategoryToColor.Add(categories[i], palette[i]);
             }
 
-            VisualisationAttributes.Instance.colors = Colors.mapColorPalette(SceneManager.Instance.dataObject.getDimension(VisualisationAttributes.Instance.ColoredAttribute), indexCategoryToColor);
+            VisualisationAttributes.Instance.colors = Colors.mapColorPalette(AxesSceneManager.Instance.dataObject.getDimension(VisualisationAttributes.Instance.ColoredAttribute), indexCategoryToColor);
         }
         EventManager.TriggerEvent(ApplicationConfiguration.OnColoredAttributeChanged, VisualisationAttributes.Instance.ColoredAttribute);
 

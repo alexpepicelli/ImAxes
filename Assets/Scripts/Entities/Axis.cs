@@ -90,7 +90,7 @@ public class Axis : MonoBehaviour, Grabbable {
 
     void UpdateRangeText()
     {
-        string type = SceneManager.Instance.dataObject.TypeDimensionDictionary1[SourceIndex];
+        string type = AxesSceneManager.Instance.dataObject.TypeDimensionDictionary1[SourceIndex];
 
         if (type == "float")
         {
@@ -103,11 +103,11 @@ public class Axis : MonoBehaviour, Grabbable {
             float minValue = Mathf.Lerp(AttributeRange.x, AttributeRange.y, MinNormaliser + 0.5f);
             float maxValue = Mathf.Lerp(AttributeRange.x, AttributeRange.y, MaxNormaliser + 0.5f);
 
-            float nearestMinValue = UtilMath.ClosestTo(SceneManager.Instance.dataObject.TextualDimensions.Keys.ToList(), minValue);
-            float nearestMaxValue = UtilMath.ClosestTo(SceneManager.Instance.dataObject.TextualDimensions.Keys.ToList(), maxValue);
+            float nearestMinValue = UtilMath.ClosestTo(AxesSceneManager.Instance.dataObject.TextualDimensions.Keys.ToList(), minValue);
+            float nearestMaxValue = UtilMath.ClosestTo(AxesSceneManager.Instance.dataObject.TextualDimensions.Keys.ToList(), maxValue);
 
-            minimumValueDimensionLabel.text = SceneManager.Instance.dataObject.TextualDimensions[nearestMinValue].ToString();
-            maximumValueDimensionLabel.text = SceneManager.Instance.dataObject.TextualDimensions[nearestMaxValue].ToString();
+            minimumValueDimensionLabel.text = AxesSceneManager.Instance.dataObject.TextualDimensions[nearestMinValue].ToString();
+            maximumValueDimensionLabel.text = AxesSceneManager.Instance.dataObject.TextualDimensions[nearestMaxValue].ToString();
         }
     }
 
@@ -157,7 +157,7 @@ public class Axis : MonoBehaviour, Grabbable {
 
     public void setDebug(string dbg)
     {
-        DataBinding.DataObject srcData = SceneManager.Instance.dataObject;
+        DataBinding.DataObject srcData = AxesSceneManager.Instance.dataObject;
         label.text = srcData.Identifiers[axisId] + "(" + dbg + ")";
     }
 
@@ -199,7 +199,7 @@ public class Axis : MonoBehaviour, Grabbable {
                 clone.GetComponent<Axis>().OnExited.Invoke();
                 clone.GetComponent<Axis>().ReturnToOrigin();
 
-                SceneManager.Instance.AddAxis(clone.GetComponent<Axis>());
+                AxesSceneManager.Instance.AddAxis(clone.GetComponent<Axis>());
                 
                 foreach (var obj in GameObject.FindObjectsOfType<WandController>())
                 {

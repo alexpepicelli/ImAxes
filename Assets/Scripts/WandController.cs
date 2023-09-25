@@ -32,7 +32,7 @@ public interface Brushable
 
 public class WandController : MonoBehaviour
 {
-    public OVRInput.Controller OculusController;
+    public GameObject OculusController;
 
     public bool isOculusRift = false;
     //Debug test
@@ -102,130 +102,130 @@ public class WandController : MonoBehaviour
 
     void Update()
     {
-        bool gripDown = isOculusRift?
-            OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OculusController) || OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger, OculusController)
-            : controller.GetPressDown(gripButton);
-
-        bool gripUp = isOculusRift ?
-            OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger, OculusController) || OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger, OculusController)
-            : controller.GetPressUp(gripButton);
-
-        bool gripping = isOculusRift ?
-            OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OculusController) || OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger, OculusController)
-            : controller.GetPress(gripButton);
-
-        //bool upButtonDown = isOculusRift?
-        //    OVRInput.GetDown(OVRInput.Button.PrimaryThumbstickDown, OculusController) || OVRInput.GetDown(OVRInput.Button.SecondaryThumbstickDown, OculusController)
-        //    : 
-        if (gripDown && intersectingGrabbables.Any(x => x!= null) && draggingObjects.Count == 0)
-        {
-            var potentialDrags = intersectingGrabbables.Where(x => x != null).ToList();
-            potentialDrags.Sort((x, y) => y.GetComponent<Grabbable>().GetPriority() - x.GetComponent<Grabbable>().GetPriority());
-            if (potentialDrags.Count() > 0)
-            {
-                PropergateOnGrab(potentialDrags.First().gameObject);
-            }            
-        }
-        else if (gripUp && draggingObjects.Count > 0)
-        {
-            draggingObjects.Where(x => x != null).ForEach(x => x.GetComponent<Grabbable>().OnRelease(this));
-            draggingObjects.Clear();
-        }
-        else if (gripping && draggingObjects.Count > 0)
-        {
-            draggingObjects.Where(x => x != null).ForEach(x => x.GetComponent<Grabbable>().OnDrag(this));            
-        }
+        // bool gripDown = isOculusRift?
+        //     OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OculusController) || OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger, OculusController)
+        //     : controller.GetPressDown(gripButton);
+        //
+        // bool gripUp = isOculusRift ?
+        //     OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger, OculusController) || OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger, OculusController)
+        //     : controller.GetPressUp(gripButton);
+        //
+        // bool gripping = isOculusRift ?
+        //     OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OculusController) || OVRInput.GetUp(OVRInput.Button.SecondaryIndexTrigger, OculusController)
+        //     : controller.GetPress(gripButton);
+        //
+        // //bool upButtonDown = isOculusRift?
+        // //    OVRInput.GetDown(OVRInput.Button.PrimaryThumbstickDown, OculusController) || OVRInput.GetDown(OVRInput.Button.SecondaryThumbstickDown, OculusController)
+        // //    : 
+        // if (gripDown && intersectingGrabbables.Any(x => x!= null) && draggingObjects.Count == 0)
+        // {
+        //     var potentialDrags = intersectingGrabbables.Where(x => x != null).ToList();
+        //     potentialDrags.Sort((x, y) => y.GetComponent<Grabbable>().GetPriority() - x.GetComponent<Grabbable>().GetPriority());
+        //     if (potentialDrags.Count() > 0)
+        //     {
+        //         PropergateOnGrab(potentialDrags.First().gameObject);
+        //     }            
+        // }
+        // else if (gripUp && draggingObjects.Count > 0)
+        // {
+        //     draggingObjects.Where(x => x != null).ForEach(x => x.GetComponent<Grabbable>().OnRelease(this));
+        //     draggingObjects.Clear();
+        // }
+        // else if (gripping && draggingObjects.Count > 0)
+        // {
+        //     draggingObjects.Where(x => x != null).ForEach(x => x.GetComponent<Grabbable>().OnDrag(this));            
+        // }
+        //
+        // if (draggingObjects.Count > 0)
+        // {
+        //     if(!isOculusRift)
+        //     controller.TriggerHapticPulse(100);
+        // }
+        //
+        // //brush actions : SteamVR_Controller.ButtonMask.Grip
+        //
+        // bool padPressDown = isOculusRift ? OVRInput.Get(OVRInput.Button.PrimaryThumbstick, OculusController) || OVRInput.Get(OVRInput.Button.SecondaryThumbstick, OculusController)
+        //    : controller.GetPress(padButton);
+        //
+        // bool padPressUp = isOculusRift ? OVRInput.GetUp(OVRInput.Button.PrimaryThumbstick, OculusController) || OVRInput.GetUp(OVRInput.Button.SecondaryThumbstick, OculusController)
+        //   : controller.GetPressUp(padButton);
         
-        if (draggingObjects.Count > 0)
-        {
-            if(!isOculusRift)
-            controller.TriggerHapticPulse(100);
-        }
-
-        //brush actions : SteamVR_Controller.ButtonMask.Grip
-
-        bool padPressDown = isOculusRift ? OVRInput.Get(OVRInput.Button.PrimaryThumbstick, OculusController) || OVRInput.Get(OVRInput.Button.SecondaryThumbstick, OculusController)
-           : controller.GetPress(padButton);
-
-        bool padPressUp = isOculusRift ? OVRInput.GetUp(OVRInput.Button.PrimaryThumbstick, OculusController) || OVRInput.GetUp(OVRInput.Button.SecondaryThumbstick, OculusController)
-          : controller.GetPressUp(padButton);
-        
-        #region details on demand
-        //detail on demand actions
-        if (VisualisationAttributes.detailsOnDemand)
-        {
-            if (padPressDown)
-            {
-                bool detail3Dscatterplots = false;
-                GameObject[] listCandidatesBrush3D = GameObject.FindGameObjectsWithTag("Scatterplot3D");
-                for (int i = 0; i < listCandidatesBrush3D.Length; i++)
-                {
-                    {
-                        if (Vector3.Distance(listCandidatesBrush3D[i].transform.position, transform.position) < 0.3f)
-                        {
-                            detail3Dscatterplots = true;
-                            brushingPoint.gameObject.SetActive(true);
-
-                            currentDetailView = listCandidatesBrush3D[i];
-                            brushingPoint.transform.position = transform.position + transform.forward * 0.1f;
-                            brushingPoint.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
-                            if (currentDetailView.GetComponent<Visualization>() != null)
-                            {
-                                currentDetailView.GetComponent<Visualization>().OnDetailOnDemand(this, 
-                                    brushingPoint.transform.position, 
-                                    currentDetailView.transform.InverseTransformPoint(brushingPoint.transform.position),
-                                    true);
-                            }
-                            else
-                            {
-                                Debug.Log("the object is null/...");
-                            }
-                        }
-                    }
-                }
-                if (!detail3Dscatterplots)
-                {
-                    RaycastHit hit;
-                    Ray downRay = new Ray(transform.position, transform.forward);
-                    if (Physics.Raycast(downRay, out hit))
-                    {
-                        if (hit.transform.gameObject.GetComponent<Brushable>() != null)
-                        {
-                            brushingPoint.gameObject.SetActive(true);
-                            currentDetailView = hit.transform.gameObject;
-                            brushingPoint.transform.position = hit.point;
-                            brushingPoint.transform.rotation = currentDetailView.transform.rotation;
-                            brushingPoint.transform.localScale = new Vector3(0.01f, 0.01f, 0.0f);
-                            
-                            currentDetailView.GetComponent<Visualization>().OnDetailOnDemand(
-                                this, 
-                                hit.point, 
-                                currentDetailView.transform.InverseTransformPoint(hit.point),
-                                false);
-                        }
-
-                    }
-                }
-            }
-            if (padPressUp)
-            {
-                if (currentDetailView != null)
-                {
-                    currentDetailView.GetComponent<Visualization>().OnDetailOnDemand(null, Vector3.zero, Vector3.zero,false);
-
-                    currentDetailView.GetComponent<Visualization>().OnDetailOnDemandRelease(this);
-                    currentDetailView = null;
-                    brushingPoint.gameObject.SetActive(false);
-
-                }
-            }
-        }
-#endregion
-        
-        tracking.RemoveAt(0);
-        tracking.Add(transform.TransformPoint(new Vector3(0, -0.04f, 0)));
-
-    }
+//         #region details on demand
+//         //detail on demand actions
+//         if (VisualisationAttributes.detailsOnDemand)
+//         {
+//             if (padPressDown)
+//             {
+//                 bool detail3Dscatterplots = false;
+//                 GameObject[] listCandidatesBrush3D = GameObject.FindGameObjectsWithTag("Scatterplot3D");
+//                 for (int i = 0; i < listCandidatesBrush3D.Length; i++)
+//                 {
+//                     {
+//                         if (Vector3.Distance(listCandidatesBrush3D[i].transform.position, transform.position) < 0.3f)
+//                         {
+//                             detail3Dscatterplots = true;
+//                             brushingPoint.gameObject.SetActive(true);
+//
+//                             currentDetailView = listCandidatesBrush3D[i];
+//                             brushingPoint.transform.position = transform.position + transform.forward * 0.1f;
+//                             brushingPoint.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+//                             if (currentDetailView.GetComponent<Visualization>() != null)
+//                             {
+//                                 currentDetailView.GetComponent<Visualization>().OnDetailOnDemand(this, 
+//                                     brushingPoint.transform.position, 
+//                                     currentDetailView.transform.InverseTransformPoint(brushingPoint.transform.position),
+//                                     true);
+//                             }
+//                             else
+//                             {
+//                                 Debug.Log("the object is null/...");
+//                             }
+//                         }
+//                     }
+//                 }
+//                 if (!detail3Dscatterplots)
+//                 {
+//                     RaycastHit hit;
+//                     Ray downRay = new Ray(transform.position, transform.forward);
+//                     if (Physics.Raycast(downRay, out hit))
+//                     {
+//                         if (hit.transform.gameObject.GetComponent<Brushable>() != null)
+//                         {
+//                             brushingPoint.gameObject.SetActive(true);
+//                             currentDetailView = hit.transform.gameObject;
+//                             brushingPoint.transform.position = hit.point;
+//                             brushingPoint.transform.rotation = currentDetailView.transform.rotation;
+//                             brushingPoint.transform.localScale = new Vector3(0.01f, 0.01f, 0.0f);
+//                             
+//                             currentDetailView.GetComponent<Visualization>().OnDetailOnDemand(
+//                                 this, 
+//                                 hit.point, 
+//                                 currentDetailView.transform.InverseTransformPoint(hit.point),
+//                                 false);
+//                         }
+//
+//                     }
+//                 }
+//             }
+//             if (padPressUp)
+//             {
+//                 if (currentDetailView != null)
+//                 {
+//                     currentDetailView.GetComponent<Visualization>().OnDetailOnDemand(null, Vector3.zero, Vector3.zero,false);
+//
+//                     currentDetailView.GetComponent<Visualization>().OnDetailOnDemandRelease(this);
+//                     currentDetailView = null;
+//                     brushingPoint.gameObject.SetActive(false);
+//
+//                 }
+//             }
+//         }
+// #endregion
+//         
+//         tracking.RemoveAt(0);
+//         tracking.Add(transform.TransformPoint(new Vector3(0, -0.04f, 0)));
+//
+     }
 
     void OnTriggerEnter(Collider col)
     {

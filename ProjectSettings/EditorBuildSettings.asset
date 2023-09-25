@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HTCViveScene.unity
     guid: 3aa6b15e6c6213647b54ea8d8919b530
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e043db7a33a540c4f9745d60b3f0e47f,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e96c0637a59f898469ff946db30e5328,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 546a71cddac5dbd418507c3cb710baf7,
+      type: 2}

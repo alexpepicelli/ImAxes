@@ -174,8 +174,8 @@ public class DetailsOnDemand : MonoBehaviour
         textMesh.SetActive(true);
         labelDetails.SetActive(true);
 
-        Vector2 rangeX = SceneManager.Instance.dataObject.DimensionsRange[SceneManager.Instance.dataObject.dimensionToIndex(xDimension)];
-        Vector2 rangeY = SceneManager.Instance.dataObject.DimensionsRange[SceneManager.Instance.dataObject.dimensionToIndex(yDimension)];
+        Vector2 rangeX = AxesSceneManager.Instance.dataObject.DimensionsRange[AxesSceneManager.Instance.dataObject.dimensionToIndex(xDimension)];
+        Vector2 rangeY = AxesSceneManager.Instance.dataObject.DimensionsRange[AxesSceneManager.Instance.dataObject.dimensionToIndex(yDimension)];
         string values = "";
 
         if (pointerPosition != null && labelDetails != null && textMesh != null)
@@ -193,13 +193,13 @@ public class DetailsOnDemand : MonoBehaviour
                 Vector2 pointerPosition2D = new Vector2(x + 0.5f, y + 0.5f);
                 List<float> distances = new List<float>();
 
-                for (int i = 0; i < SceneManager.Instance.dataObject.getDimension(0).Length; i++)
+                for (int i = 0; i < AxesSceneManager.Instance.dataObject.getDimension(0).Length; i++)
                 {
-                    distances.Add(Vector2.Distance(pointerPosition2D, new Vector2(SceneManager.Instance.dataObject.getDimension(xDimension)[i], SceneManager.Instance.dataObject.getDimension(yDimension)[i])));
+                    distances.Add(Vector2.Distance(pointerPosition2D, new Vector2(AxesSceneManager.Instance.dataObject.getDimension(xDimension)[i], AxesSceneManager.Instance.dataObject.getDimension(yDimension)[i])));
                 }
                 int index = distances.FindIndex(d => d < distances.Min() + precisionSearch && d > distances.Min() - precisionSearch);
 
-                var dataObj = SceneManager.Instance.dataObject;
+                var dataObj = AxesSceneManager.Instance.dataObject;
 
                 string xvalstr = StringValFromDataObj(dataObj, xDimension, index);
                 string yvalstr = StringValFromDataObj(dataObj, yDimension, index);
@@ -213,8 +213,8 @@ public class DetailsOnDemand : MonoBehaviour
 
                 leaderInformation.SetPosition(0, pointerPosition);
                     leaderInformation.SetPosition(1,
-                      (transform.TransformPoint((SceneManager.Instance.dataObject.getDimension(xDimension)[index] - 0.5f) * 0.2660912f,
-                       (SceneManager.Instance.dataObject.getDimension(yDimension)[index] - 0.5f) * 0.2660912f, 0f)));
+                      (transform.TransformPoint((AxesSceneManager.Instance.dataObject.getDimension(xDimension)[index] - 0.5f) * 0.2660912f,
+                       (AxesSceneManager.Instance.dataObject.getDimension(yDimension)[index] - 0.5f) * 0.2660912f, 0f)));
                     leaderInformation.widthCurve = AnimationCurve.Linear(0, 0.0015f, 1, 0.0015f);
 
             }
@@ -253,9 +253,9 @@ public class DetailsOnDemand : MonoBehaviour
         
         labelDetails.SetActive(true);
         
-        Vector2 rangeX = SceneManager.Instance.dataObject.DimensionsRange[SceneManager.Instance.dataObject.dimensionToIndex(xDimension)];
-        Vector2 rangeY = SceneManager.Instance.dataObject.DimensionsRange[SceneManager.Instance.dataObject.dimensionToIndex(yDimension)];
-        Vector2 rangeZ = SceneManager.Instance.dataObject.DimensionsRange[SceneManager.Instance.dataObject.dimensionToIndex(zDimension)];
+        Vector2 rangeX = AxesSceneManager.Instance.dataObject.DimensionsRange[AxesSceneManager.Instance.dataObject.dimensionToIndex(xDimension)];
+        Vector2 rangeY = AxesSceneManager.Instance.dataObject.DimensionsRange[AxesSceneManager.Instance.dataObject.dimensionToIndex(yDimension)];
+        Vector2 rangeZ = AxesSceneManager.Instance.dataObject.DimensionsRange[AxesSceneManager.Instance.dataObject.dimensionToIndex(zDimension)];
 
         if (pointerPosition != null && labelDetails != null && textMesh != null)
         {
@@ -309,13 +309,13 @@ public class DetailsOnDemand : MonoBehaviour
 
                 float minDistance = float.MaxValue;
                 int minIndex = -1;
-                for (int i = 0; i < SceneManager.Instance.dataObject.getDimension(0).Length; i++)
+                for (int i = 0; i < AxesSceneManager.Instance.dataObject.getDimension(0).Length; i++)
                 {
                     var m = Vector3.SqrMagnitude(pointerPosition3D -
                         new Vector3(
-                        SceneManager.Instance.dataObject.getDimension(xDimension)[i],
-                        SceneManager.Instance.dataObject.getDimension(yDimension)[i],
-                        SceneManager.Instance.dataObject.getDimension(zDimension)[i]));
+                        AxesSceneManager.Instance.dataObject.getDimension(xDimension)[i],
+                        AxesSceneManager.Instance.dataObject.getDimension(yDimension)[i],
+                        AxesSceneManager.Instance.dataObject.getDimension(zDimension)[i]));
 
                     if (m < minDistance)
                     {
@@ -326,7 +326,7 @@ public class DetailsOnDemand : MonoBehaviour
 
                 int index = minIndex;
 
-                var dataObj = SceneManager.Instance.dataObject;
+                var dataObj = AxesSceneManager.Instance.dataObject;
 
                 string xvalstr = StringValFromDataObj(dataObj, xDimension, index);
                 string yvalstr = StringValFromDataObj(dataObj, yDimension, index);
@@ -382,15 +382,15 @@ public class DetailsOnDemand : MonoBehaviour
 
     public object getValueFromDimension(float value, int dimension)
     {
-        if (SceneManager.Instance.dataObject.TypeDimensionDictionary1[dimension] == "string")
+        if (AxesSceneManager.Instance.dataObject.TypeDimensionDictionary1[dimension] == "string")
         {
-            Vector2 range = SceneManager.Instance.dataObject.DimensionsRange[dimension];
+            Vector2 range = AxesSceneManager.Instance.dataObject.DimensionsRange[dimension];
             float lerpedValue = Mathf.Lerp(range.x, range.y, value);
-            float closest = UtilMath.ClosestTo(SceneManager.Instance.dataObject.TextualDimensions.Keys.ToList(), lerpedValue);
-            return SceneManager.Instance.dataObject.TextualDimensions[closest].ToString();
+            float closest = UtilMath.ClosestTo(AxesSceneManager.Instance.dataObject.TextualDimensions.Keys.ToList(), lerpedValue);
+            return AxesSceneManager.Instance.dataObject.TextualDimensions[closest].ToString();
         }
         else
-            return SceneManager.Instance.dataObject.getOriginalValue(value, dimension);
+            return AxesSceneManager.Instance.dataObject.getOriginalValue(value, dimension);
     }
 
     internal void OnDetailOnDemandEnd()
