@@ -612,7 +612,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.03
-  m_Center: {x: 0, y: -0.04, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.02}
 --- !u!1 &1895150466
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,6 +708,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 275677271404920423, guid: f39a9d103c4129b42a53567f6cd8356a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1110917729932336801, guid: f39a9d103c4129b42a53567f6cd8356a,
         type: 3}
       propertyPath: m_TagString
@@ -716,6 +721,21 @@ PrefabInstance:
     - target: {fileID: 1110917729942126971, guid: f39a9d103c4129b42a53567f6cd8356a,
         type: 3}
       propertyPath: m_showState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633367905990714009, guid: f39a9d103c4129b42a53567f6cd8356a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1808
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633367905990714009, guid: f39a9d103c4129b42a53567f6cd8356a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0871
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633367905991016101, guid: f39a9d103c4129b42a53567f6cd8356a,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2169537291589126116, guid: f39a9d103c4129b42a53567f6cd8356a,
@@ -1002,7 +1022,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.03
-  m_Center: {x: 0, y: -0.04, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.02}
 --- !u!114 &2034725562
 MonoBehaviour:
   m_ObjectHideFlags: 0
