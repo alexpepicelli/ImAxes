@@ -66,25 +66,25 @@ public class View
     }
 
     
-    public void setDataDimension(float[] dat, VIEW_DIMENSION dimension)
+    public void SetDataDimension(float[] data, VIEW_DIMENSION dimension)
     {
-        float minValue = dat.Min();
-        float maxValue = dat.Max();
+        float minValue = data.Min();
+        float maxValue = data.Max();
 
-        for (int i = 0; i < dat.Length; i++)
+        for (int i = 0; i < data.Length; i++)
         {
             Vector3 p = positions[i];
 
             switch (dimension)
             {
                 case VIEW_DIMENSION.X:
-                    p.x = UtilMath.normaliseValue(dat[i], minValue, maxValue, -0.5f, 0.5f);
+                    p.x = UtilMath.NormaliseValue(data[i], minValue, maxValue, -0.5f, 0.5f);
                     break;
                 case VIEW_DIMENSION.Y:
-                    p.y = UtilMath.normaliseValue(dat[i], minValue, maxValue, -0.5f, 0.5f);
+                    p.y = UtilMath.NormaliseValue(data[i], minValue, maxValue, -0.5f, 0.5f);
                     break;
                 case VIEW_DIMENSION.Z:
-                    p.z = UtilMath.normaliseValue(dat[i], minValue, maxValue, -0.5f, 0.5f);
+                    p.z = UtilMath.NormaliseValue(data[i], minValue, maxValue, -0.5f, 0.5f);
                     break;
             }
             positions[i] = p;
@@ -92,7 +92,7 @@ public class View
 
     }
 
-    public void setDefaultColor()
+    public void SetDefaultColor()
     {
         Color[] colors = new Color[myMesh.vertices.Length];
         for (int i = 0; i < colors.Length; i++)

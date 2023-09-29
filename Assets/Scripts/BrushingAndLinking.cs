@@ -378,9 +378,9 @@ public class BrushingAndLinking : MonoBehaviour, UIComponent
 
     public static Vector3 transformPointToVisualisation(Vector3 point, Vector3 bl, Vector3 br, Vector3 tl)
     {
-        return new Vector3(UtilMath.normaliseValue(point.x, -0.5f, 0.5f, br.x, bl.x),
-                           UtilMath.normaliseValue(point.y, -0.5f, 0.5f, bl.y, tl.y),
-                           UtilMath.normaliseValue(point.z, -0.5f, 0.5f, bl.z, br.z));
+        return new Vector3(UtilMath.NormaliseValue(point.x, -0.5f, 0.5f, br.x, bl.x),
+                           UtilMath.NormaliseValue(point.y, -0.5f, 0.5f, bl.y, tl.y),
+                           UtilMath.NormaliseValue(point.z, -0.5f, 0.5f, bl.z, br.z));
 
     }
 

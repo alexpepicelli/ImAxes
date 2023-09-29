@@ -16,11 +16,13 @@ public class UtilMath {
 	//Unity max vertices count per mesh
 	public static int MAXIMUM_VERTICES_COUNT = 65534; 
 
-	// scsale data between 2 spaces
-	public static float normaliseValue(float value, float i0, float i1, float j0, float j1)
+	// scale data between 2 spaces
+	public static float NormaliseValue(float value, float inputMin, float inputMax, float outputMin, float outputMax)
 	{
-		float L = (j0 - j1) / (i0 - i1);
-		return (j0 - (L * i0) + (L * value));
+		float inputRange = inputMax - inputMin;
+		float outputRange = outputMax - outputMin;
+		float normalised = outputRange / inputRange;
+		return (outputMin - (normalised * inputMin) + (normalised * value));
 	}
 
 	public static float animateSlowInSlowOut(float t)

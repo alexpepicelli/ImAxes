@@ -11,7 +11,7 @@ using System.IO;
 
 public class Axis : MonoBehaviour, IAxisGrabbable {
 
-    [SerializeField] TextMeshPro label;
+    [SerializeField] public TextMeshPro label;
     [SerializeField] TextMeshPro minimumValueDimensionLabel;
     [SerializeField] TextMeshPro maximumValueDimensionLabel;
 

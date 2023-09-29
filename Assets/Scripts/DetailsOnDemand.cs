@@ -371,7 +371,7 @@ public class DetailsOnDemand : MonoBehaviour
                 // details on demand for PCP
                 if (tuplePCPData.Item1.x < 0f)
                 {
-                    float valueLeft = UtilMath.normaliseValue(tuplePCPWorld.Item1.x, -0.5f, 0.5f, rangeX.x, rangeX.y);
+                    float valueLeft = UtilMath.NormaliseValue(tuplePCPWorld.Item1.x, -0.5f, 0.5f, rangeX.x, rangeX.y);
                 }
             }
 
@@ -404,9 +404,9 @@ public class DetailsOnDemand : MonoBehaviour
 
     Vector3 transformPointToVisualisation(Vector3 point)
     {
-        return new Vector3(UtilMath.normaliseValue(point.x, -0.5f, 0.5f, br.x, bl.x),
-                           UtilMath.normaliseValue(point.y, -0.5f, 0.5f, bl.y, tl.y),
-                           UtilMath.normaliseValue(point.z, -0.5f, 0.5f, bl.z, br.z));
+        return new Vector3(UtilMath.NormaliseValue(point.x, -0.5f, 0.5f, br.x, bl.x),
+                           UtilMath.NormaliseValue(point.y, -0.5f, 0.5f, bl.y, tl.y),
+                           UtilMath.NormaliseValue(point.z, -0.5f, 0.5f, bl.z, br.z));
     }
 
     internal void setTransformParent(Transform transform)

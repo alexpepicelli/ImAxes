@@ -103,8 +103,8 @@ public class VisualisationFactory : MonoBehaviour
         for (int i = 0; i < bins.Length; i++)
         {
             // normalize positions to range in -0.5...0.5
-            float y = UtilMath.normaliseValue(i, 0, bins.Length - 1, 0.5f, -0.5f);
-            float x = UtilMath.normaliseValue(bins[i], minBin, maxBin, -0.5f, 0.5f);
+            float y = UtilMath.NormaliseValue(i, 0, bins.Length - 1, 0.5f, -0.5f);
+            float x = UtilMath.NormaliseValue(bins[i], minBin, maxBin, -0.5f, 0.5f);
             Vector3 v = new Vector3(y, x, 0f);
             l.Add(v);
         }
@@ -150,16 +150,16 @@ public class VisualisationFactory : MonoBehaviour
         float maxBin = bins.Max();
 
         //create the data points height (~ histo)
-        List<Vector3> l = new List<Vector3>();
+        List<Vector3> barDataPoints = new List<Vector3>();
         for (int i = 0; i < bins.Length; i++)
         {
             // normalize positions to range in -0.5...0.5
-            float y = UtilMath.normaliseValue(i, 0, bins.Length - 1, 0.5f, -0.5f);
+            float y = UtilMath.NormaliseValue(i, 0, bins.Length - 1, 0.5f, -0.5f);
             if (float.IsNaN(y))
                 y = 0;
-            float x = UtilMath.normaliseValue(bins[i], minBin, maxBin, minNormalizer, maxNormalizer); // -0.5f, 0.5f);
+            float x = UtilMath.NormaliseValue(bins[i], minBin, maxBin, minNormalizer, maxNormalizer); // -0.5f, 0.5f);
             Vector3 v = new Vector3(x, y, 0f);
-            l.Add(v);
+            barDataPoints.Add(v);
         }
 
         // generate the mesh
@@ -172,7 +172,7 @@ public class VisualisationFactory : MonoBehaviour
         float step = 0.5f / bins.Length;
         for (int i = 0; i < bins.Length; ++i)
         {
-            Vector3 v = l[i];
+            Vector3 v = barDataPoints[i];
             verts.Add(new Vector3(v.y - step, -0.5f, 0.0001f));
             verts.Add(new Vector3(v.y - step, v.x, 0.0001f));
             verts.Add(new Vector3(v.y + step, v.x, 0.0001f));
@@ -183,6 +183,7 @@ public class VisualisationFactory : MonoBehaviour
             verts.Add(new Vector3(v.y + step, v.x, -0.0001f));
             verts.Add(new Vector3(v.y + step, -0.5f, -0.0001f));
 
+            
             // front
             tris.Add(i * 8 + 0 + 0);
             tris.Add(i * 8 + 0 + 1);
@@ -207,9 +208,10 @@ public class VisualisationFactory : MonoBehaviour
 
         MeshRenderer meshRenderer = Snax.AddComponent<MeshRenderer>();
         meshRenderer.material = histogramMaterial;
-        return new Tuple<GameObject, Vector3[]>(Snax, l.ToArray());
+        return new Tuple<GameObject, Vector3[]>(Snax, barDataPoints.ToArray());
     }
 
+    //TODO: This is copied from the create -- integrate into same function
     public static void UpdatetHistogramMesh(DataObject dobjs, int Dimension, int binSize, bool smooth, float scale, Material mat, Transform holder, float minFilter, float maxFilter, float minNormalizer, float maxNormalizer, ref Mesh mesh)
     {
         mesh.Clear();
@@ -241,17 +243,17 @@ public class VisualisationFactory : MonoBehaviour
         List<Vector3> l = new List<Vector3>();
         for (int i = 0; i < bins.Length; i++)
         {
-            float y1 = UtilMath.normaliseValue(i, 0, bins.Length - 1, -0.5f, 0.5f);
+            float y1 = UtilMath.NormaliseValue(i, 0, bins.Length - 1, -0.5f, 0.5f);
             if ((y1 >= (minFilter) && y1 <= (maxFilter)))
             {
                 // normalize positions to range in -0.5...0.5
-                float y = UtilMath.normaliseValue(i, 0, bins.Length - 1, 0.5f, -0.5f);
+                float y = UtilMath.NormaliseValue(i, 0, bins.Length - 1, 0.5f, -0.5f);
 
-                float ynorm = UtilMath.normaliseValue(-y, minNormalizer, maxNormalizer, 0.5f, -0.5f);
+                float ynorm = UtilMath.NormaliseValue(-y, minNormalizer, maxNormalizer, 0.5f, -0.5f);
                 if (ynorm >= -0.5f &&
                          ynorm <= 0.5f)
                 {
-                    float x = UtilMath.normaliseValue(bins[i], minBin, maxBin, -0.5f, 0.5f);
+                    float x = UtilMath.NormaliseValue(bins[i], minBin, maxBin, -0.5f, 0.5f);
 
                     Vector3 v = new Vector3(x, ynorm, 0f);
                     l.Add(v);
@@ -303,7 +305,8 @@ public class VisualisationFactory : MonoBehaviour
 
     }
 
-    public GameObject CreateDiscHistogramView(DataObject dobjs, int Dimension, int binSize, bool smooth, float scale)
+    //TODO: Wtf is a disc histogram???
+    public Tuple<GameObject, Vector3[]> CreateDiscHistogramView(DataObject dobjs, int Dimension, int binSize, bool smooth, float scale)
     {
         GameObject Snax = new GameObject();
         List<Vector3> l = new List<Vector3>();
@@ -326,8 +329,8 @@ public class VisualisationFactory : MonoBehaviour
         for (int i = 0; i < bins.Length; i++)
         {
             // normalize positions to range in -0.5...0.5
-            float y = UtilMath.normaliseValue(i, 0, bins.Length - 1, 0.5f, -0.5f);
-            float x = UtilMath.normaliseValue(bins[i], minBin, maxBin, -0.5f, 0.5f);
+            float y = UtilMath.NormaliseValue(i, 0, bins.Length - 1, 0.5f, -0.5f);
+            float x = UtilMath.NormaliseValue(bins[i], minBin, maxBin, -0.5f, 0.5f);
             Vector3 v = new Vector3(y, x);
             l.Add(v);
         }
@@ -345,7 +348,7 @@ public class VisualisationFactory : MonoBehaviour
         lineRenderer.SetPositions(pointCurved);
         lineRenderer.useWorldSpace = false;
 
-        return Snax;
+        return new Tuple<GameObject, Vector3[]>(Snax, l.ToArray());
     }
 
     /// <summary>
@@ -388,15 +391,15 @@ public class VisualisationFactory : MonoBehaviour
             if (DimensionX >= 0)
             {
                 float[] xpts = dobjs.getDimension(DimensionX);
-                v.setDataDimension(xpts, View.VIEW_DIMENSION.X);
+                v.SetDataDimension(xpts, View.VIEW_DIMENSION.X);
             }
             if (DimensionY >= 0)
             {
-                v.setDataDimension(dobjs.getDimension(DimensionY), View.VIEW_DIMENSION.Y);
+                v.SetDataDimension(dobjs.getDimension(DimensionY), View.VIEW_DIMENSION.Y);
             }
             if (DimensionZ >= 0)
             {
-                v.setDataDimension(dobjs.getDimension(DimensionZ), View.VIEW_DIMENSION.Z);
+                v.SetDataDimension(dobjs.getDimension(DimensionZ), View.VIEW_DIMENSION.Z);
             }
         }
         else
@@ -419,8 +422,8 @@ public class VisualisationFactory : MonoBehaviour
                     range.Add(1);
                 }
 
-                v.setDataDimension(data.ToArray(), View.VIEW_DIMENSION.Y);
-                v.setDataDimension(range.ToArray(), View.VIEW_DIMENSION.X);
+                v.SetDataDimension(data.ToArray(), View.VIEW_DIMENSION.Y);
+                v.SetDataDimension(range.ToArray(), View.VIEW_DIMENSION.X);
             }
         }
         if (LinkIndex < 0)
@@ -467,9 +470,9 @@ public class VisualisationFactory : MonoBehaviour
             ZData.Add(0.5f);
         }
 
-        v.setDataDimension(XData.ToArray(), View.VIEW_DIMENSION.X);
-        v.setDataDimension(YData.ToArray(), View.VIEW_DIMENSION.Y);
-        v.setDataDimension(ZData.ToArray(), View.VIEW_DIMENSION.Z);
+        v.SetDataDimension(XData.ToArray(), View.VIEW_DIMENSION.X);
+        v.SetDataDimension(YData.ToArray(), View.VIEW_DIMENSION.Y);
+        v.SetDataDimension(ZData.ToArray(), View.VIEW_DIMENSION.Z);
         v.updateView(null);
 
         view.AddComponent<MeshFilter>();
@@ -519,9 +522,9 @@ public class VisualisationFactory : MonoBehaviour
             ZData.Add(0.5f);
         }
 
-        v.setDataDimension(XData.ToArray(), View.VIEW_DIMENSION.X);
-        v.setDataDimension(YData.ToArray(), View.VIEW_DIMENSION.Y);
-        v.setDataDimension(ZData.ToArray(), View.VIEW_DIMENSION.Z);
+        v.SetDataDimension(XData.ToArray(), View.VIEW_DIMENSION.X);
+        v.SetDataDimension(YData.ToArray(), View.VIEW_DIMENSION.Y);
+        v.SetDataDimension(ZData.ToArray(), View.VIEW_DIMENSION.Z);
         v.updateView(null);
 
         view.AddComponent<MeshFilter>();
@@ -577,9 +580,9 @@ public class VisualisationFactory : MonoBehaviour
             ZData.Add(dimz2[i]);
         }
 
-        v.setDataDimension(XData.ToArray(), View.VIEW_DIMENSION.X);
-        v.setDataDimension(YData.ToArray(), View.VIEW_DIMENSION.Y);
-        v.setDataDimension(ZData.ToArray(), View.VIEW_DIMENSION.Z);
+        v.SetDataDimension(XData.ToArray(), View.VIEW_DIMENSION.X);
+        v.SetDataDimension(YData.ToArray(), View.VIEW_DIMENSION.Y);
+        v.SetDataDimension(ZData.ToArray(), View.VIEW_DIMENSION.Z);
         v.updateView(null);
 
         view.AddComponent<MeshFilter>();

@@ -346,20 +346,30 @@ public class Visualization : MonoBehaviour, IAxisGrabbable, Brushable
         {
             Staxes.Tuple<GameObject, Vector3[]> histT = VisualisationFactory.Instance.CreateBarHistogramView(AxesSceneManager.Instance.dataObject,
                 axes[0].axisId,
-                (int)HISTOGRAM_BIN_SIZE,
+                HISTOGRAM_BIN_SIZE,
                 false,
-                1f,
+                2f,
                 VisualisationFactory.Instance.histogramMaterial,
                 histogramObject.transform,
                 axes[0].MinFilter,
                 axes[0].MaxFilter,
                 axes[0].MinNormaliser,
                 axes[0].MaxNormaliser);
+            
+            // Staxes.Tuple<GameObject, Vector3[]>  histT = VisualisationFactory.Instance.CreateDiscHistogramView(AxesSceneManager.Instance.dataObject, axes[0].axisId, HISTOGRAM_BIN_SIZE, false, 1f);
 
             GameObject hist = histT.Item1;
             histogramPositions = histT.Item2;
 
             hist.transform.SetParent(histogramObject.transform, false);
+            
+            var graph = new GameObject
+            {
+                name = axes[0].label.text + " graph"
+            };
+            
+            axes[0].transform.SetParent(graph.transform);
+            transform.SetParent(graph.transform);
         }
         else if (axes.Count == 2)
         {
@@ -375,7 +385,7 @@ public class Visualization : MonoBehaviour, IAxisGrabbable, Brushable
             GameObject parallel = parallelT.Item1;
             parallel.transform.SetParent(parallelCoordsObject.transform, false);
             instantiatedViews.Add(parallelT.Item2);
-            parallelT.Item2.setDefaultColor();
+            parallelT.Item2.SetDefaultColor();
             parallelT.Item1.layer = LayerMask.NameToLayer("View");
             parallelT.Item1.tag = "View";
             parallelT.Item1.name += " parallel";
@@ -390,7 +400,7 @@ public class Visualization : MonoBehaviour, IAxisGrabbable, Brushable
 
             scatter2.transform.SetParent(scatterplot2DObject.transform, false);
             instantiatedViews.Add(scatter2DT.Item2);
-            scatter2DT.Item2.setDefaultColor();
+            scatter2DT.Item2.SetDefaultColor();
             scatter2DT.Item2.setColors(VisualisationAttributes.Instance.colors, false);
             scatter2DT.Item2.setSizes(VisualisationAttributes.Instance.sizes);
             OnChangePointSize(VisualisationAttributes.Instance.ScatterplotDefaultPointSize);
@@ -402,6 +412,15 @@ public class Visualization : MonoBehaviour, IAxisGrabbable, Brushable
             DetailsOnDemandComponent = scatter2DT.Item1.AddComponent<DetailsOnDemand>();
             DetailsOnDemandComponent.VisualizationReference = this;
             scatter2DT.Item1.GetComponentInChildren<DetailsOnDemand>().setTransformParent(transform);
+
+            var graph = new GameObject
+            {
+                name = axisH.label.text + " & " + axisV.label.text + " graph"
+            };
+            
+            axisH.transform.SetParent(graph.transform);
+            axisV.transform.SetParent(graph.transform);
+            transform.SetParent(graph.transform);
 
             //scatter2DT.Item1.AddComponent<BrushingAndLinking>();
         }
@@ -445,7 +464,7 @@ public class Visualization : MonoBehaviour, IAxisGrabbable, Brushable
                 GameObject scatter = scatter3DT.Item1;
                 scatter.transform.SetParent(scatterplot3DObject.transform, false);
                 instantiatedViews.Add(scatter3DT.Item2);
-                scatter3DT.Item2.setDefaultColor();
+                scatter3DT.Item2.SetDefaultColor();
                 scatter3DT.Item2.setColors(VisualisationAttributes.Instance.colors, false);
                 scatter3DT.Item2.setSizes(VisualisationAttributes.Instance.sizes);
                 OnChangePointSize(VisualisationAttributes.Instance.ScatterplotDefaultPointSize);
@@ -871,7 +890,7 @@ public class Visualization : MonoBehaviour, IAxisGrabbable, Brushable
                     {
                         Vector3 normalisedPosition =
                             new Vector3(points[i].Value.x,
-                                UtilMath.normaliseValue(points[i].Value.y, axes[0].MinNormaliser, axes[0].MaxNormaliser, -0.5f, 0.5f),
+                                UtilMath.NormaliseValue(points[i].Value.y, axes[0].MinNormaliser, axes[0].MaxNormaliser, -0.5f, 0.5f),
                                 points[i].Value.z);
 
                         if (normalisedPosition.y < -0.5 ||
@@ -895,8 +914,8 @@ public class Visualization : MonoBehaviour, IAxisGrabbable, Brushable
                     if (points[i] != null)
                     {
                         Vector3 normalisedPosition =
-                            new Vector3(UtilMath.normaliseValue(points[i].Value.x, axisH2D.MinNormaliser, axisH2D.MaxNormaliser, -0.5f, 0.5f),
-                                UtilMath.normaliseValue(points[i].Value.y, axisV2D.MinNormaliser, axisV2D.MaxNormaliser, -0.5f, 0.5f),
+                            new Vector3(UtilMath.NormaliseValue(points[i].Value.x, axisH2D.MinNormaliser, axisH2D.MaxNormaliser, -0.5f, 0.5f),
+                                UtilMath.NormaliseValue(points[i].Value.y, axisV2D.MinNormaliser, axisV2D.MaxNormaliser, -0.5f, 0.5f),
                                 points[i].Value.z);
 
                         if (normalisedPosition.x < -0.5 ||
@@ -924,9 +943,9 @@ public class Visualization : MonoBehaviour, IAxisGrabbable, Brushable
                     if (points[i] != null)
                     {
                         Vector3 normalisedPosition =
-                            new Vector3(UtilMath.normaliseValue(points[i].Value.x, axisH3D.MinNormaliser, axisH3D.MaxNormaliser, -0.5f, 0.5f),
-                                UtilMath.normaliseValue(points[i].Value.y, axisV3D.MinNormaliser, axisV3D.MaxNormaliser, -0.5f, 0.5f),
-                                UtilMath.normaliseValue(points[i].Value.z, axisD3D.MinNormaliser, axisD3D.MaxNormaliser, -0.5f, 0.5f));
+                            new Vector3(UtilMath.NormaliseValue(points[i].Value.x, axisH3D.MinNormaliser, axisH3D.MaxNormaliser, -0.5f, 0.5f),
+                                UtilMath.NormaliseValue(points[i].Value.y, axisV3D.MinNormaliser, axisV3D.MaxNormaliser, -0.5f, 0.5f),
+                                UtilMath.NormaliseValue(points[i].Value.z, axisD3D.MinNormaliser, axisD3D.MaxNormaliser, -0.5f, 0.5f));
 
                         if (normalisedPosition.x < -0.5 ||
                          normalisedPosition.x > 0.5 ||
